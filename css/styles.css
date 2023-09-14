@@ -109,7 +109,7 @@ header {
 }
 .footer {
   background-color: #2a3a45;
-  padding-left: 30px;
+  padding-left: 8vw;
 }
 .footer-col1 {
   grid-column: 1/4;

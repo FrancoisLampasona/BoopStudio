@@ -306,9 +306,9 @@
 
 .rettangolo_contenitore_contattaci {
   grid-column: 1/4;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
   position: absolute;
   width: 85vw;
   height: 120vw;
@@ -733,15 +733,58 @@
     z-index: -1;
   }
   /* <=========================== Section 5 ========================> */
+  /* <=========================== Section 5 ========================> */
+  #linea_5_orizzontale {
+    display: none;
+  }
+  #linea_6_orizzontale {
+    display: none;
+  }
+  #linea_7_orizzontale {
+    display: none;
+  }
+  .linee_orizzontali img {
+    width: 100%;
+  }
+  .rettangolo_contenitore_contattaci {
+    margin-top: 7.5vw;
+    border-radius: 140px;
+    width: 80vw;
+    height: 30vw;
+  }
   .dati {
-    padding-top: 5vh;
+    gap: 1vw;
+    margin-top: 2vw;
+    padding-top: 2vw;
+  }
+  #testo-contattacci {
+    font-size: 4vw;
   }
   .content_form {
-    font-size: 5vw;
+    font-size: 1.5vw;
   }
-
   .bottom_form {
-    font-size: 5vw;
+    font-size: 1.5vw;
+  }
+  #nome {
+    grid-column: 1/2;
+  }
+  #cognome {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+  #email {
+    grid-column: 3/4;
+    grid-row: 1;
+  }
+  #messaggio {
+    margin-top: 15px;
+    grid-row: 2;
+    grid-column: 1/4;
+  }
+  #invia {
+    margin-top: 2vh;
+    grid-row: 3;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
