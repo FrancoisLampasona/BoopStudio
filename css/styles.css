@@ -267,8 +267,11 @@ header {
     margin-left: 5vh;
     margin-bottom: 1vh;
   }
-  .hamburger_icon img {
-    max-width: 80%;
+  #close_icon{
+    width: 50%;
+  }
+  #menu_icon{
+    width: 65%;
   }
   .header_logo {
     max-width: 80%;
@@ -342,6 +345,12 @@ header {
     display: block;
     margin-left: 5vh;
     margin-bottom: 1vh;
+  }
+  #close_icon{
+    width: 50%;
+  }
+  #menu_icon{
+    width: 65%;
   }
   .hamburger_icon img {
     max-width: 70%;
