@@ -351,7 +351,7 @@ header {
     margin: 10px auto;
   }
   .header_logo img {
-    margin-left: 0px;
+    margin-left: -15px;
   }
 
   /* <=========================== Footer ========================> */
@@ -419,14 +419,14 @@ header {
     margin-bottom: 1vh;
   }
   .hamburger_icon img {
-    max-width: 85%;
+    max-width: 95%;
   }
   .header_logo {
     max-width: 80%;
     margin: 10px auto;
   }
   .header_logo img {
-    margin-left: 0px;
+    margin-left: -15px;
   }
 
   /* <=========================== Footer ========================> */
