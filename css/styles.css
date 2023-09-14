@@ -149,7 +149,8 @@ header {
     height: 1px;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(35px);
     box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.15);
     transition: 0.5s ease;
   }
@@ -230,7 +231,8 @@ header {
     height: 1px;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(35px);
     box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.15);
     transition: 0.5s ease;
   }
@@ -305,7 +307,8 @@ header {
     height: 0px;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(35px);
     box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.15);
     transition: 0.5s ease;
   }
@@ -376,7 +379,8 @@ header {
     height: 1px;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(35px);
     box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.15);
     transition: 0.5s ease;
   }
