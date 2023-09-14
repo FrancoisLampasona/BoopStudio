@@ -306,13 +306,15 @@
 
 .rettangolo_contenitore_contattaci {
   grid-column: 1/4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   position: absolute;
   width: 85vw;
   height: 120vw;
   border-radius: 40px;
   background: #2a3a45;
   box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
-  justify-self: center;
   margin-top: 8vh;
 }
 
@@ -808,7 +810,7 @@
   }
   .rettangolo_contenitore_contattaci {
     margin-top: 12vh;
-    border-radius: 160px;
+    border-radius: 140px;
     width: 80vw;
     height: 30vw;
   }
