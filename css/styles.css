@@ -49,7 +49,7 @@ header {
   box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.15);
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 1000;
   width: 100%;
 }
 
@@ -106,9 +106,6 @@ header {
   display: grid;
   grid-template-columns: 1 fr 1fr 1fr;
   grid-auto-rows: auto;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* justify-content: space-evenly; */
 }
 .footer {
   background-color: #2a3a45;
@@ -319,18 +316,6 @@ header {
     font-size: 2.5vw;
   }
 
-  /* .footer-col {
-    width: 45%;
-  }
-  .footer-text {
-    font-size: 1.5em;
-  }
-  .contatti-text h1 {
-    font-size: 1.5em;
-  }
-  .contatti-text p {
-    font-size: 1em;
-  } */
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -420,18 +405,6 @@ header {
     font-size: 2vw;
   }
 
-  /* .footer-col {
-    width: 30%;
-  }
-  .footer-text {
-    font-size: 1.5em;
-  }
-  .contatti-text h1 {
-    font-size: 1.5em;
-  }
-  .contatti-text p {
-    font-size: 1em;
-  } */
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -515,18 +488,7 @@ header {
     font-size: 2vw;
   }
 
-  /* .footer-col {
-    width: 25%;
-  }
-  .footer-text {
-    font-size: 1.5em;
-  }
-  .contatti-text h1 {
-    font-size: 1.5em;
-  }
-  .contatti-text p {
-    font-size: 1em;
-  } */
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -605,27 +567,15 @@ header {
   }
 
   .footer-text {
-    font-size: 3.5vw;
+    font-size: 2.8vw;
   }
 
   .contatti-text h1 {
-    font-size: 2.7vw;
+    font-size: 2.2vw;
   }
 
   .contatti-text p {
-    font-size: 1.5vw;
+    font-size: 1vw;
   }
 
-  /* .footer-col {
-    width: auto;
-  }
-  .footer-text {
-    font-size: 3rem;
-  }
-  .contatti-text h1 {
-    font-size: 2rem;
-  }
-  .contatti-text p {
-    font-size: 1.5rem;
-  } */
 }

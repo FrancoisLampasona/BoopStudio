@@ -293,21 +293,37 @@
 }
 
 .linee_orizzontali {
+  width: 100%;
+  overflow: hidden;
   grid-column: 1/4;
   justify-self: center;
+  padding-top: 5vh;
+}
+
+.linee_orizzontali img {
+  width: 200vw;
 }
 
 .rettangolo_contenitore_contattaci {
   grid-column: 1/4;
   position: absolute;
-  width: 1720px;
-  height: 640px;
-  border-radius: 150px;
+  width: 85vw;
+  height: 120vw;
+  border-radius: 40px;
   background: #2a3a45;
   box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
-  margin-left: 10vh;
-  margin-bottom: 30vh;
-  margin-top: 10vh;
+  justify-self: center;
+  margin-top: 8vh;
+}
+
+#testo-contattacci {
+  margin-top: 3.5vh;
+  display: flex;
+  justify-content: center;
+  color: #f8fafa;
+  font-size: 10vw;
+  font-family: Champ;
+  font-weight: 900;
 }
 
 .dati {
@@ -315,9 +331,9 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   gap: 8px;
-  margin-top: 10vh;
-  margin-left: 15vh;
-  margin-right: 15vh;
+  margin-top: 3.5vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
 }
 
 .dati input {
@@ -327,7 +343,7 @@
 .content_form {
   background-color: transparent;
   color: #f8fafa;
-  font-size: 26px;
+  font-size: 5vw;
   font-family: Montserrat;
   font-weight: 500;
   word-wrap: break-word;
@@ -338,7 +354,7 @@
   border: none;
   background-color: transparent;
   color: #2c9bd8;
-  font-size: 30px;
+  font-size: 4.446vw;
   font-family: Champ;
   font-weight: 900;
   text-decoration: underline;
@@ -360,7 +376,8 @@
 
 #nome {
   margin-right: 10px;
-  grid-column: 1/2;
+  grid-column: 1/4;
+  grid-row: 1;
   position: relative;
   border-radius: 0 0 2px 2px;
   border-bottom: 3px solid #f8fafa;
@@ -368,16 +385,16 @@
 
 #cognome {
   margin-right: 10px;
-  grid-column: 2/3;
-  grid-row: 1;
+  grid-column: 1/4;
+  grid-row: 2;
   border-radius: 0 0 2px 2px;
   border-bottom: 3px solid #f8fafa;
 }
 
 #email {
   margin-right: 10px;
-  grid-column: 3/4;
-  grid-row: 1;
+  grid-column: 1/4;
+  grid-row: 3;
   border-radius: 0 0 2px 2px;
   border-bottom: 3px solid #f8fafa;
 }
@@ -386,6 +403,7 @@
   margin-right: 10px;
   margin-top: 20px;
   grid-column: 1/4;
+  grid-row: 4;
   border-radius: 0 0 2px 2px;
   border-bottom: 3px solid #f8fafa;
   resize: none;
@@ -393,18 +411,8 @@
 
 #invia {
   grid-column: 1/4;
-  margin-right: 90px;
-  padding-top: 50px;
-}
-
-#testo-contattacci {
-  margin-top: 10vh;
-  display: flex;
-  justify-content: center;
-  color: #f8fafa;
-  font-size: 60px;
-  font-family: Champ;
-  font-weight: 900;
+  justify-self: center;
+  margin-top: 4vh;
 }
 
 /* MEDIA QUERY */
@@ -587,6 +595,10 @@
     width: 9%;
     z-index: -1;
   }
+  /* <=========================== Section 5 ========================> */
+  .dati {
+    gap: 6vw;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -646,6 +658,17 @@
   .linee_verticali img {
     width: 4rem;
     z-index: -1;
+  }
+  /* <=========================== Section 5 ========================> */
+  .dati {
+    padding-top: 5vh;
+  }
+  .content_form {
+    font-size: 5vw;
+  }
+
+  .bottom_form {
+    font-size: 5vw;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -707,6 +730,17 @@
     width: 5rem;
     z-index: -1;
   }
+  /* <=========================== Section 5 ========================> */
+  .dati {
+    padding-top: 5vh;
+  }
+  .content_form {
+    font-size: 5vw;
+  }
+
+  .bottom_form {
+    font-size: 5vw;
+  }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -758,5 +792,58 @@
     font-family: Montserrat;
     font-weight: 500;
     word-wrap: break-word;
+  }
+  /* <=========================== Section 5 ========================> */
+  #linea_5_orizzontale {
+    display: none;
+  }
+  #linea_6_orizzontale {
+    display: none;
+  }
+  #linea_7_orizzontale {
+    display: none;
+  }
+  .linee_orizzontali img {
+    width: 100%;
+  }
+  .rettangolo_contenitore_contattaci {
+    margin-top: 12vh;
+    border-radius: 160px;
+    width: 80vw;
+    height: 30vw;
+  }
+  .dati {
+    gap: 1vw;
+    margin-top: 2vw;
+    padding-top: 2vw;
+  }
+  #testo-contattacci {
+    font-size: 4vw;
+  }
+  .content_form {
+    font-size: 1.5vw;
+  }
+  .bottom_form {
+    font-size: 1.5vw;
+  }
+  #nome {
+    grid-column: 1/2;
+  }
+  #cognome {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+  #email {
+    grid-column: 3/4;
+    grid-row: 1;
+  }
+  #messaggio {
+    margin-top: 15px;
+    grid-row: 2;
+    grid-column: 1/4;
+  }
+  #invia {
+    margin-top: 2vh;
+    grid-row: 3;
   }
 }
