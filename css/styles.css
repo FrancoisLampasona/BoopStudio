@@ -1,0 +1,508 @@
+@font-face {
+  font-family: "Champ";
+  src: url("Champ-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --boopstudio-blue: #2c9bd8;
+  --background-dark: #2d3548;
+  --text-light: rgba(255, 255, 255, 0.6);
+  --text-lighter: rgba(255, 255, 255, 0.9);
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
+}
+
+/* <=========================== Tutto il sito ========================> */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* <=========================== Link ========================> */
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: white; /* Colore dei link visitati */
+}
+
+/* <=========================== Body ========================> */
+
+body {
+  background-color: white;
+}
+
+/* <=========================== Header ========================> */
+
+header {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.15);
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  position: absolute;
+}
+
+.header_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#check {
+  display: none;
+}
+
+.hamburger_icon {
+  display: none;
+}
+
+.hamburger_icon img {
+  width: 4vh;
+  height: auto;
+}
+
+.header_logo {
+  margin: 1vh;
+  margin-left: 5vh;
+}
+
+.header_menu {
+  padding-bottom: 0;
+}
+
+.header_menu li {
+  display: inline-block;
+}
+
+.header_menu li a {
+  display: block;
+  padding: 45px;
+  color: #2a3a45;
+  font-size: 30px;
+  font-family: Montserrat;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+/* <=========================== Footer ========================> */
+
+.container {
+  width: 100%;
+  height: 324px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.footer {
+  background-color: #2a3a45;
+  padding-left: 30px;
+}
+.footer-col {
+  margin-top: 40px;
+  width: auto;
+  color: #f8fafa;
+  padding-top: 5vh;
+}
+
+.footer-text {
+  font-size: 50px;
+  font-family: "Champ";
+  font-weight: 900;
+}
+
+.contatti-text h1 {
+  font-size: 30px;
+}
+
+.contatti-text p {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+/* MEDIA QUERY */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* <=========================== Header ========================> */
+
+  .header_menu {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(35px);
+    box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.15);
+    transition: 0.5s ease;
+  }
+  .header_menu li {
+    display: block;
+  }
+  .header_menu li a {
+    padding: 4vh;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+
+  #check:checked ~ .hamburger_icon #menu_icon {
+    display: none;
+  }
+  .hamburger_icon #close_icon {
+    display: none;
+  }
+  #check:checked ~ .hamburger_icon #close_icon {
+    display: block;
+  }
+  #check:checked ~ .header_menu {
+    height: 21rem;
+  }
+
+  .header_content {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .hamburger_icon {
+    display: block;
+    margin-right: 6vw;
+    margin-bottom: 1vh;
+  }
+  .hamburger_icon img {
+    max-width: 92%;
+  }
+  .header_logo {
+    max-width: 70%;
+  }
+  .header_logo img {
+    width: 60%;
+    margin-top: 0.5vh;
+    margin-left: 1vh;
+  }
+
+  /* <=========================== Footer ========================> */
+
+  .footer {
+    padding-bottom: 10vh;
+  }
+  .footer-col {
+    margin-top: 0;
+    width: 100%;
+  }
+  .footer-text {
+    font-size: 1.5em;
+  }
+  .contatti-text h1 {
+    font-size: 1.5em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* <=========================== Header ========================> */
+
+  .header_menu {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(35px);
+    box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.15);
+    transition: 0.5s ease;
+  }
+  .header_menu li {
+    display: block;
+  }
+  .header_menu li a {
+    padding: 45px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+
+  #check:checked ~ .hamburger_icon #menu_icon {
+    display: none;
+  }
+  .hamburger_icon #close_icon {
+    display: none;
+  }
+  #check:checked ~ .hamburger_icon #close_icon {
+    display: block;
+  }
+  #check:checked ~ .header_menu {
+    height: 32rem;
+  }
+
+  .hamburger_icon {
+    display: block;
+    margin-left: 5vh;
+    margin-bottom: 1vh;
+  }
+  .hamburger_icon img {
+    max-width: 92%;
+  }
+  .header_logo {
+    max-width: 80%;
+    margin: 10px auto;
+  }
+  .header_logo img {
+    width: 80%;
+    margin-left: 0px;
+  }
+
+  /* <=========================== Footer ========================> */
+
+  .footer-col {
+    width: 45%;
+  }
+  .footer-text {
+    font-size: 1.5em;
+  }
+  .contatti-text h1 {
+    font-size: 1.5em;
+  }
+  .contatti-text p {
+    font-size: 1em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* <=========================== Header ========================> */
+
+  .header_menu {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(35px);
+    box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.15);
+    transition: 0.5s ease;
+  }
+  .header_menu li {
+    display: block;
+  }
+  .header_menu li a {
+    padding: 45px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+
+  #check:checked ~ .hamburger_icon #menu_icon {
+    display: none;
+  }
+  .hamburger_icon #close_icon {
+    display: none;
+  }
+  #check:checked ~ .hamburger_icon #close_icon {
+    display: block;
+  }
+  #check:checked ~ .header_menu {
+    height: 32rem;
+  }
+
+  .hamburger_icon {
+    display: block;
+    margin-left: 5vh;
+    margin-bottom: 1vh;
+  }
+  .header_logo {
+    max-width: 80%;
+    margin: 10px auto;
+  }
+  .header_logo img {
+    margin-left: 0px;
+  }
+
+  /* <=========================== Footer ========================> */
+
+  .footer-col {
+    width: 30%;
+  }
+  .footer-text {
+    font-size: 1.5em;
+  }
+  .contatti-text h1 {
+    font-size: 1.5em;
+  }
+  .contatti-text p {
+    font-size: 1em;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* <=========================== Header ========================> */
+
+  .header_menu {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(35px);
+    box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.15);
+    transition: 0.5s ease;
+  }
+  .header_menu li {
+    display: block;
+  }
+  .header_menu li a {
+    padding: 45px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+
+  #check:checked ~ .hamburger_icon #menu_icon {
+    display: none;
+  }
+  .hamburger_icon #close_icon {
+    display: none;
+  }
+  #check:checked ~ .hamburger_icon #close_icon {
+    display: block;
+  }
+  #check:checked ~ .header_menu {
+    height: 32rem;
+  }
+
+  .hamburger_icon {
+    display: block;
+    margin-left: 5vh;
+    margin-bottom: 1vh;
+  }
+  .header_logo {
+    max-width: 80%;
+    margin: 10px auto;
+  }
+  .header_logo img {
+    margin-left: 0px;
+  }
+
+  /* <=========================== Footer ========================> */
+
+  .footer-col {
+    width: 25%;
+  }
+  .footer-text {
+    font-size: 1.5em;
+  }
+  .contatti-text h1 {
+    font-size: 1.5em;
+  }
+  .contatti-text p {
+    font-size: 1em;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* <=========================== Header ========================> */
+
+  .header_menu {
+    position: relative;
+    height: initial;
+    width: auto;
+    background: none;
+    background-color: initial;
+    box-shadow: none;
+    backdrop-filter: none;
+    transition: none;
+  }
+
+  #check {
+    display: none;
+  }
+
+  .hamburger_icon {
+    display: none;
+  }
+
+  .hamburger_icon img {
+    width: 35px;
+    height: auto;
+  }
+
+  .header_logo {
+    max-width: 70%;
+    margin: 25px 0;
+    margin-left: 5vh;
+  }
+
+  .header_logo img {
+    width: 100%;
+  }
+
+  .header_menu {
+    padding-bottom: 0;
+  }
+
+  .header_menu li {
+    display: inline-block;
+  }
+
+  .header_menu li a {
+    display: block;
+    padding: 45px;
+    color: #2a3a45;
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+
+  /* <=========================== Footer ========================> */
+
+  .footer-col {
+    width: auto;
+  }
+  .footer-text {
+    font-size: 3rem;
+  }
+  .contatti-text h1 {
+    font-size: 2rem;
+  }
+  .contatti-text p {
+    font-size: 1.5rem;
+  }
+}
