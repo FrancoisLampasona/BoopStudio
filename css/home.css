@@ -287,28 +287,22 @@
 
 .Contattaci {
   margin-top: 20vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .linee_orizzontali {
   width: 100%;
   overflow: hidden;
-  grid-column: 1/4;
-  justify-self: center;
   padding-top: 5vh;
 }
 
 .linee_orizzontali img {
+  pointer-events: none;
   width: 200vw;
 }
 
 .rettangolo_contenitore_contattaci {
-  grid-column: 1/4;
-  display: flex;
-  justify-self: center;
-  flex-direction: column;
   position: absolute;
   width: 85vw;
   height: 120vw;
@@ -662,15 +656,29 @@
     z-index: -1;
   }
   /* <=========================== Section 5 ========================> */
+  .rettangolo_contenitore_contattaci {
+    margin-top: 7.5vw;
+    width: 78vw;
+    height: 80vw;
+  }
   .dati {
-    padding-top: 5vh;
+    padding-top: 2vh;
+  }
+  #testo-contattacci {
+    font-size: 5vw;
   }
   .content_form {
-    font-size: 5vw;
+    font-size: 2vw;
   }
 
   .bottom_form {
-    font-size: 5vw;
+    font-size: 2.5vw;
+  }
+  #linea_5_orizzontale {
+    display: none;
+  }
+  #linea_7_orizzontale {
+    display: none;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -733,7 +741,6 @@
     z-index: -1;
   }
   /* <=========================== Section 5 ========================> */
-  /* <=========================== Section 5 ========================> */
   #linea_5_orizzontale {
     display: none;
   }
@@ -748,9 +755,9 @@
   }
   .rettangolo_contenitore_contattaci {
     margin-top: 7.5vw;
-    border-radius: 140px;
+    border-radius: 100px;
     width: 80vw;
-    height: 30vw;
+    height: 32vw;
   }
   .dati {
     gap: 1vw;
@@ -852,8 +859,8 @@
     width: 100%;
   }
   .rettangolo_contenitore_contattaci {
-    margin-top: 5vw;
-    border-radius: 140px;
+    margin-top: 7vw;
+    border-radius: 100px;
     width: 80vw;
     height: 30vw;
   }

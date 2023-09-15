@@ -104,7 +104,6 @@ header {
 }
 .row {
   display: grid;
-  grid-template-columns: 1 fr 1fr 1fr;
   grid-auto-rows: auto;
 }
 .footer {
