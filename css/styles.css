@@ -162,10 +162,10 @@ header {
     height: 1px;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(35px);
-    -webkit-backdrop-filter: blur(35px);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
     box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.15);
-    border-radius: 0px 0px 50px 50px;
+    border-radius: 0px 0px 60px 60px;
     transition: 0.5s ease;
   }
   .header_menu li {
@@ -191,7 +191,7 @@ header {
     display: block;
   }
   #check:checked ~ .header_menu {
-    height: 45vh;
+    height: 50vh;
   }
 
   .header_content {
@@ -236,10 +236,10 @@ header {
     height: 1px;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(35px);
-    -webkit-backdrop-filter: blur(35px);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
     box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.15);
-    border-radius: 0px 0px 50px 50px;
+    border-radius: 0px 0px 60px 60px;
     transition: 0.5s ease;
   }
   .header_menu li {
@@ -330,10 +330,10 @@ header {
     height: 1px;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(35px);
-    -webkit-backdrop-filter: blur(35px);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
     box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.15);
-    border-radius: 0px 0px 50px 50px ;
+    border-radius: 0px 0px 60px 60px;
     transition: 0.5s ease;
   }
   .header_menu li {
@@ -359,13 +359,13 @@ header {
     display: block;
   }
   #check:checked ~ .header_menu {
-    height: 60vh;
+    height: 65vw;
   }
 
   .hamburger_icon {
     position: fixed;
     display: block;
-    margin-left: 5vh;
+    margin-left: 3vh;
     margin-bottom: 1vh;
   }
   #close_icon {
@@ -419,8 +419,8 @@ header {
     height: 1px;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(35px);
-    -webkit-backdrop-filter: blur(35px);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
     box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.15);
     border-radius: 0px 0px 80px 80px;
     transition: 0.5s ease;
