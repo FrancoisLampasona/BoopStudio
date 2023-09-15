@@ -58,10 +58,23 @@
 .linee_main_section img {
   width: 110vw;
   height: auto;
+  padding-top: 5px;
 }
 
 .linee_main_nomobile {
   display: none;
+}
+
+#linee_animation_right {
+  display: flex;
+  animation: 10s carousel-left-to-right infinite linear;
+  animation-delay: 0ms;
+}
+
+#linee_animation_left {
+  display: flex;
+  animation: 10s carousel-right-to-left infinite linear;
+  animation-delay: 0ms;
 }
 
 /* <=========================== Section 2 ========================> */
@@ -315,7 +328,7 @@
 /* <=========================== Section 5 ========================> */
 
 .Contattaci {
-  margin-top: 180vh;
+  margin-top: 20vh;
   display: flex;
   justify-content: center;
 }
@@ -562,7 +575,13 @@
   #linea_5_orizzontale {
     display: none;
   }
+  #linea_5_animazione {
+    display: none;
+  }
   #linea_7_orizzontale {
+    display: none;
+  }
+  #linea_7_animazione {
     display: none;
   }
 }
@@ -603,8 +622,8 @@
   }
 
   #home_text_3 {
-    padding-top: 8.5vh;
-    font-size: 1.8vw;
+    padding-top: 5vh;
+    font-size: 2.2vw;
   }
 
   .linee_main_section {
@@ -628,9 +647,26 @@
   }
 
   .linee_main_nomobile {
-    display: block;
+    display: flex;
+    height: 70vw;
+    overflow: hidden;
   }
 
+  #linee_animation_top {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    animation: 10s carousel-bottom-to-top infinite linear;
+    animation-delay: 0ms;
+  }
+
+  #linee_animation_bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    animation: 10s carousel-top-to-bottom infinite linear;
+    animation-delay: 0ms;
+  }
   /* <=========================== Section 2 ========================> */
 
   .rettangolo_chisiamo {
@@ -668,20 +704,31 @@
   }
 
   /* <=========================== Section 5 ========================> */
+
   #linea_5_orizzontale {
+    display: none;
+  }
+  #linea_5_animazione {
     display: none;
   }
   #linea_6_orizzontale {
     display: none;
   }
+  #linea_6_animazione {
+    display: none;
+  }
   #linea_7_orizzontale {
     display: none;
   }
+  #linea_7_animazione {
+    display: none;
+  }
+
   .linee_orizzontali img {
-    width: 100%;
+    max-width: 100%;
   }
   .rettangolo_contenitore_contattaci {
-    margin-top: 7.5vw;
+    margin-top: 6.5vw;
     border-radius: 100px;
     width: 80vw;
     height: 32vw;
@@ -819,11 +866,12 @@
     max-width: 100%;
     z-index: 0;
     margin-top: 2.2vw;
-    margin-right: 4.5vw;
+    margin-right: 4.9vw;
     margin-left: 10vw;
   }
 
   .linee_main_section img {
+    padding-left: 5px;
     width: 8vw;
     opacity: unset;
   }
@@ -833,9 +881,26 @@
   }
 
   .linee_main_nomobile {
-    display: block;
+    display: flex;
+    height: 70vw;
+    overflow: hidden;
   }
 
+  #linee_animation_top {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    animation: 10s carousel-bottom-to-top infinite linear;
+    animation-delay: 0ms;
+  }
+
+  #linee_animation_bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    animation: 10s carousel-top-to-bottom infinite linear;
+    animation-delay: 0ms;
+  }
   /* <=========================== Section 2 ========================> */
 
   .rettangolo_chisiamo {
@@ -924,5 +989,43 @@
   #invia {
     margin-top: 2vh;
     grid-row: 3;
+  }
+}
+
+/* <=========================== Animation ========================> */
+
+@keyframes carousel-right-to-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes carousel-left-to-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes carousel-top-to-bottom {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes carousel-bottom-to-top {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
   }
 }

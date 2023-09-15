@@ -191,7 +191,7 @@ header {
     display: block;
   }
   #check:checked ~ .header_menu {
-    height: 50vh;
+    height: 55vh;
   }
 
   .header_content {
@@ -265,7 +265,7 @@ header {
     display: block;
   }
   #check:checked ~ .header_menu {
-    height: 53vh;
+    height: 55vh;
   }
 
   .hamburger_icon {
