@@ -941,14 +941,23 @@
   #linea_5_orizzontale {
     display: none;
   }
+  #linea_5_animazione {
+    display: none;
+  }
   #linea_6_orizzontale {
+    display: none;
+  }
+  #linea_6_animazione {
     display: none;
   }
   #linea_7_orizzontale {
     display: none;
   }
+  #linea_7_animazione {
+    display: none;
+  }
   .linee_orizzontali img {
-    width: 100%;
+    max-width: 100%;
   }
   .rettangolo_contenitore_contattaci {
     margin-top: 7vw;
