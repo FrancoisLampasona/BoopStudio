@@ -15,7 +15,7 @@
   width: 50vw;
   position: absolute;
   margin-top: -5px;
-  margin-left: 15vw;
+  margin-left: 21.5vw;
 }
 
 #home_text_nomobile {
@@ -151,184 +151,110 @@
 
 /* <=========================== Section 3 ========================> */
 
-.Servizi {
-  margin-top: 100vh;
-  display: flex;
-  justify-content: center;
-}
-
-#servizi_text {
-  color: #2a3a45;
-  font-size: 80px;
-  font-family: Champ;
-  font-weight: 900;
-  word-wrap: break-word;
-}
-
-.contenitore-card {
-  margin-top: 20vh;
-  align-items: flex-start;
-  display: flex;
-  min-height: 100%;
-  justify-content: center;
-  color: #f8fafa;
-  font-size: 30px;
-  font-family: Champ;
-  font-weight: 900;
-  text-decoration: underline;
-  word-wrap: break-word;
-}
-
-.card-grid {
-  display: grid;
-  height: 800px;
-  grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: var(--spacing-l);
-  grid-row-gap: var(--spacing-l);
-  max-width: var(--width-container);
-  width: 100%;
-}
-.card {
-  width: 500px;
-  list-style: none;
-  position: relative;
-}
-
-.card:before {
-  content: "";
-  display: block;
-  padding-bottom: 150%;
-  width: 100%;
-}
-
-.card__background {
-  background-size: cover;
-  background-position: center;
-  border-radius: var(--spacing-l);
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transform-origin: center;
-  transform: scale(1) translateZ(0);
-  transition: filter 200ms linear, transform 200ms linear;
-}
-
-.card:hover .card__background {
-  transform: scale(1.05) translateZ(0);
-}
-
-.card-grid:hover > .card:not(:hover) .card__background {
-  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
-}
-
-.card__content {
-  left: 0;
-  padding: var(--spacing-l);
-  position: absolute;
-  top: 0;
-}
-
-.card__category {
-  color: var(--text-light);
-  font-size: 0.9rem;
-  margin-bottom: var(--spacing-s);
-  text-transform: uppercase;
-}
-
-.card__heading {
-  color: var(--text-lighter);
-  font-size: 1.9rem;
-  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-  line-height: 1.4;
-  word-spacing: 100vw;
-}
-
 /* =========================== Section 4 ======================== */
 
-.class_skill {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 10px;
-  margin-top: 20vh;
+.skill {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.class_skill_text {
-  grid-column: 1/2;
-  margin-left: 15vh;
-  margin-top: 30vh;
+.skill_text {
+  margin-left: 1vw;
+  margin-top: 5vh;
 }
 
 #skill_text_1 {
+  text-align: center;
   color: #2a3a45;
-  font-size: 80px;
+  font-size: 10vw;
   font-family: Champ;
   font-weight: 900;
   word-wrap: break-word;
 }
 
 #skill_text_2 {
-  padding-top: 7vh;
+  text-align: center;
+  padding-top: 10vw;
   color: #2a3a45;
-  font-size: 30px;
+  font-size: 4.5vw;
   font-family: Montserrat;
   font-weight: 500;
   word-wrap: break-word;
 }
 
 .pallini_skills {
-  display: flex;
-  justify-content: end;
-  margin-right: 10vh;
+  margin-top: 10vw;
+  max-width: 100%;
 }
 
 .pallini_skills img {
-  max-width: 120%;
+  max-width: 100%;
 }
 
 .cerchi_skills {
   position: absolute;
-  display: grid;
-  justify-self: end;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  display: flex;
 }
 
-/* .cerchi_skills img {
-    max-width: 100%;
-  } */
+.cerchi_skills img {
+  max-width: 100%;
+}
 
 #Cerchio_1 {
-  grid-row: 1;
+  position: absolute;
+  width: 25vw;
+  margin-top: -5vw;
+  padding-left: 24vw;
 }
 
 #Cerchio_2 {
-  grid-row: 1;
+  position: absolute;
+  width: 31vw;
+  margin-top: -8vw;
+  padding-left: 56.8vw;
 }
 
 #Cerchio_3 {
-  grid-row: 2;
+  width: 22vw;
+  position: absolute;
+  margin-top: 19vw;
+  padding-left: 2vw;
 }
+
 #Cerchio_4 {
-  grid-row: 2;
+  width: 28vw;
+  position: absolute;
+  margin-top: 24vw;
+  padding-left: 35vw;
 }
+
 #Cerchio_5 {
-  grid-row: 2;
+  width: 25vw;
+  position: absolute;
+  margin-top: 25vw;
+  padding-left: 70vw;
 }
+
 #Cerchio_6 {
-  grid-row: 3;
+  width: 25vw;
+  position: absolute;
+  margin-top: 46.8vw;
+  padding-left: 12.5vw;
 }
+
 #Cerchio_7 {
-  grid-row: 3;
+  width: 28vw;
+  position: absolute;
+  padding-left: 56vw;
+  margin-top: 50vw;
 }
 
 /* <=========================== Section 5 ========================> */
 
 .Contattaci {
-  margin-top: 20vh;
+  margin-top: 5vh;
   display: flex;
   justify-content: center;
 }
@@ -703,6 +629,95 @@
     font-size: 2vw;
   }
 
+  /* =========================== Section 4 ======================== */
+
+  .skill {
+    flex-direction: row;
+  }
+
+  .skill_text {
+    margin-left: 1vw;
+    margin-top: 18vh;
+  }
+
+  #skill_text_1 {
+    font-size: 5vw;
+  }
+
+  #skill_text_2 {
+    text-align: center;
+    padding-top: 5vw;
+    font-size: 1.7vw;
+  }
+
+  .pallini_skills {
+    margin-top: 5vw;
+    margin-left: 4vw;
+    max-width: 100%;
+  }
+
+  .pallini_skills img {
+    max-width: 50vw;
+  }
+
+  .cerchi_skills {
+    position: absolute;
+    display: flex;
+  }
+
+  .cerchi_skills img {
+    max-width: 100%;
+  }
+
+  #Cerchio_1 {
+    position: absolute;
+    width: 13vw;
+    margin-top: 6.5vw;
+    padding-left: 6.5vw;
+  }
+
+  #Cerchio_2 {
+    position: absolute;
+    width: 15vw;
+    margin-top: 5.5vw;
+    padding-left: 23vw;
+  }
+
+  #Cerchio_3 {
+    width: 11vw;
+    position: absolute;
+    margin-top: 18.7vw;
+    margin-left: -6.2vw;
+  }
+
+  #Cerchio_4 {
+    width: 13vw;
+    position: absolute;
+    margin-top: 21.4vw;
+    padding-left: 12vw;
+  }
+
+  #Cerchio_5 {
+    width: 12.5vw;
+    position: absolute;
+    margin-top: 21.8vw;
+    padding-left: 30.2vw;
+  }
+
+  #Cerchio_6 {
+    width: 12.5vw;
+    position: absolute;
+    margin-top: 32vw;
+    padding-left: 0.3vw;
+  }
+
+  #Cerchio_7 {
+    width: 13vw;
+    position: absolute;
+    padding-left: 23.3vw;
+    margin-top: 34.4vw;
+  }
+
   /* <=========================== Section 5 ========================> */
 
   #linea_5_orizzontale {
@@ -935,6 +950,95 @@
     padding-top: 3.2vw;
     text-align: center;
     font-size: 2vw;
+  }
+  /* =========================== Section 4 ======================== */
+
+  .skill {
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .skill_text {
+    margin-left: 1vw;
+    margin-top: 18vh;
+  }
+
+  #skill_text_1 {
+    font-size: 5vw;
+  }
+
+  #skill_text_2 {
+    text-align: center;
+    padding-top: 5vw;
+    font-size: 1.7vw;
+  }
+
+  .pallini_skills {
+    margin-top: 5vw;
+    margin-left: 4vw;
+    max-width: 100%;
+  }
+
+  .pallini_skills img {
+    max-width: 50vw;
+  }
+
+  .cerchi_skills {
+    position: absolute;
+    display: flex;
+  }
+
+  .cerchi_skills img {
+    width: 50%;
+  }
+
+  #Cerchio_1 {
+    position: absolute;
+    width: 25vw;
+    margin-top: 6.5vw;
+    padding-left: 6.5vw;
+  }
+
+  #Cerchio_2 {
+    position: absolute;
+    width: 32vw;
+    margin-top: 5.5vw;
+    padding-left: 23vw;
+  }
+
+  #Cerchio_3 {
+    width: 22vw;
+    position: absolute;
+    margin-top: 18.7vw;
+    margin-left: -6.2vw;
+  }
+
+  #Cerchio_4 {
+    width: 26vw;
+    position: absolute;
+    margin-top: 21.4vw;
+    padding-left: 12vw;
+  }
+
+  #Cerchio_5 {
+    width: 25vw;
+    position: absolute;
+    margin-top: 21.8vw;
+    padding-left: 30.2vw;
+  }
+
+  #Cerchio_6 {
+    width: 25vw;
+    position: absolute;
+    margin-top: 32vw;
+    padding-left: 0.3vw;
+  }
+
+  #Cerchio_7 {
+    width: 28vw;
+    position: absolute;
+    padding-left: 23.3vw;
+    margin-top: 34.4vw;
   }
 
   /* <=========================== Section 5 ========================> */
