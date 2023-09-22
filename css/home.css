@@ -151,6 +151,49 @@
 
 /* <=========================== Section 3 ========================> */
 
+.servizi {
+  margin-top: 15vw;
+  margin-bottom: 8vw;
+  text-align: center;
+  color: #2a3a45;
+  font-size: 10vw;
+  font-family: Champ;
+  font-weight: 900;
+  word-wrap: break-word;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 20rem;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+/* .swiper-slide figure {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+} */
+
+/* .swiper-slide figcaption {
+  position: absolute;
+} */
+
+.swiper-custom-pagination {
+  display: flex;
+  width: 100%;
+  padding-top: 2rem;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.swiper-custom-pagination .swiper-pagination-bullet {
+  width: 25px;
+  height: 10px;
+  border-radius: 60px;
+  text-align: center;
+}
 /* =========================== Section 4 ======================== */
 
 .skill {
@@ -209,11 +252,18 @@
   padding-left: 24vw;
 }
 
+#Cerchio_1 img {
+  animation: spin 1s infinite linear;
+}
+
 #Cerchio_2 {
   position: absolute;
   width: 31vw;
   margin-top: -8vw;
   padding-left: 56.8vw;
+}
+#Cerchio_2 img {
+  animation: spin-reverse 1s infinite linear;
 }
 
 #Cerchio_3 {
@@ -221,177 +271,62 @@
   position: absolute;
   margin-top: 19vw;
   padding-left: 2vw;
+  animation: spin 1s infinite linear;
 }
-
+#Cerchio_3 img {
+  animation: spin 1s infinite linear;
+}
 #Cerchio_4 {
   width: 28vw;
   position: absolute;
   margin-top: 24vw;
   padding-left: 35vw;
 }
-
+#Cerchio_4 img {
+  animation: spin-reverse 1s infinite linear;
+}
 #Cerchio_5 {
   width: 25vw;
   position: absolute;
   margin-top: 25vw;
   padding-left: 70vw;
 }
-
+#Cerchio_5 img {
+  animation: spin 1s infinite linear;
+}
 #Cerchio_6 {
   width: 25vw;
   position: absolute;
   margin-top: 46.8vw;
   padding-left: 12.5vw;
 }
-
+#Cerchio_6 img {
+  animation: spin-reverse 1s infinite linear;
+}
 #Cerchio_7 {
   width: 28vw;
   position: absolute;
   padding-left: 56vw;
   margin-top: 50vw;
 }
-
-/* <=========================== Section 5 ========================> */
-
-.Contattaci {
-  margin-top: 5vh;
-  display: flex;
-  justify-content: center;
-}
-
-.linee_orizzontali {
-  width: 100%;
-  overflow: hidden;
-  padding-top: 5vh;
-}
-
-.linee_orizzontali img {
-  pointer-events: none;
-  width: 200vw;
-}
-
-.rettangolo_contenitore_contattaci {
-  position: absolute;
-  width: 85vw;
-  height: 120vw;
-  border-radius: 40px;
-  background: #2a3a45;
-  box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
-  margin-top: 8vh;
-}
-
-#testo-contattacci {
-  margin-top: 3.5vh;
-  display: flex;
-  justify-content: center;
-  color: #f8fafa;
-  font-size: 10vw;
-  font-family: Champ;
-  font-weight: 900;
-}
-
-.dati {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 8px;
-  margin-top: 3.5vh;
-  margin-left: 5vh;
-  margin-right: 5vh;
-}
-
-.dati input {
-  padding-bottom: 10px;
-}
-
-.content_form {
-  background-color: transparent;
-  color: #f8fafa;
-  font-size: 5vw;
-  font-family: Montserrat;
-  font-weight: 500;
-  word-wrap: break-word;
-  border: none;
-}
-
-.bottom_form {
-  border: none;
-  background-color: transparent;
-  color: #2c9bd8;
-  font-size: 4.446vw;
-  font-family: Champ;
-  font-weight: 900;
-  text-decoration: underline;
-  word-wrap: break-word;
-}
-
-.content_form:focus {
-  outline: white;
-}
-
-.linea {
-  position: absolute;
-  color: #f8fafa;
-  width: 110px;
-  height: 10px;
-  border: 2px;
-  z-index: 100;
-}
-
-#nome {
-  margin-right: 10px;
-  grid-column: 1/4;
-  grid-row: 1;
-  position: relative;
-  border-radius: 0 0 2px 2px;
-  border-bottom: 3px solid #f8fafa;
-}
-
-#cognome {
-  margin-right: 10px;
-  grid-column: 1/4;
-  grid-row: 2;
-  border-radius: 0 0 2px 2px;
-  border-bottom: 3px solid #f8fafa;
-}
-
-#email {
-  margin-right: 10px;
-  grid-column: 1/4;
-  grid-row: 3;
-  border-radius: 0 0 2px 2px;
-  border-bottom: 3px solid #f8fafa;
-}
-
-#messaggio {
-  margin-right: 10px;
-  margin-top: 20px;
-  grid-column: 1/4;
-  grid-row: 4;
-  border-radius: 0 0 2px 2px;
-  border-bottom: 3px solid #f8fafa;
-  resize: none;
-}
-
-#invia {
-  grid-column: 1/4;
-  justify-self: center;
-  margin-top: 4vh;
+#Cerchio_7 img {
+  animation: spin 1s infinite linear;
 }
 
 /* MEDIA QUERY */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  /* <=========================== Main Section ========================> */
+  /* <=========================== Section 3 ========================> */
+  .swiper-custom-pagination {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 600px) {
-  /* <=========================== Main Section ========================> */
-
-  /* <=========================== Section 5 ========================> */
-  .dati {
-    gap: 6vw;
+  /* <=========================== Section 3 ========================> */
+  .swiper-custom-pagination {
+    display: none;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -431,6 +366,12 @@
   .linee_main_section img {
     opacity: unset;
   }
+  /* <=========================== Section 3 ========================> */
+
+  .swiper-slide img {
+    width: 24rem;
+  }
+
   /* <=========================== Section 2 ========================> */
   .rettangolo_chisiamo {
     width: 85vw;
@@ -478,37 +419,6 @@
     font-weight: 900;
     text-decoration: underline;
     word-wrap: break-word;
-  }
-  /* <=========================== Section 5 ========================> */
-  .rettangolo_contenitore_contattaci {
-    margin-top: 14vw;
-    width: 78vw;
-    height: 80vw;
-  }
-  .dati {
-    padding-top: 2vh;
-  }
-  #testo-contattacci {
-    font-size: 5vw;
-  }
-  .content_form {
-    font-size: 2vw;
-  }
-
-  .bottom_form {
-    font-size: 2.5vw;
-  }
-  #linea_5_orizzontale {
-    display: none;
-  }
-  #linea_5_animazione {
-    display: none;
-  }
-  #linea_7_orizzontale {
-    display: none;
-  }
-  #linea_7_animazione {
-    display: none;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -593,6 +503,7 @@
     animation: 10s carousel-top-to-bottom infinite linear;
     animation-delay: 0ms;
   }
+
   /* <=========================== Section 2 ========================> */
 
   .rettangolo_chisiamo {
@@ -629,6 +540,14 @@
     font-size: 2vw;
   }
 
+  /* <=========================== Section 3 ========================> */
+  .servizi {
+    font-size: 5vw;
+  }
+
+  .swiper-slide img {
+    width: 100rem;
+  }
   /* =========================== Section 4 ======================== */
 
   .skill {
@@ -637,7 +556,7 @@
 
   .skill_text {
     margin-left: 1vw;
-    margin-top: 18vh;
+    margin-top: 14vw;
   }
 
   #skill_text_1 {
@@ -716,71 +635,6 @@
     position: absolute;
     padding-left: 23.3vw;
     margin-top: 34.4vw;
-  }
-
-  /* <=========================== Section 5 ========================> */
-
-  #linea_5_orizzontale {
-    display: none;
-  }
-  #linea_5_animazione {
-    display: none;
-  }
-  #linea_6_orizzontale {
-    display: none;
-  }
-  #linea_6_animazione {
-    display: none;
-  }
-  #linea_7_orizzontale {
-    display: none;
-  }
-  #linea_7_animazione {
-    display: none;
-  }
-
-  .linee_orizzontali img {
-    max-width: 100%;
-  }
-  .rettangolo_contenitore_contattaci {
-    margin-top: 6.5vw;
-    border-radius: 100px;
-    width: 80vw;
-    height: 32vw;
-  }
-  .dati {
-    gap: 1vw;
-    margin-top: 2vw;
-    padding-top: 2vw;
-  }
-  #testo-contattacci {
-    font-size: 4vw;
-  }
-  .content_form {
-    font-size: 1.5vw;
-  }
-  .bottom_form {
-    font-size: 1.5vw;
-  }
-  #nome {
-    grid-column: 1/2;
-  }
-  #cognome {
-    grid-column: 2/3;
-    grid-row: 1;
-  }
-  #email {
-    grid-column: 3/4;
-    grid-row: 1;
-  }
-  #messaggio {
-    margin-top: 15px;
-    grid-row: 2;
-    grid-column: 1/4;
-  }
-  #invia {
-    margin-top: 2vh;
-    grid-row: 3;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -951,16 +805,20 @@
     text-align: center;
     font-size: 2vw;
   }
-  /* =========================== Section 4 ======================== */
+  /* =========================== Section 3 ======================== */
 
+  .swiper-slide img {
+    width: 60rem;
+    height: 50rem;
+  }
+  /* =========================== Section 4 ======================== */
   .skill {
-    justify-content: center;
     flex-direction: row;
   }
 
   .skill_text {
     margin-left: 1vw;
-    margin-top: 18vh;
+    margin-top: 14vw;
   }
 
   #skill_text_1 {
@@ -989,119 +847,56 @@
   }
 
   .cerchi_skills img {
-    width: 50%;
+    max-width: 100%;
   }
 
   #Cerchio_1 {
     position: absolute;
-    width: 25vw;
+    width: 13vw;
     margin-top: 6.5vw;
     padding-left: 6.5vw;
   }
 
   #Cerchio_2 {
     position: absolute;
-    width: 32vw;
+    width: 15vw;
     margin-top: 5.5vw;
     padding-left: 23vw;
   }
 
   #Cerchio_3 {
-    width: 22vw;
+    width: 11vw;
     position: absolute;
     margin-top: 18.7vw;
     margin-left: -6.2vw;
   }
 
   #Cerchio_4 {
-    width: 26vw;
+    width: 13vw;
     position: absolute;
     margin-top: 21.4vw;
     padding-left: 12vw;
   }
 
   #Cerchio_5 {
-    width: 25vw;
+    width: 12.5vw;
     position: absolute;
     margin-top: 21.8vw;
     padding-left: 30.2vw;
   }
 
   #Cerchio_6 {
-    width: 25vw;
+    width: 12.5vw;
     position: absolute;
     margin-top: 32vw;
     padding-left: 0.3vw;
   }
 
   #Cerchio_7 {
-    width: 28vw;
+    width: 13vw;
     position: absolute;
     padding-left: 23.3vw;
     margin-top: 34.4vw;
-  }
-
-  /* <=========================== Section 5 ========================> */
-  #linea_5_orizzontale {
-    display: none;
-  }
-  #linea_5_animazione {
-    display: none;
-  }
-  #linea_6_orizzontale {
-    display: none;
-  }
-  #linea_6_animazione {
-    display: none;
-  }
-  #linea_7_orizzontale {
-    display: none;
-  }
-  #linea_7_animazione {
-    display: none;
-  }
-  .linee_orizzontali img {
-    max-width: 100%;
-  }
-  .rettangolo_contenitore_contattaci {
-    margin-top: 7vw;
-    border-radius: 8vw;
-    width: 80vw;
-    height: 30vw;
-  }
-  .dati {
-    gap: 1vw;
-    margin-top: 2vw;
-    padding-top: 2vw;
-  }
-  #testo-contattacci {
-    font-size: 4vw;
-  }
-  .content_form {
-    font-size: 1.5vw;
-  }
-  .bottom_form {
-    font-size: 1.5vw;
-  }
-  #nome {
-    grid-column: 1/2;
-  }
-  #cognome {
-    grid-column: 2/3;
-    grid-row: 1;
-  }
-  #email {
-    grid-column: 3/4;
-    grid-row: 1;
-  }
-  #messaggio {
-    margin-top: 15px;
-    grid-row: 2;
-    grid-column: 1/4;
-  }
-  #invia {
-    margin-top: 2vh;
-    grid-row: 3;
   }
 }
 
@@ -1140,5 +935,46 @@
   }
   to {
     transform: translateY(0);
+  }
+}
+
+@keyframes wiggle-more {
+  0%,
+  100% {
+    transform: rotate(-12deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: scale(100%);
+  }
+  10% {
+    transform: scale(80%);
+  }
+  50% {
+    transform: scale(120%);
   }
 }

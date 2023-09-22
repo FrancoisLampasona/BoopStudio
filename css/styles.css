@@ -32,7 +32,7 @@ a {
   text-decoration: none;
 }
 a:visited {
-  color: white; /* Colore dei link visitati */
+  color: unset; /* Colore dei link visitati */
 }
 
 /* <=========================== Body ========================> */
@@ -94,6 +94,145 @@ header {
   font-family: Montserrat;
   font-weight: 500;
   word-wrap: break-word;
+}
+/* <=========================== Contattacci ========================> */
+
+#linee_animation_right {
+  display: flex;
+  animation: 10s carousel-left-to-right infinite linear;
+  animation-delay: 0ms;
+}
+
+#linee_animation_left {
+  display: flex;
+  animation: 10s carousel-right-to-left infinite linear;
+  animation-delay: 0ms;
+}
+
+.Contattaci {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+.linee_orizzontali {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 5vh;
+}
+
+.linee_orizzontali img {
+  pointer-events: none;
+  width: 200vw;
+}
+
+.rettangolo_contenitore_contattaci {
+  position: absolute;
+  width: 85vw;
+  height: 120vw;
+  border-radius: 40px;
+  background: #2a3a45;
+  box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
+  margin-top: 8vh;
+}
+
+#testo-contattacci {
+  margin-top: 3.5vh;
+  display: flex;
+  justify-content: center;
+  color: #f8fafa;
+  font-size: 10vw;
+  font-family: Champ;
+  font-weight: 900;
+}
+
+.dati {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 8px;
+  margin-top: 3.5vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+}
+
+.dati input {
+  padding-bottom: 10px;
+}
+
+.content_form {
+  background-color: transparent;
+  color: #f8fafa;
+  font-size: 5vw;
+  font-family: Montserrat;
+  font-weight: 500;
+  word-wrap: break-word;
+  border: none;
+}
+
+.bottom_form {
+  border: none;
+  background-color: transparent;
+  color: #2c9bd8;
+  font-size: 4.446vw;
+  font-family: Champ;
+  font-weight: 900;
+  text-decoration: underline;
+  word-wrap: break-word;
+}
+
+.content_form:focus {
+  outline: white;
+}
+
+.linea {
+  position: absolute;
+  color: #f8fafa;
+  width: 110px;
+  height: 10px;
+  border: 2px;
+  z-index: 100;
+}
+
+#nome {
+  margin-right: 10px;
+  grid-column: 1/4;
+  grid-row: 1;
+  position: relative;
+  border-radius: 0 0 2px 2px;
+  border-bottom: 3px solid #f8fafa;
+}
+
+#cognome {
+  margin-right: 10px;
+  grid-column: 1/4;
+  grid-row: 2;
+  border-radius: 0 0 2px 2px;
+  border-bottom: 3px solid #f8fafa;
+}
+
+#email {
+  margin-right: 10px;
+  grid-column: 1/4;
+  grid-row: 3;
+  border-radius: 0 0 2px 2px;
+  border-bottom: 3px solid #f8fafa;
+}
+
+#messaggio {
+  margin-right: 10px;
+  margin-top: 20px;
+  grid-column: 1/4;
+  grid-row: 4;
+  border-radius: 0 0 2px 2px;
+  border-bottom: 3px solid #f8fafa;
+  resize: none;
+}
+
+#invia {
+  grid-column: 1/4;
+  justify-self: center;
+  margin-top: 4vh;
 }
 
 /* <=========================== Footer ========================> */
@@ -289,7 +428,10 @@ header {
     width: 80%;
     margin-left: 0px;
   }
-
+  /* <=========================== Contattacci ========================> */
+  .dati {
+    gap: 6vw;
+  }
   /* <=========================== Footer ========================> */
 
   .container {
@@ -383,6 +525,39 @@ header {
     margin: 10px auto;
   }
 
+  /* <=========================== Contattacci ========================> */
+
+  .rettangolo_contenitore_contattaci {
+    margin-top: 14vw;
+    width: 78vw;
+    height: 80vw;
+  }
+  .dati {
+    padding-top: 2vh;
+  }
+  #testo-contattacci {
+    font-size: 5vw;
+  }
+  .content_form {
+    font-size: 2vw;
+  }
+
+  .bottom_form {
+    font-size: 2.5vw;
+  }
+  #linea_5_orizzontale {
+    display: none;
+  }
+  #linea_5_animazione {
+    display: none;
+  }
+  #linea_7_orizzontale {
+    display: none;
+  }
+  #linea_7_animazione {
+    display: none;
+  }
+
   /* <=========================== Footer ========================> */
 
   .footer-col2 {
@@ -466,6 +641,71 @@ header {
     margin: 10px auto;
   }
 
+  /* <=========================== Contattacci ========================> */
+
+  #linea_5_orizzontale {
+    display: none;
+  }
+  #linea_5_animazione {
+    display: none;
+  }
+  #linea_6_orizzontale {
+    display: none;
+  }
+  #linea_6_animazione {
+    display: none;
+  }
+  #linea_7_orizzontale {
+    display: none;
+  }
+  #linea_7_animazione {
+    display: none;
+  }
+
+  .linee_orizzontali img {
+    max-width: 100%;
+  }
+  .rettangolo_contenitore_contattaci {
+    margin-top: 6.5vw;
+    border-radius: 100px;
+    width: 80vw;
+    height: 32vw;
+  }
+  .dati {
+    gap: 1vw;
+    margin-top: 2vw;
+    padding-top: 2vw;
+  }
+  #testo-contattacci {
+    font-size: 4vw;
+  }
+  .content_form {
+    font-size: 1.5vw;
+  }
+  .bottom_form {
+    font-size: 1.5vw;
+  }
+  #nome {
+    grid-column: 1/2;
+  }
+  #cognome {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+  #email {
+    grid-column: 3/4;
+    grid-row: 1;
+  }
+  #messaggio {
+    margin-top: 15px;
+    grid-row: 2;
+    grid-column: 1/4;
+  }
+  #invia {
+    margin-top: 2vh;
+    grid-row: 3;
+  }
+
   /* <=========================== Footer ========================> */
 
   .footer-col2 {
@@ -546,6 +786,69 @@ header {
     word-wrap: break-word;
   }
 
+  /* <=========================== Contattacci ========================> */
+  #linea_5_orizzontale {
+    display: none;
+  }
+  #linea_5_animazione {
+    display: none;
+  }
+  #linea_6_orizzontale {
+    display: none;
+  }
+  #linea_6_animazione {
+    display: none;
+  }
+  #linea_7_orizzontale {
+    display: none;
+  }
+  #linea_7_animazione {
+    display: none;
+  }
+  .linee_orizzontali img {
+    max-width: 100%;
+  }
+  .rettangolo_contenitore_contattaci {
+    margin-top: 7vw;
+    border-radius: 8vw;
+    width: 80vw;
+    height: 30vw;
+  }
+  .dati {
+    gap: 1vw;
+    margin-top: 2vw;
+    padding-top: 2vw;
+  }
+  #testo-contattacci {
+    font-size: 4vw;
+  }
+  .content_form {
+    font-size: 1.5vw;
+  }
+  .bottom_form {
+    font-size: 1.5vw;
+  }
+  #nome {
+    grid-column: 1/2;
+  }
+  #cognome {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+  #email {
+    grid-column: 3/4;
+    grid-row: 1;
+  }
+  #messaggio {
+    margin-top: 15px;
+    grid-row: 2;
+    grid-column: 1/4;
+  }
+  #invia {
+    margin-top: 2vh;
+    grid-row: 3;
+  }
+
   /* <=========================== Footer ========================> */
 
   .container {
@@ -575,5 +878,43 @@ header {
 
   .contatti-text p {
     font-size: 1vw;
+  }
+}
+
+/* <=========================== Animation ========================> */
+
+@keyframes carousel-right-to-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes carousel-left-to-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes carousel-top-to-bottom {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes carousel-bottom-to-top {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
   }
 }
