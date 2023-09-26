@@ -7,7 +7,7 @@
 
 .brand-identity-text {
   margin-left: 8.5vw;
-  margin-top: 30vw;
+  margin-top: 20vw;
   z-index: 1;
 }
 
@@ -17,6 +17,16 @@
   font-family: Champ;
   font-weight: 900;
   word-wrap: break-word;
+}
+
+.decorazione-main {
+  transform: translate(-85%, -50%);
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../assets/decorazioni/tratti_gialli.png");
 }
 
 #linea-testo img {
@@ -46,7 +56,7 @@
 }
 
 .mini-logho-container {
-  margin-top: 2vh;
+  margin-top: 3vh;
   position: relative;
 }
 
@@ -142,6 +152,48 @@
   align-items: center;
 }
 
+.logo-1-desktop,
+.logo-2-desktop,
+.logo-3-desktop,
+.logo-4-desktop,
+.logo-5-desktop,
+.logo-6-desktop,
+.logo-7-desktop,
+.logo-8-desktop {
+  display: none;
+}
+
+#logo-text-scopri {
+  padding-top: 5vh;
+  color: #ed6931;
+  font-size: 4.5vw;
+  font-family: Champ;
+  font-weight: 900;
+  text-decoration: underline;
+  word-wrap: break-word;
+}
+
+.logo-1-retro {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+.logo-h1-mobile {
+  margin-top: 18vw;
+  color: #2a3a45;
+  font-size: 5vw;
+  font-family: Champ;
+  font-weight: 900;
+}
+
+.logo-text-mobile {
+  padding-top: 5vw;
+  color: #2a3a45;
+  font-size: 2.5vw;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
 .logo-1 {
   background-color: transparent;
   perspective: 1000px;
@@ -149,7 +201,7 @@
   height: 75vw;
 }
 
-.logo-1-interno {
+.logo-1-mobile {
   position: relative;
   width: 100%;
   height: 100%;
@@ -158,7 +210,7 @@
   transform-style: preserve-3d;
 }
 
-.logo-1:hover .logo-1-interno {
+.logo-1:hover .logo-1-mobile {
   transform: rotateY(180deg);
 }
 
@@ -176,7 +228,14 @@
   background-image: url("../assets/brand_identity/loghi/vito_logo.png");
 }
 .logo-1-retro {
+  z-index: -1;
+  background-size: cover;
+  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
   transform: rotateY(180deg);
+}
+
+.logo-1:hover .numero-1 {
+  opacity: 0;
 }
 
 .cerchio-1 {
@@ -187,10 +246,6 @@
   background-size: 100%;
   background-repeat: no-repeat;
   background-image: url("../assets/brand_identity/loghi/cerchi/1_cerchio.png");
-}
-
-.logo-1:hover .numero-1 {
-  opacity: 0;
 }
 
 .numero-1 {
@@ -205,12 +260,67 @@
   background-image: url("../assets/brand_identity/loghi/numeri/1_num.png");
 }
 
+.decorazione-1-mobile {
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../assets/decorazioni/tratti_gialli.png");
+}
+
 .logo-2 {
   margin-top: 10vh;
   width: 80vw;
   height: 75vw;
+}
+
+.logo-2-mobile {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+}
+
+.logo-2:hover .logo-2-mobile {
+  transform: rotateY(180deg);
+}
+
+.logo-2-fronte,
+.logo-2-retro {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.logo-2-fronte {
   background-size: cover;
   background-image: url("../assets/brand_identity/loghi/monroy_logo.png");
+}
+.logo-2-retro {
+  z-index: -1;
+  background-size: cover;
+  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
+  transform: rotateY(180deg);
+}
+
+.logo-2:hover .numero-2 {
+  opacity: 0;
+}
+
+.decorazione-2-mobile {
+  right: 0;
+  top: -1vw;
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../assets/decorazioni/stelle_blu.png");
 }
 
 .cerchio-2 {
@@ -234,14 +344,64 @@
   background-image: url("../assets/brand_identity/loghi/numeri/2_num.png");
 }
 
+.logo-2-retro {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
 .logo-3 {
   margin-top: 10vh;
   width: 80vw;
   height: 75vw;
-  background-size: cover;
-  background-image: url("../assets/brand_identity/loghi/visit_logo.png");
+}
+.logo-3-mobile {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
 }
 
+.logo-3:hover .logo-3-mobile {
+  transform: rotateY(180deg);
+}
+
+.logo-3-fronte,
+.logo-3-retro {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.logo-3-fronte {
+  background-size: cover;
+  background-image: url("../assets/brand_identity/loghi/monroy_logo.png");
+}
+.logo-3-retro {
+  z-index: -1;
+  background-size: cover;
+  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
+  transform: rotateY(180deg);
+}
+
+.logo-3:hover .numero-3 {
+  opacity: 0;
+}
+
+.decorazione-3-mobile {
+  left: 0;
+  top: -1vw;
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../assets/decorazioni/stella_arancio.png");
+}
 .cerchio-3 {
   z-index: 1;
   transform: translate(2%, 0%);
@@ -267,10 +427,54 @@
   margin-top: 10vh;
   width: 80vw;
   height: 75vw;
+}
+.logo-4-mobile {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+}
+
+.logo-4:hover .logo-4-mobile {
+  transform: rotateY(180deg);
+}
+
+.logo-4-fronte,
+.logo-4-retro {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.logo-4-fronte {
   background-size: cover;
   background-image: url("../assets/brand_identity/loghi/cantina_logo.png");
 }
+.logo-4-retro {
+  z-index: -1;
+  background-size: cover;
+  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
+  transform: rotateY(180deg);
+}
 
+.logo-4:hover .numero-4 {
+  opacity: 0;
+}
+
+.decorazione-4-mobile {
+  right: 0;
+  top: -1vw;
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../assets/decorazioni/stelle_gialle.png");
+}
 .cerchio-4 {
   z-index: 1;
   transform: translate(2%, 0%);
@@ -296,8 +500,54 @@
   margin-top: 10vh;
   width: 80vw;
   height: 75vw;
+}
+
+.logo-5-mobile {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+}
+
+.logo-5:hover .logo-5-mobile {
+  transform: rotateY(180deg);
+}
+
+.logo-5-fronte,
+.logo-5-retro {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.logo-5-fronte {
   background-size: cover;
   background-image: url("../assets/brand_identity/loghi/moceri_logo.png");
+}
+.logo-5-retro {
+  z-index: -1;
+  background-size: cover;
+  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
+  transform: rotateY(180deg);
+}
+
+.logo-5:hover .numero-5 {
+  opacity: 0;
+}
+
+.decorazione-5-mobile {
+  left: 0;
+  top: -1vw;
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../assets/decorazioni/farfalle_blu.png");
 }
 
 .cerchio-5 {
@@ -325,8 +575,54 @@
   margin-top: 10vh;
   width: 80vw;
   height: 75vw;
+}
+
+.logo-6-mobile {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+}
+
+.logo-6:hover .logo-6-mobile {
+  transform: rotateY(180deg);
+}
+
+.logo-6-fronte,
+.logo-6-retro {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.logo-6-fronte {
   background-size: cover;
   background-image: url("../assets/brand_identity/loghi/pandi_logo.png");
+}
+.logo-6-retro {
+  z-index: -1;
+  background-size: cover;
+  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
+  transform: rotateY(180deg);
+}
+
+.logo-6:hover .numero-6 {
+  opacity: 0;
+}
+
+.decorazione-6-mobile {
+  right: 0;
+  top: -1vw;
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../assets/decorazioni/tratti_arancio.png");
 }
 
 .cerchio-6 {
@@ -354,8 +650,54 @@
   margin-top: 10vh;
   width: 80vw;
   height: 75vw;
+}
+
+.logo-7-mobile {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+}
+
+.logo-7:hover .logo-7-mobile {
+  transform: rotateY(180deg);
+}
+
+.logo-7-fronte,
+.logo-7-retro {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.logo-7-fronte {
   background-size: cover;
   background-image: url("../assets/brand_identity/loghi/laura_logo.png");
+}
+.logo-7-retro {
+  z-index: -1;
+  background-size: cover;
+  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
+  transform: rotateY(180deg);
+}
+
+.logo-7:hover .numero-7 {
+  opacity: 0;
+}
+
+.decorazione-7-mobile {
+  left: 0;
+  top: -1vw;
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../assets/decorazioni/stella_gialla.png");
 }
 
 .cerchio-7 {
@@ -383,8 +725,54 @@
   margin-top: 10vh;
   width: 80vw;
   height: 75vw;
+}
+
+.logo-8-mobile {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+}
+
+.logo-8:hover .logo-8-mobile {
+  transform: rotateY(180deg);
+}
+
+.logo-8-fronte,
+.logo-8-retro {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.logo-8-fronte {
   background-size: cover;
   background-image: url("../assets/brand_identity/loghi/convertable_logo.png");
+}
+.logo-8-retro {
+  z-index: -1;
+  background-size: cover;
+  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
+  transform: rotateY(180deg);
+}
+
+.logo-8:hover .numero-8 {
+  opacity: 0;
+}
+
+.decorazione-8-mobile {
+  right: 0;
+  top: -1vw;
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../assets/decorazioni/farfalle_blu.png");
 }
 
 .cerchio-8 {
@@ -439,7 +827,9 @@
   #brand-text-3 {
     font-size: 2.5vw;
   }
-
+  .mini-logho-container {
+    padding-top: 2vw;
+  }
   .mini-logo-1 {
     overflow: hidden;
     transform: translate(335%, -250%);
@@ -489,20 +879,33 @@
 
   /* <=========================== Section 2 ========================> */
 
+  .logo-1:hover .logo-1-mobile,
+  .logo-2:hover .logo-2-mobile,
+  .logo-3:hover .logo-3-mobile,
+  .logo-4:hover .logo-4-mobile,
+  .logo-5:hover .logo-5-mobile,
+  .logo-6:hover .logo-6-mobile,
+  .logo-7:hover .logo-7-mobile,
+  .logo-8:hover .logo-8-mobile {
+    transform: none;
+  }
+
+  .logo-1:hover .numero-1,
+  .logo-2:hover .numero-2,
+  .logo-3:hover .numero-3,
+  .logo-4:hover .numero-4,
+  .logo-5:hover .numero-5,
+  .logo-6:hover .numero-6,
+  .logo-7:hover .numero-7,
+  .logo-8:hover .numero-8 {
+    opacity: 100;
+  }
+
   .loghi-container {
     padding-top: 10vw;
     margin-bottom: 5vh;
     justify-content: start;
     align-items: start;
-  }
-  .logo-1-desktop {
-    padding-top: 8vw;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-self: end;
-    margin-right: 4vw;
   }
   .logo-h1-desktop {
     color: #2a3a45;
@@ -514,9 +917,20 @@
   .logo-text-desktop {
     padding-top: 5vw;
     color: #2a3a45;
-    font-size: 1.9vw;
+    font-size: 1.8vw;
     font-family: Montserrat;
     font-weight: 500;
+  }
+
+  .logo-1-desktop {
+    transform: translateX(35%);
+    padding-top: 8vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-self: end;
+    margin-right: 4vw;
   }
 
   .logo-1-desktop h1 {
@@ -527,9 +941,25 @@
     text-align: right;
   }
 
+  .decorazione-1 {
+    transform: translate(70%, -190%);
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../assets/decorazioni/tratti_gialli.png");
+  }
 
   .logo-1 {
+    display: flex;
+    flex-direction: column;
     margin-left: 2vw;
+    max-width: 100%;
+    height: 45vw;
+  }
+
+  .logo-1-fronte {
     width: 42vw;
     height: 41vw;
   }
@@ -547,12 +977,37 @@
   }
 
   .logo-2 {
-    margin-right: 2vw;
-    width: 43vw;
-    height: 41vw;
-    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    margin-left: 2vw;
+    max-width: 100%;
+    height: 45vw;
   }
 
+  .logo-2-fronte {
+    transform: translate(124%, 0%);
+    width: 43vw;
+    height: 41vw;
+  }
+  .logo-2-desktop {
+    transform: translate(0%, 10vw);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-self: start;
+    margin-left: 3vw;
+  }
+
+  .decorazione-2 {
+    transform: translate(315%, -70%);
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../assets/decorazioni/stelle_blu.png");
+  }
   .cerchio-2 {
     width: 41vw;
     height: 41vw;
@@ -564,11 +1019,43 @@
   }
 
   .logo-3 {
+    display: flex;
+    flex-direction: row;
     margin-left: 2vw;
-    width: 42vw;
+    max-width: 100%;
     height: 41vw;
   }
+  .logo-3-fronte {
+    width: 43vw;
+    height: 41vw;
+  }
+  .logo-3-desktop {
+    transform: translate(87%, -50%);
+    padding-top: 8vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-self: end;
+    margin-right: 4vw;
+  }
 
+  .logo-3-desktop h1 {
+    text-align: right;
+  }
+
+  .logo-3-desktop div {
+    text-align: right;
+  }
+  .decorazione-3 {
+    transform: translate(95%, -260%);
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../assets/decorazioni/stella_arancio.png");
+  }
   .cerchio-3 {
     transform: translate(2%, 0%);
     width: 41vw;
@@ -582,10 +1069,36 @@
   }
 
   .logo-4 {
-    margin-right: 2vw;
+    display: flex;
+    flex-direction: row;
+    margin-left: 2vw;
+    max-width: 100%;
+    height: 41vw;
+  }
+
+  .logo-4-fronte {
+    transform: translate(124%, 0%);
     width: 43vw;
     height: 41vw;
-    align-self: flex-end;
+  }
+
+  .logo-4-desktop {
+    transform: translate(0%, 10vw);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-self: start;
+    margin-left: 3vw;
+  }
+  .decorazione-4 {
+    transform: translate(450%, -60%);
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../assets/decorazioni/stelle_gialle.png");
   }
 
   .cerchio-4 {
@@ -600,11 +1113,43 @@
   }
 
   .logo-5 {
+    display: flex;
+    flex-direction: row;
     margin-left: 2vw;
-    width: 42vw;
+    max-width: 100%;
+    height: 41vw;
+  }
+  .logo-5-fronte {
+    width: 43vw;
     height: 41vw;
   }
 
+  .logo-5-desktop {
+    transform: translate(92%, -50%);
+    padding-top: 8vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-self: end;
+    margin-right: 4vw;
+  }
+  .logo-5-desktop h1 {
+    text-align: right;
+  }
+
+  .logo-5-desktop div {
+    text-align: right;
+  }
+  .decorazione-5 {
+    transform: translate(110%, -160%);
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../assets/decorazioni/farfalle_blu.png");
+  }
   .cerchio-5 {
     width: 41vw;
     height: 41vw;
@@ -617,10 +1162,37 @@
   }
 
   .logo-6 {
-    margin-right: 2vw;
+    display: flex;
+    flex-direction: row;
+    margin-left: 2vw;
+    max-width: 100%;
+    height: 41vw;
+  }
+
+  .logo-6-fronte {
+    transform: translate(124%, 0%);
     width: 43vw;
     height: 41vw;
-    align-self: flex-end;
+  }
+
+  .logo-6-desktop {
+    transform: translate(0%, 10vw);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-self: start;
+    margin-left: 3vw;
+  }
+
+  .decorazione-6 {
+    transform: translate(210%, -70%);
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../assets/decorazioni/tratti_arancio.png");
   }
 
   .cerchio-6 {
@@ -634,9 +1206,42 @@
   }
 
   .logo-7 {
+    display: flex;
+    flex-direction: row;
     margin-left: 2vw;
-    width: 42vw;
+    max-width: 100%;
     height: 41vw;
+  }
+  .logo-7-fronte {
+    width: 43vw;
+    height: 41vw;
+  }
+
+  .logo-7-desktop {
+    transform: translate(88%, -50%);
+    padding-top: 8vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-self: end;
+    margin-right: 4vw;
+  }
+  .logo-7-desktop h1 {
+    text-align: right;
+  }
+
+  .logo-7-desktop div {
+    text-align: right;
+  }
+  .decorazione-7 {
+    transform: translate(200%, -350%);
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../assets/decorazioni/stella_gialla.png");
   }
 
   .cerchio-7 {
@@ -651,12 +1256,37 @@
   }
 
   .logo-8 {
-    margin-right: 2vw;
-    width: 43vw;
+    display: flex;
+    flex-direction: row;
+    margin-left: 2vw;
+    max-width: 100%;
     height: 41vw;
-    align-self: flex-end;
   }
 
+  .logo-8-fronte {
+    transform: translate(124%, 0%);
+    width: 43vw;
+    height: 41vw;
+  }
+
+  .logo-8-desktop {
+    transform: translate(0%, 10vw);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-self: start;
+    margin-left: 3vw;
+  }
+  .decorazione-8 {
+    transform: translate(240%, -80%);
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../assets/decorazioni/farfalle_blu.png");
+  }
   .cerchio-8 {
     width: 41vw;
     height: 41vw;
