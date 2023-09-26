@@ -7,7 +7,7 @@
 
 .brand-identity-text {
   margin-left: 8.5vw;
-  margin-top: 20vw;
+  margin-top: 25vw;
   z-index: 1;
 }
 
@@ -22,8 +22,8 @@
 .decorazione-main {
   transform: translate(-85%, -50%);
   position: absolute;
-  width: 10vw;
-  height: 10vw;
+  width: 7vw;
+  height: 7vw;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("../assets/decorazioni/tratti_gialli.png");
@@ -808,6 +808,12 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   /* <=========================== Main Section ========================> */
+
+  .brand-identity-text {
+    margin-left: 5vw;
+    margin-top: 20vw;
+  }
+
   #brand-text-1 {
     font-size: 4.5vw;
   }
@@ -1030,7 +1036,7 @@
     height: 41vw;
   }
   .logo-3-desktop {
-    transform: translate(87%, -50%);
+    transform: translate(90%, -50%);
     padding-top: 8vw;
     position: absolute;
     display: flex;

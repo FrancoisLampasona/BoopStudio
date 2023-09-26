@@ -50,13 +50,13 @@
 
 .linee_main_section {
   max-width: 100%;
-  margin-top: 25vw;
+  margin-top: 20vw;
   overflow: hidden;
   margin-bottom: 25vw;
 }
 
 .linee_main_section img {
-  width: 110vw;
+  width: 150vw;
   height: auto;
   padding-top: 5px;
 }
@@ -67,13 +67,13 @@
 
 #linee_animation_right {
   display: flex;
-  animation: 10s carousel-left-to-right infinite linear;
+  animation: 20s carousel-left-to-right infinite linear;
   animation-delay: 0ms;
 }
 
 #linee_animation_left {
   display: flex;
-  animation: 10s carousel-right-to-left infinite linear;
+  animation: 20s carousel-right-to-left infinite linear;
   animation-delay: 0ms;
 }
 
@@ -253,7 +253,7 @@
 }
 
 #Cerchio_1 img {
-  animation: spin 1s infinite linear;
+  animation: spin 4s infinite linear;
 }
 
 #Cerchio_2 {
@@ -263,7 +263,7 @@
   padding-left: 56.8vw;
 }
 #Cerchio_2 img {
-  animation: spin-reverse 1s infinite linear;
+  animation: spin-reverse 4s infinite linear;
 }
 
 #Cerchio_3 {
@@ -271,10 +271,10 @@
   position: absolute;
   margin-top: 19vw;
   padding-left: 2vw;
-  animation: spin 1s infinite linear;
+  animation: spin 4s infinite linear;
 }
 #Cerchio_3 img {
-  animation: spin 1s infinite linear;
+  animation: spin 4s infinite linear;
 }
 #Cerchio_4 {
   width: 28vw;
@@ -283,7 +283,7 @@
   padding-left: 35vw;
 }
 #Cerchio_4 img {
-  animation: spin-reverse 1s infinite linear;
+  animation: spin-reverse 4s infinite linear;
 }
 #Cerchio_5 {
   width: 25vw;
@@ -292,7 +292,7 @@
   padding-left: 70vw;
 }
 #Cerchio_5 img {
-  animation: spin 1s infinite linear;
+  animation: spin 4s infinite linear;
 }
 #Cerchio_6 {
   width: 25vw;
@@ -301,7 +301,7 @@
   padding-left: 12.5vw;
 }
 #Cerchio_6 img {
-  animation: spin-reverse 1s infinite linear;
+  animation: spin-reverse 4s infinite linear;
 }
 #Cerchio_7 {
   width: 28vw;
@@ -310,7 +310,7 @@
   margin-top: 50vw;
 }
 #Cerchio_7 img {
-  animation: spin 1s infinite linear;
+  animation: spin 4s infinite linear;
 }
 
 /* MEDIA QUERY */
