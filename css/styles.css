@@ -31,8 +31,11 @@
 a {
   text-decoration: none;
 }
-a:visited {
-  color: initial; /* Colore dei link visitati */
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit; /* Colore dei link visitati */
 }
 
 /* <=========================== Body ========================> */
