@@ -32,7 +32,7 @@ a {
   text-decoration: none;
 }
 a:visited {
-  color: inherit; /* Colore dei link visitati */
+  color: initial; /* Colore dei link visitati */
 }
 
 /* <=========================== Body ========================> */
