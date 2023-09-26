@@ -207,11 +207,12 @@
   height: 100%;
   text-align: center;
   transition: transform 0.9s;
-  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.9s;
 }
 
 .logo-1:hover .logo-1-mobile {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .logo-1-fronte,
@@ -232,6 +233,7 @@
   background-size: cover;
   background-image: url("../assets/brand_identity/loghi/retro_logo.png");
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .logo-1:hover .numero-1 {
