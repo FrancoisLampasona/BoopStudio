@@ -163,8 +163,8 @@
 
 .swiper-slide img {
   display: block;
-  width: 20rem;
-  height: 30rem;
+  width: 75vw;
+  height: 115vw;
   object-fit: cover;
   border-radius: 40px;
 }
@@ -181,18 +181,17 @@
 
 .swiper-custom-pagination {
   display: flex;
-  width: 100%;
-  padding-top: 2rem;
   justify-content: center;
-  gap: 1rem;
+  gap: 10px;
 }
 
 .swiper-custom-pagination .swiper-pagination-bullet {
-  width: 25px;
+  width: 10px;
   height: 10px;
-  border-radius: 60px;
-  text-align: center;
+  border-radius: 50%;
+  background-color: #000; /* Cambia il colore dei pallini */
 }
+
 /* =========================== Section 4 ======================== */
 
 .skill {
@@ -366,9 +365,12 @@
     opacity: unset;
   }
   /* <=========================== Section 3 ========================> */
-
   .swiper-slide img {
-    width: 24rem;
+    display: block;
+    width: 50vw;
+    height: 70vw;
+    object-fit: cover;
+    border-radius: 40px;
   }
 
   /* <=========================== Section 2 ========================> */
@@ -543,10 +545,14 @@
   .servizi {
     font-size: 5vw;
   }
-
   .swiper-slide img {
-    width: 100rem;
+    display: block;
+    width: 40vw;
+    height: 50vw;
+    object-fit: cover;
+    border-radius: 40px;
   }
+
   /* =========================== Section 4 ======================== */
 
   .skill {
@@ -807,9 +813,13 @@
   /* =========================== Section 3 ======================== */
 
   .swiper-slide img {
-    width: 60rem;
-    height: 50rem;
+    display: block;
+    width: 35vw;
+    height: 50vw;
+    object-fit: cover;
+    border-radius: 40px;
   }
+  
   /* =========================== Section 4 ======================== */
   .skill {
     flex-direction: row;
