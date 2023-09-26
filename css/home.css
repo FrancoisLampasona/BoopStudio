@@ -50,9 +50,9 @@
 
 .linee_main_section {
   max-width: 100%;
-  margin-top: 20vw;
+  margin-top: 15vw;
   overflow: hidden;
-  margin-bottom: 25vw;
+  margin-bottom: 20vw;
 }
 
 .linee_main_section img {
@@ -85,17 +85,16 @@
 
 .rettangolo_chisiamo {
   position: relative;
-  width: 90vw;
-  height: 112vw;
+  width: 95vw;
+  height: 120vw;
   border-radius: 40px;
   background: #2a3a45;
   box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
-  margin-top: 1vh;
 }
 
 #testo1 {
   text-align: center;
-  margin-top: 2vh;
+  margin-top: 2.5vh;
   opacity: 0.1;
   color: #f8fafa;
   font-size: 14vw;
@@ -105,10 +104,10 @@
 
 #testo2 {
   position: absolute;
-  margin-left: 20vw;
-  margin-top: -10.5vw;
+  margin-left: 18vw;
+  margin-top: -11vw;
   color: #f8fafa;
-  font-size: 4.5vw;
+  font-size: 5.5vw;
   font-family: Champ;
   font-weight: 900;
 }
@@ -127,7 +126,7 @@
 }
 
 #testo3_mobile {
-  padding-top: 4.2vw;
+  padding-top: 5.5vw;
   text-align: center;
   margin-right: 3vw;
   margin-left: 3vw;
@@ -139,7 +138,7 @@
 }
 
 #testo4 {
-  padding-top: 8vw;
+  padding-top: 10vw;
   text-align: center;
   color: #2c9bd8;
   font-size: 5.5vw;
