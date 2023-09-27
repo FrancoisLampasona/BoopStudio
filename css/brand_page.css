@@ -1,0 +1,136 @@
+/* <=========================== Main Section ========================> */
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.logo-contenitore {
+  width: 125vw;
+  height: 135vw;
+  text-align: center;
+  overflow: hidden;
+}
+
+.logo-contenitore img {
+  max-width: 100%;
+  height: auto;
+}
+
+#logo-cerchio {
+  transform: translate(15%, 25%);
+  position: relative;
+  z-index: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#logo-cerchio img {
+  width: 90%;
+}
+
+#logo-titolo {
+  padding-top: 15vw;
+  color: #2a3a45;
+  font-size: 10vw;
+  font-family: Champ;
+  font-weight: 900;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+#linea-testo img {
+  transform: translateX(23%);
+  width: 70vw;
+}
+
+#logo-description {
+  padding-top: 5vw;
+  color: #2a3a45;
+  font-size: 4.2vw;
+  font-family: Montserrat;
+  font-weight: 500;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+/* <=========================== Nascita Section ========================> */
+
+.nascita-section {
+  padding-top: 17vw;
+  display: flex;
+  justify-content: center;
+}
+
+.container-nascita {
+  position: relative;
+  width: 90vw;
+  height: 120vw;
+  border-radius: 40px;
+  background: #2a3a45;
+  box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
+}
+#testo-1 {
+  text-align: center;
+  margin-top: 2.5vh;
+  opacity: 0.1;
+  color: #f8fafa;
+  font-size: 14vw;
+  font-family: Champ;
+  font-weight: 900;
+}
+
+#testo-2 {
+  position: absolute;
+  margin-left: 18vw;
+  margin-top: -11vw;
+  color: #f8fafa;
+  font-size: 5.5vw;
+  font-family: Champ;
+  font-weight: 900;
+}
+
+#testo-3-nomobile {
+  display: none;
+  padding-top: 4vw;
+  text-align: center;
+  margin-right: 3vw;
+  margin-left: 3vw;
+  color: #f8fafa;
+  font-size: 3vw;
+  font-family: Montserrat;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+#testo-3-mobile {
+  padding-top: 5vw;
+  text-align: center;
+  margin-right: 3vw;
+  margin-left: 3vw;
+  color: #f8fafa;
+  font-size: 3.7vw;
+  font-family: Montserrat;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/* <=========================== Mockup Section ========================> */
+
+.mockup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-1 {
+  width: 100%;
+  height: 69vw;
+  border-radius: 30px;
+  background: aqua;
+}

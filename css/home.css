@@ -151,8 +151,8 @@
 /* <=========================== Section 3 ========================> */
 
 .servizi {
-  margin-top: 15vw;
-  margin-bottom: 8vw;
+  margin-top: 12vw;
+  margin-bottom: 6vw;
   text-align: center;
   color: #2a3a45;
   font-size: 10vw;
@@ -161,41 +161,35 @@
   word-wrap: break-word;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 75vw;
-  height: 115vw;
-  object-fit: cover;
+.owl-carousel .item {
   border-radius: 40px;
+  height: 115vw;
+  background: #4dc7a0;
+  padding: 1rem;
 }
 
-/* .swiper-slide figure {
-  position: relative;
-  margin: 0;
-  overflow: hidden;
-} */
+#item-1,
+#item-2,
+#item-3,
+#item-4 {
+  background: url("../montagne.png") center/cover no-repeat;
+}
 
-/* .swiper-slide figcaption {
+#card-text {
   position: absolute;
-} */
-
-.swiper-custom-pagination {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.swiper-custom-pagination .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #000; /* Cambia il colore dei pallini */
+  transform: translate(5vw, 100vw);
+  color: #f8fafa;
+  font-size: 5vw;
+  font-family: Champ;
+  font-weight: 900;
+  text-decoration: underline;
+  word-wrap: break-word;
 }
 
 /* =========================== Section 4 ======================== */
 
 .skill {
-  margin-top: 5vh;
+  margin-top: 2vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -365,12 +359,16 @@
     opacity: unset;
   }
   /* <=========================== Section 3 ========================> */
-  .swiper-slide img {
-    display: block;
-    width: 50vw;
-    height: 70vw;
-    object-fit: cover;
+  .owl-carousel .item {
     border-radius: 40px;
+    height: 65vw;
+    background: #4dc7a0;
+    padding: 1rem;
+  }
+
+  #card-text {
+    transform: translate(5vw, 55vw);
+    font-size: 3.5vw;
   }
 
   /* <=========================== Section 2 ========================> */
@@ -545,12 +543,17 @@
   .servizi {
     font-size: 5vw;
   }
-  .swiper-slide img {
-    display: block;
-    width: 40vw;
-    height: 50vw;
-    object-fit: cover;
+
+  .owl-carousel .item {
     border-radius: 40px;
+    height: 42vw;
+    background: #4dc7a0;
+    padding: 1rem;
+  }
+
+  #card-text {
+    transform: translate(4vw, 35vw);
+    font-size: 2vw;
   }
 
   /* =========================== Section 4 ======================== */
@@ -811,15 +814,17 @@
     font-size: 2vw;
   }
   /* =========================== Section 3 ======================== */
-
-  .swiper-slide img {
-    display: block;
-    width: 35vw;
-    height: 50vw;
-    object-fit: cover;
+  .owl-carousel .item {
     border-radius: 40px;
+    height: 35vw;
+    background: #4dc7a0;
+    padding: 1rem;
   }
-  
+
+  #card-text {
+    transform: translate(2vw, 28vw);
+    font-size: 2vw;
+  }
   /* =========================== Section 4 ======================== */
   .skill {
     flex-direction: row;

@@ -42,16 +42,16 @@
     />
 
     <!-- JavaScript -->
-
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
-
-    <!-- Swiper JS -->
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
   </head>
 
@@ -71,17 +71,18 @@
             />
           </label>
           <div class="header_logo">
-            <img
-              src="assets/BoopStudioSiteWebIcon.svg"
-              alt="Boop Studio Logo"
-            />
+            <a href="../index.html"
+              ><img
+                src="../assets/BoopStudioSiteWebIcon.svg"
+                alt="Boop Studio Logo"
+            /></a>
           </div>
 
           <ul class="header_menu">
-            <li><a href="html/brand_indentity.html">Chi siamo</a></li>
-            <li><a href="">Servizi</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Contatti</a></li>
+            <li><a href="#chisiamo-section">Chi siamo</a></li>
+            <li><a href="#sevizi-section">Servizi</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#contattacci-section">Contatti</a></li>
           </ul>
         </div>
       </header>
@@ -110,7 +111,7 @@
           </div>
         </div>
         <div id="home_text_3">
-          <a href="#Contattacci-Section">Scopri di più</a>
+          <a href="#contattacci-section">Scopri di più</a>
         </div>
       </div>
       <div class="linee_main_section">
@@ -222,7 +223,7 @@
 
     <!-- =========================== Section 2 ======================== -->
 
-    <div class="Chi_siamo">
+    <div class="Chi_siamo" id="chisiamo-section">
       <div class="rettangolo_chisiamo">
         <div id="testo1">Chi Siamo</div>
         <div id="testo2">Conosci il team Boop</div>
@@ -254,34 +255,50 @@
 
     <!-- =========================== Section 3 ======================== -->
 
-    <div class="servizi">Servizi</div>
-    
+    <div class="servizi" id="sevizi-section">Servizi</div>
+
     <!-- Swiper -->
-    <div class="swiper" id="swiper-2">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="montagne.png" alt="Mobile App" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="montagne.png" alt="Web Site" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="montagne.png" alt="Brand Identity" />
-        </div>
-
-        <div class="swiper-slide">
-          <img src="montagne.png" alt="Social Media" />
-        </div>
+    <div class="owl-carousel owl-theme">
+      <div class="item" id="item-1">
+        <a href="/html/web_site.html" id="card-text">Web-Site</a>
       </div>
-      <!-- end swiper-wrapper -->
-      <div class="swiper-custom-pagination"></div>
+      <div class="item" id="item-2">
+        <a href="/html/mobile_app.html" id="card-text">Mobile App</a>
+      </div>
+      <div class="item" id="item-3">
+        <a href="/html/social_media.html" id="card-text">Social Media</a>
+      </div>
+      <div class="item" id="item-4">
+        <a href="/html/brand_indentity.html" id="card-text">Brand Identity</a>
+      </div>
     </div>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/app.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        stagePadding: 40,
+        loop: true,
+        margin: 10,
+        // nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          768: {
+            items: 2,
+          },
+          992: {
+            items: 3,
+          },
+          1200: {
+            items: 4,
+            loop: false,
+          },
+        },
+      });
+    </script>
 
     <!-- =========================== Section 4 ======================== -->
 
@@ -344,7 +361,7 @@
 
     <!-- =========================== Contattacci ======================== -->
 
-    <div class="Contattaci" id="Contattacci-Section">
+    <div class="Contattaci" id="contattacci-section">
       <div class="linee_orizzontali">
         <div id="linee_animation_right">
           <img
