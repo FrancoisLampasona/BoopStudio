@@ -49,7 +49,7 @@
 /* <=========================== Mockup Section ========================> */
 
 .container-1 {
-  width: 93%;
+  width: 90%;
   height: 64vw;
   border-radius: 30px;
   background-size: cover;
@@ -107,7 +107,7 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .container-1 {
-    width: 93%;
+    width: 90%;
     height: 135vw;
   }
   .container-2 {
@@ -118,7 +118,7 @@
 
 @media only screen and (min-width: 600px) {
   .container-1 {
-    width: 93%;
+    width: 90%;
     height: 135vw;
   }
   .container-2 {
