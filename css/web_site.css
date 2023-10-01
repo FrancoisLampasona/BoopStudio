@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  height: 210vw;
 }
 
 .website-text {
@@ -35,7 +36,7 @@
 }
 
 #website-text-2 {
-  padding-top: 10vw;
+  padding-top: 5vw;
   color: #2a3a45;
   font-size: 4vw;
   font-family: Montserrat;
@@ -47,7 +48,7 @@
 }
 
 #website-text-3 {
-  padding-top: 5vh;
+  padding-top: 3.5vh;
   color: #ed6931;
   font-size: 4.5vw;
   font-family: Champ;
@@ -57,7 +58,7 @@
 }
 
 .website-img {
-  transform: translateY(-25vw);
+  transform: translateY(-20vw);
   margin-left: -25vw;
   position: relative;
   width: 150%;
@@ -67,4 +68,726 @@
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../assets/web_site/site_image.png");
+}
+
+/* <=========================== Section 2 ========================> */
+
+.siti-container {
+  margin-top: 10vw;
+  height: 180vw;
+}
+
+.sito-1-desktop {
+  display: none;
+}
+
+.sito-2-desktop {
+  display: none;
+}
+
+.sito-1-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sito-2-mobile {
+  transform: translateY(-35%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sfondo {
+  transform: translateY(-5%);
+  width: 75vw;
+  height: 75vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
+}
+
+.sfondo-2 {
+  transform: translateY(-2%);
+  width: 75vw;
+  height: 75vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
+}
+
+/* #sito-text-scopri {
+  padding-top: 2vh;
+  color: #ed6931;
+  font-size: 4.5vw;
+  font-family: Champ;
+  font-weight: 900;
+  text-decoration: underline;
+  word-wrap: break-word;
+} */
+
+.cerchio-1 {
+  z-index: 0;
+  transform: translate(0%, -102%);
+  width: 75vw;
+  height: 75vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../assets/brand_identity/loghi/cerchi/1_cerchio.png");
+}
+
+.cerchio-2 {
+  z-index: 0;
+  transform: translate(0%, -102%);
+  width: 75vw;
+  height: 75vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../assets/brand_identity/loghi/cerchi/2_cerchio.png");
+}
+
+.computer-1 {
+  transform: translateY(-38%);
+  position: absolute;
+  width: 105vw;
+  margin-right: 5vw;
+  height: 110vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../assets/web_site/sito_1.png");
+  z-index: 1;
+}
+
+.computer-2 {
+  transform: translateY(-38%);
+  position: absolute;
+  width: 105vw;
+  margin-right: 5vw;
+  height: 110vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../assets/web_site/sito_2.png");
+  z-index: 1;
+}
+
+/* MEDIA QUERY */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (min-width: 600px) {
+  /* <=========================== Main Section ========================> */
+
+  #website-text-1 {
+    margin-left: 2vw;
+    font-size: 8vw;
+  }
+
+  .decorazione-main {
+    transform: translate(-55%, -50%);
+  }
+
+  #linea-testo img {
+    margin-left: 2vw;
+    width: 65vw;
+  }
+
+  #website-text-2 {
+    margin-left: 2vw;
+    font-size: 3vw;
+  }
+
+  #website-text-mobile {
+    display: none;
+  }
+
+  #website-text-nomobile {
+    display: block;
+  }
+
+  #website-text-3 {
+    margin-left: 2vw;
+    font-size: 3.5vw;
+  }
+
+  .website-img {
+    transform: translate(10%, -20vw);
+    margin-left: -25vw;
+    width: 130%;
+    height: 150vw;
+  }
+
+  /* <=========================== Section 2 ========================> */
+
+  .siti-container {
+    margin-top: 0vw;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* <=========================== Main Section ========================> */
+
+  .website-text {
+    margin-left: 8.5vw;
+    margin-top: 25vw;
+  }
+
+  #website-text-1 {
+    margin-left: 2vw;
+    font-size: 9.5vw;
+  }
+
+  .decorazione-main {
+    transform: translate(-60%, -50%);
+    width: 7vw;
+    height: 7vw;
+  }
+
+  #linea-testo img {
+    width: 55vw;
+  }
+
+  #website-text-2 {
+    padding-top: 5vw;
+    font-size: 3vw;
+  }
+
+  #website-text-nomobile {
+    display: block;
+  }
+
+  #website-text-3 {
+    padding-top: 3vh;
+    font-size: 3.5vw;
+  }
+
+  .website-img {
+    transform: translateY(-12vw);
+    width: 150%;
+    height: 150vw;
+  }
+
+  /* <=========================== Section 2 ========================> */
+
+  .siti-container {
+    margin-top: 0vw;
+  }
+
+  .sito-2-mobile {
+    transform: translateY(0%);
+    padding-top: 20vw;
+  }
+
+  .cerchio-1 {
+    z-index: 0;
+    transform: translate(2%, 0%);
+    width: 75vw;
+    height: 75vw;
+  }
+
+  .cerchio-2 {
+    z-index: 0;
+    transform: translate(2%, 0%);
+    width: 75vw;
+    height: 75vw;
+  }
+
+  .sfondo {
+    transform: translateY(-5%);
+    position: absolute;
+    width: 75vw;
+    height: 75vw;
+  }
+
+  .sfondo-2 {
+    transform: translateY(-5%);
+    position: absolute;
+    width: 75vw;
+    height: 75vw;
+  }
+
+  /* #sito-text-scopri {
+    padding-top: 2vh;
+    color: #ed6931;
+    font-size: 4.5vw;
+  } */
+
+  .computer-1 {
+    transform: translateY(-5%);
+    height: 110vw;
+    width: 105vw;
+    margin-right: 5vw;
+  }
+
+  .computer-2 {
+    transform: translateY(-5%);
+    height: 110vw;
+    width: 105vw;
+    margin-right: 5vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* <=========================== Main Section ========================> */
+
+  .website {
+    height: 80vw;
+  }
+
+  .website-text {
+    margin-left: 5vw;
+    margin-top: 20vw;
+    z-index: 1;
+  }
+
+  #website-text-1 {
+    padding-left: 2vw;
+    font-size: 5vw;
+  }
+
+  .decorazione-main {
+    transform: translate(-35%, -50%);
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+  }
+
+  #linea-testo img {
+    padding-left: 2vw;
+    width: 24vw;
+    height: 1.5vw;
+  }
+
+  #website-text-2 {
+    padding-left: 2vw;
+    padding-top: 4vw;
+    font-size: 1.8vw;
+  }
+
+  #website-text-nomobile {
+    display: block;
+  }
+
+  #website-text-3 {
+    padding-left: 2vw;
+    padding-top: 3.5vh;
+    font-size: 2vw;
+  }
+
+  .website-img {
+    transform: translate(80%, -65vw);
+    margin-left: -25vw;
+    width: 90%;
+    height: 90vw;
+  }
+
+  /* <=========================== Section 2 ========================> */
+
+  .siti-container {
+    margin-top: 0vw;
+    height: 90vw;
+  }
+
+  .sito-1-mobile {
+    display: none;
+  }
+
+  .sito-2-mobile {
+    display: none;
+  }
+
+  .sito-1-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .sito-2-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .cerchio-1 {
+    grid-row: 1;
+    grid-column: 1/2;
+    transform: translate(16%, -25%);
+    width: 45vw;
+    height: 45vw;
+  }
+
+  .cerchio-2 {
+    grid-row: 1;
+    grid-column: 3/4;
+    transform: translate(-15%, 5%);
+    width: 45vw;
+    height: 45vw;
+  }
+
+  .sfondo {
+    grid-row: 1;
+    grid-column: 1/2;
+    transform: translate(15%, -25%);
+    position: absolute;
+    width: 45vw;
+    height: 45vw;
+  }
+
+  .sfondo-2 {
+    grid-row: 1;
+    grid-column: 3/4;
+    transform: translate(105%, 5%);
+    position: absolute;
+    width: 45vw;
+    height: 45vw;
+  }
+
+  .computer-1 {
+    transform: translate(-5%, -35%);
+    position: absolute;
+    width: 65vw;
+    height: 75vw;
+    margin-right: 5vw;
+  }
+
+  .computer-2 {
+    transform: translate(55%, -20%);
+    position: absolute;
+    width: 65vw;
+    height: 75vw;
+    margin-right: 5vw;
+  }
+
+  .decorazione-1 {
+    transform: translate(930%, -40%);
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../assets/decorazioni/tratti_gialli.png");
+  }
+
+  .decorazione-2 {
+    transform: translate(270%, 110%);
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../assets/decorazioni/stelle_blu.png");
+  }
+
+  .informazioni {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .informazioni-2 {
+    margin-top: 14vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sito-h1-desktop {
+    height: 10vw;
+    margin-right: 3vw;
+    color: #2a3a45;
+    font-size: 4vw;
+    font-family: Champ;
+    font-weight: 900;
+    word-wrap: break-word;
+    text-align: end;
+  }
+
+  .sito-h1-desktop-2 {
+    height: 5vw;
+    margin-left: 3vw;
+    color: #2a3a45;
+    font-size: 4vw;
+    font-family: Champ;
+    font-weight: 900;
+    word-wrap: break-word;
+    text-align: start;
+  }
+  
+
+  .sito-text-desktop {
+    margin-right: 3vw;
+    padding-top: 2vh;
+    text-align: end;
+    font-family: Montserrat;
+    font-weight: 500;
+  }
+
+  
+  .sito-text-desktop-2 {
+    width: 45vw;
+    margin-left: 3vw;
+    padding-top: 2vh;
+    text-align: start;
+    font-family: Montserrat;
+    font-weight: 500;
+  }
+
+  #sito-text-scopri {
+    padding-top: 2vh;
+    margin-right: 3vw;
+    color: #ed6931;
+    font-size: 2.5vw;
+    font-family: Champ;
+    font-weight: 900;
+    text-decoration: underline;
+    word-wrap: break-word;
+    text-align: end;
+  }
+
+  
+  #sito-text-scopri-2 {
+    padding-top: 2vh;
+    margin-left: 3vw;
+    color: #ed6931;
+    font-size: 2.5vw;
+    font-family: Champ;
+    font-weight: 900;
+    text-decoration: underline;
+    word-wrap: break-word;
+    text-align: start;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* <=========================== Main Section ========================> */
+
+  .website {
+    height: 80vw;
+  }
+
+  .website-text {
+    margin-left: 5vw;
+    margin-top: 18vw;
+    z-index: 1;
+  }
+
+  #website-text-1 {
+    padding-left: 1vw;
+    font-size: 5vw;
+  }
+
+  .decorazione-main {
+    transform: translate(-45%, -50%);
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+  }
+
+  #linea-testo img {
+    padding-left: 1vw;
+    width: 24vw;
+    height: 1.5vw;
+  }
+
+  #website-text-2 {
+    padding-left: 1vw;
+    padding-top: 4vw;
+    font-size: 1.8vw;
+  }
+
+  #website-text-nomobile {
+    display: block;
+  }
+
+  #website-text-3 {
+    padding-left: 1vw;
+    padding-top: 5vh;
+    font-size: 2vw;
+  }
+
+  .website-img {
+    transform: translate(80%, -65vw);
+    margin-left: -25vw;
+    width: 90%;
+    height: 90vw;
+  }
+
+  /* <=========================== Section 2 ========================> */
+
+  .siti-container {
+    transform: translateY(-10%);
+    margin-top: 0vw;
+  }
+
+  .sito-2-mobile {
+    display: none;
+  }
+
+  .sito-1-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .sito-2-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    overflow: hidden;
+  }
+
+  .cerchio-1 {
+    grid-row: 1;
+    grid-column: 1/2;
+    transform: translate(16%, -25%);
+    width: 45vw;
+    height: 45vw;
+  }
+
+  .cerchio-2 {
+    grid-row: 1;
+    grid-column: 3/4;
+    transform: translate(-20%, -0%);
+    width: 45vw;
+    height: 45vw;
+  }
+
+  .sfondo {
+    grid-row: 1;
+    grid-column: 1/2;
+    transform: translate(15%, -25%);
+    position: absolute;
+    width: 45vw;
+    height: 45vw;
+  }
+
+  .sfondo-2 {
+    grid-row: 1;
+    grid-column: 3/4;
+    transform: translate(-20%, 0%);
+    position: relative;
+    width: 45vw;
+    height: 45vw;
+  }
+
+  .computer-1 {
+    grid-row: 1;
+    grid-column: 1/2;
+    transform: translate(-5%, -35%);
+    position: absolute;
+    width: 65vw;
+    height: 75vw;
+    margin-right: 5vw;
+  }
+
+  .computer-2 {
+    grid-row: 1;
+    grid-column: 3/4;
+    transform: translate(54%, -20%);
+    position: absolute;
+    width: 65vw;
+    height: 75vw;
+    margin-right: 5vw;
+  }
+
+  .decorazione-1 {
+    transform: translate(930%, -40%);
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../assets/decorazioni/tratti_gialli.png");
+  }
+
+  .decorazione-2 {
+    transform: translate(280%, 100%);
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../assets/decorazioni/stelle_blu.png");
+  }
+
+  .informazioni {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sito-h1-desktop {
+    grid-row: 1;
+    height: 10vw;
+    margin-right: 3vw;
+    color: #2a3a45;
+    font-size: 4vw;
+    font-family: Champ;
+    font-weight: 900;
+    word-wrap: break-word;
+    text-align: end;
+  }
+
+  .sito-h1-desktop-2 {
+    grid-row: 1;
+    height: 10vw;
+    margin-right: 3vw;
+    color: #2a3a45;
+    font-size: 4vw;
+    font-family: Champ;
+    font-weight: 900;
+    word-wrap: break-word;
+    text-align: start;
+  }
+
+  .sito-text-desktop {
+    margin-right: 3vw;
+    font-size: 1.5vw;
+    padding-top: 2vh;
+    text-align: end;
+    color: #2a3a45;
+    font-family: Montserrat;
+    font-weight: 500;
+  }
+
+  .sito-text-desktop-2 {
+    margin-right: 3vw;
+    font-size: 1.5vw;
+    padding-top: 0vh;
+    text-align: start;
+    color: #2a3a45;
+    font-family: Montserrat;
+    font-weight: 500;
+  }
+
+  #sito-text-scopri {
+    padding-top: 5vh;
+    margin-right: 3vw;
+    color: #ed6931;
+    font-size: 2.5vw;
+    font-family: Champ;
+    font-weight: 900;
+    text-decoration: underline;
+    word-wrap: break-word;
+    text-align: end;
+  }
+  
+  #sito-text-scopri-2 {
+    padding-top: 5vh;
+    margin-right: 3vw;
+    color: #ed6931;
+    font-size: 2.5vw;
+    font-family: Champ;
+    font-weight: 900;
+    text-decoration: underline;
+    word-wrap: break-word;
+    text-align: start;
+  }
 }

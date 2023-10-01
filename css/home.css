@@ -164,20 +164,38 @@
 .owl-carousel .item {
   border-radius: 40px;
   height: 115vw;
-  background: #4dc7a0;
   padding: 1rem;
 }
 
-#item-1,
-#item-2,
-#item-3,
+#item-1 {
+  background-size: 112% 112%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/immagini_card_carosello/BrandID_card_image.png");
+}
+
+#item-2 {
+  background-size: 112% 112%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/immagini_card_carosello/site_web_image.png");
+}
+#item-3 {
+  background-size: 112% 112%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/immagini_card_carosello/BrandID_card_image.png");
+}
 #item-4 {
-  background: url("../montagne.png") center/cover no-repeat;
+  background-size: 112% 112%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/immagini_card_carosello/app_card_image.png");
 }
 
 #card-text {
   position: absolute;
-  transform: translate(5vw, 100vw);
+  transform: translate(3vw, 105vw);
   color: #f8fafa;
   font-size: 5vw;
   font-family: Champ;
@@ -367,7 +385,7 @@
   }
 
   #card-text {
-    transform: translate(5vw, 55vw);
+    transform: translate(2vw, 58vw);
     font-size: 3.5vw;
   }
 
@@ -552,7 +570,7 @@
   }
 
   #card-text {
-    transform: translate(4vw, 35vw);
+    transform: translate(2vw, 38vw);
     font-size: 2vw;
   }
 
@@ -816,13 +834,14 @@
   /* =========================== Section 3 ======================== */
   .owl-carousel .item {
     border-radius: 40px;
-    height: 35vw;
+    height: 40vw;
     background: #4dc7a0;
     padding: 1rem;
+    margin-left: 10px;
   }
 
   #card-text {
-    transform: translate(2vw, 28vw);
+    transform: translate(2vw, 36vw);
     font-size: 2vw;
   }
   /* =========================== Section 4 ======================== */
