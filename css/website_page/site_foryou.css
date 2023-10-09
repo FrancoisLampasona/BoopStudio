@@ -1,0 +1,636 @@
+/* <=========================== Main Section ========================> */
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.logo-contenitore {
+  width: 125vw;
+  height: 145vw;
+  text-align: center;
+  overflow: hidden;
+}
+
+.logo-contenitore img {
+  max-width: 120%;
+  height: auto;
+}
+
+#logo-titolo {
+  padding-top: 15vw;
+  color: #2a3a45;
+  font-size: 10vw;
+  font-family: Champ;
+  font-weight: 900;
+  word-wrap: break-word;
+  text-align: center;
+}
+#logo-cerchio {
+  transform: translate(10%, 25%);
+  position: relative;
+  z-index: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#logo-cerchio img {
+  width: 120%;
+}
+
+#linea-testo img {
+  transform: translateX(23%);
+  width: 70vw;
+}
+
+#linea-testo-desktop {
+  display: none;
+}
+
+#logo-description {
+  padding-top: 5vw;
+  color: #2a3a45;
+  font-size: 4.2vw;
+  font-family: Montserrat;
+  font-weight: 500;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+#logo-description-desktop {
+  display: none;
+}
+
+#image-pc {
+  transform: translate(-15%);
+}
+
+/* <=========================== Perchè Section ========================> */
+
+.perche-section {
+  padding-top: 17vw;
+  display: flex;
+  justify-content: center;
+}
+
+.container-perche {
+  position: relative;
+  width: 90vw;
+  height: 125vw;
+  border-radius: 40px;
+  background: #2a3a45;
+  box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
+}
+#testo-1 {
+  text-align: center;
+  margin-top: 2.5vh;
+  opacity: 0.1;
+  color: #f8fafa;
+  font-size: 14vw;
+  font-family: Champ;
+  font-weight: 900;
+}
+
+#testo-2 {
+  position: absolute;
+  margin-left: 19vw;
+  margin-top: -11vw;
+  color: #f8fafa;
+  font-size: 5.5vw;
+  font-family: Champ;
+  font-weight: 900;
+}
+
+#testo-3-nomobile {
+  display: none;
+  padding-top: 5vw;
+  margin-right: 3vw;
+  margin-left: 3vw;
+  color: #f8fafa;
+  font-family: Montserrat;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+#testo-3-mobile {
+  padding-top: 5vw;
+  text-align: center;
+  margin-right: 3vw;
+  margin-left: 3vw;
+  color: #f8fafa;
+  font-size: 4vw;
+  font-family: Montserrat;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/* <=========================== Mockup Section ========================> */
+
+.mockup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-mockup {
+  padding-top: 15vw;
+  padding-bottom: 15vw;
+  color: #2a3a45;
+  font-size: 10vw;
+  font-family: Champ;
+  font-weight: 900;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.container-1 {
+  width: 90%;
+  height: 110vw;
+  border-radius: 30px;
+  background-color: #2a3a45;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: right 50% bottom 65%;
+  box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
+}
+
+.container-2 {
+  margin-top: 10vw;
+  width: 90%;
+  height: 80vw;
+  border-radius: 30px;
+  background-color: #2a3a45;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: right 50% bottom 65%;
+  box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
+}
+.container-3 {
+  margin-top: 10vw;
+  width: 90%;
+  height: 80vw;
+  border-radius: 30px;
+  background-color: #2a3a45;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: right 50% bottom 65%;
+  box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
+}
+
+.container-4 {
+  margin-top: 10vw;
+  width: 90%;
+  height: 105vw;
+  border-radius: 30px;
+  background-color: #2a3a45;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: right 50% bottom 65%;
+  box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
+}
+
+.mockup-container p {
+  text-align: start;
+  margin-top: 3vh;
+  width: 85%;
+  color: #2a3a45;
+  font-size: 5vw;
+  font-family: Champ;
+  font-weight: 900;
+}
+
+/* MEDIA QUERY */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (min-width: 600px) {
+  /* <=========================== Main Section ========================> */
+
+  .logo-contenitore {
+    width: 112vw;
+    height: 130vw;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* <=========================== Main Section ========================> */
+
+  .logo-section {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .logo-contenitore {
+    width: 100vw;
+    height: 60vw;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .logo-contenitore img {
+    max-width: 120%;
+    height: auto;
+  }
+
+  #logo-titolo {
+    position: absolute;
+    transform: translate(-45%, -59vw);
+    color: #2a3a45;
+    font-size: 4.5vw;
+    font-family: Champ;
+    font-weight: 900;
+    word-wrap: break-word;
+    text-align: center;
+  }
+
+  #linea-testo {
+    display: none;
+  }
+
+  #linea-testo-desktop {
+    display: inline;
+  }
+
+  #linea-testo-desktop img {
+    transform: translate(-46%, -2450%);
+    width: 40vw;
+  }
+
+  #logo-cerchio {
+    transform: translate(30%, 10%);
+    position: relative;
+    z-index: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #logo-cerchio img {
+    width: 65%;
+  }
+
+  .text {
+    transform: translate(0%, 25%);
+  }
+
+  #logo-description {
+    display: none;
+  }
+
+  #logo-description-desktop {
+    display: block;
+    transform: translate(-40%, -240%);
+    padding-top: 5vw;
+    color: #2a3a45;
+    font-size: 2vw;
+    font-family: Montserrat;
+    font-weight: 500;
+    word-wrap: break-word;
+    text-align: left;
+  }
+
+  #image-pc {
+    transform: translate(-2%, 5%);
+  }
+
+  /* <=========================== Perchè Section ========================> */
+
+  .perche-section {
+    transform: translate(0%, -20%);
+    padding-top: 0vw;
+  }
+
+  .container-perche {
+    width: 90vw;
+    height: 45vw;
+    border-radius: 60px;
+  }
+  #testo-1 {
+    margin-top: 1vh;
+    font-size: 10vw;
+  }
+
+  #testo-2 {
+    margin-left: 26vw;
+    margin-top: -8vw;
+    font-size: 4vw;
+  }
+
+  #testo-3-nomobile {
+    display: block;
+    padding-top: 2vw;
+    text-align: center;
+    font-size: 2vw;
+  }
+
+  #testo-3-mobile {
+    display: none;
+  }
+  /* <=========================== Mockup Section ========================> */
+
+  .mockup-container {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .text-mockup {
+    grid-row: 1;
+    grid-column: 1/4;
+    padding-top: 0vw;
+    padding-bottom: 10vw;
+    color: #2a3a45;
+    font-size: 5vw;
+    font-family: Champ;
+    font-weight: 900;
+    word-wrap: break-word;
+    text-align: center;
+  }
+
+  .container-1 {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    width: 76%;
+    height: 65vw;
+    border-radius: 30px;
+    z-index: 0;
+  }
+
+  .container-2 {
+    grid-row: 2;
+    grid-column: 2/4;
+    margin-left: 18vw;
+    margin-top: -20vw;
+    width: 70%;
+    height: 45vw;
+    border-radius: 30px;
+  }
+
+  .container-3 {
+    grid-row: 3;
+    grid-column: 1/3;
+    margin-top: 5vw;
+    width: 76%;
+    height: 45.5vw;
+    border-radius: 30px;
+  }
+
+  .container-4 {
+    grid-row: 3;
+    grid-column: 2/4;
+    margin-top: -17vw;
+    margin-left: 18vw;
+    width: 70%;
+    height: 68vw;
+    border-radius: 30px;
+  }
+
+  .mockup-container p {
+    text-align: start;
+    margin-top: 3vh;
+    width: 85%;
+    color: #2a3a45;
+    font-size: 5vw;
+    font-family: Champ;
+    font-weight: 900;
+  }
+
+  #CS-1 {
+    position: absolute;
+    transform: translateY(270%);
+    grid-row: 2/3;
+    width: 45%;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    font-size: 3vw;
+    margin-bottom: 5vw;
+  }
+
+  #CS-2 {
+    position: absolute;
+    transform: translate(105%, -280%);
+    width: 45%;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    font-size: 3vw;
+    margin-bottom: 5vw;
+  }
+
+  #CS-3 {
+    position: absolute;
+    transform: translate(0%, 1700%);
+    grid-row: 2/3;
+    width: 45%;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    font-size: 3vw;
+    margin-bottom: 5vw;
+  }
+
+  #CS-4 {
+    position: absolute;
+    transform: translate(105%, 1700%);
+    grid-row: 2/3;
+    width: 45%;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    font-size: 3vw;
+    margin-bottom: 5vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* <=========================== Main Section ========================> */
+  .logo-section {
+    transform: translateY(5%);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .logo-contenitore {
+    width: 100vw;
+    height: 62vw;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .logo-contenitore img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #logo-titolo {
+    transform: translate(-72%, -230%);
+    color: #2a3a45;
+    font-size: 4vw;
+    text-align: left;
+  }
+
+  #linea-testo-desktop img {
+    transform: translate(-66%, -2600%);
+    width: 35vw;
+  }
+
+  #logo-cerchio {
+    transform: translate(32%, 5%);
+  }
+
+  #logo-cerchio img {
+    width: 55%;
+  }
+
+  .text {
+    transform: translate(5%, -50%);
+  }
+
+  #logo-description-desktop {
+    display: block;
+    transform: translate(-50%, -235%);
+    font-size: 1.8vw;
+  }
+
+  /* <=========================== Perchè Section ========================> */
+
+  .perche-section {
+    transform: translate(0%, -40%);
+    padding-top: 0vw;
+  }
+
+  .container-perche {
+    width: 90%;
+    height: 35vw;
+    border-radius: 8vw;
+  }
+  #testo-1 {
+    margin-top: 1vh;
+    font-size: 7vw;
+  }
+
+  #testo-2 {
+    margin-left: 31vw;
+    margin-top: -5.9vw;
+    font-size: 3vw;
+  }
+
+  #testo-3-nomobile {
+    display: block;
+    padding-top: 1.5vw;
+    text-align: center;
+    font-size: 1.7vw;
+  }
+
+  #testo-3-mobile {
+    display: none;
+  }
+  /* <=========================== Mockup Section ========================> */
+
+  .mockup-container {
+    transform: translate(0%, -2.5%);
+  }
+
+  .text-mockup {
+    padding-top: 0vw;
+    padding-bottom: 10vw;
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  #CS-1 {
+    transform: translate(12%, 800%);
+  }
+
+  #CS-2 {
+    transform: translate(115%, -250%);
+  }
+
+  #CS-3 {
+    transform: translate(12%, 2250%);
+    margin-bottom: 8vw;
+  }
+
+  #CS-4 {
+    transform: translate(116%, 2250%);
+    margin-bottom: 8vw;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* <=========================== Mockup Section ========================> */
+
+  .container-1 {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    width: 76%;
+    height: 59vw;
+    border-radius: 30px;
+  }
+
+  .container-2 {
+    grid-row: 2;
+    grid-column: 2/4;
+    margin-left: 18vw;
+    margin-top: -20vw;
+    width: 70%;
+    height: 40vw;
+    border-radius: 30px;
+  }
+
+  .container-3 {
+    grid-row: 3;
+    grid-column: 1/3;
+    margin-top: 5vw;
+    width: 76%;
+    height: 42vw;
+    border-radius: 30px;
+  }
+
+  .container-4 {
+    grid-row: 3;
+    grid-column: 2/4;
+    margin-top: -14vw;
+    margin-left: 18vw;
+    width: 70%;
+    height: 58vw;
+    border-radius: 30px;
+  }
+
+  #CS-1 {
+    transform: translate(12%, 765%);
+  }
+
+  #CS-2 {
+    transform: translate(115%, -180%);
+    margin-bottom: 7vw;
+  }
+
+  #CS-3 {
+    transform: translate(12%, 2120%);
+    margin-bottom: 8vw;
+  }
+
+  #CS-4 {
+    transform: translate(116%, 2030%);
+    margin-bottom: 8vw;
+  }
+}

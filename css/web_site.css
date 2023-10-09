@@ -120,7 +120,8 @@
   background-image: url("../assets/brand_identity/loghi/retro_logo.png");
 }
 
-/* #sito-text-scopri {
+#sito-text-scopri-mobile {
+  position: absolute;
   padding-top: 2vh;
   color: #ed6931;
   font-size: 4.5vw;
@@ -128,7 +129,7 @@
   font-weight: 900;
   text-decoration: underline;
   word-wrap: break-word;
-} */
+}
 
 .cerchio-1 {
   z-index: 0;
@@ -314,7 +315,8 @@
     height: 75vw;
   }
 
-  /* #sito-text-scopri {
+  /* #sito-text-scopri-Desktop{
+    position: absolute;
     padding-top: 2vh;
     color: #ed6931;
     font-size: 4.5vw;
