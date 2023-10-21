@@ -362,7 +362,7 @@
 
   .mobileApp-text {
     margin-left: 2vw;
-    margin-top: 20vw;
+    margin-top: 25vw;
     z-index: 1;
   }
 
@@ -416,6 +416,7 @@
 
   .mobileapp-container {
     margin-top: 0vw;
+    margin-bottom: 0vw;
     overflow: hidden;
     height: 90vw;
   }
@@ -511,7 +512,7 @@
   }
 
   .decorazione-2 {
-    transform: translate(270%, 70%);
+    transform: translate(500%, 70%);
     position: absolute;
     width: 7vw;
     height: 7vw;
@@ -545,6 +546,7 @@
 
   .mobileapp-h1-desktop-2 {
     height: 5vw;
+    margin-bottom: 5vw;
     margin-left: 3vw;
     color: #2a3a45;
     font-size: 4vw;
@@ -606,7 +608,7 @@
 
   .mobileApp-text {
     margin-left: 5vw;
-    margin-top: 15vw;
+    margin-top: 22vw;
     z-index: 1;
   }
 
