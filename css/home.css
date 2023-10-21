@@ -14,7 +14,7 @@
 .class_home_text img {
   width: 50vw;
   position: absolute;
-  margin-top: -5px;
+  margin-top: 0px;
   margin-left: 21.5vw;
 }
 
@@ -39,7 +39,7 @@
 }
 
 #home_text_3 {
-  padding-top: 8vh;
+  padding-top: 7vh;
   color: #ed6931;
   font-size: 4.5vw;
   font-family: Champ;
@@ -84,8 +84,10 @@
 }
 
 .rettangolo_chisiamo {
+  margin-right: 5.5vw;
+  margin-left: 5.5vw;
   position: relative;
-  width: 95vw;
+  width: 100%;
   height: 120vw;
   border-radius: 40px;
   background: #2a3a45;
@@ -104,7 +106,7 @@
 
 #testo2 {
   position: absolute;
-  margin-left: 18vw;
+  margin-left: 16vw;
   margin-top: -11vw;
   color: #f8fafa;
   font-size: 5.5vw;
@@ -151,11 +153,11 @@
 /* <=========================== Section 3 ========================> */
 
 .servizi {
-  margin-top: 12vw;
-  margin-bottom: 6vw;
+  margin-top: 20.5vw;
+  margin-bottom: 8vw;
   text-align: center;
   color: #2a3a45;
-  font-size: 10vw;
+  font-size: 8vw;
   font-family: Champ;
   font-weight: 900;
   word-wrap: break-word;
@@ -165,6 +167,11 @@
   border-radius: 40px;
   height: 115vw;
   padding: 1rem;
+}
+
+.owl-carousel .owl-dots {
+  border-radius: 40px;
+  padding-top: 4vw;
 }
 
 #item-1 {
@@ -207,7 +214,7 @@
 /* =========================== Section 4 ======================== */
 
 .skill {
-  margin-top: 2vh;
+  margin-top: 5vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -221,7 +228,7 @@
 #skill_text_1 {
   text-align: center;
   color: #2a3a45;
-  font-size: 10vw;
+  font-size: 8vw;
   font-family: Champ;
   font-weight: 900;
   word-wrap: break-word;
@@ -229,9 +236,9 @@
 
 #skill_text_2 {
   text-align: center;
-  padding-top: 10vw;
+  padding-top: 5vw;
   color: #2a3a45;
-  font-size: 4.5vw;
+  font-size: 4vw;
   font-family: Montserrat;
   font-weight: 500;
   word-wrap: break-word;
@@ -247,6 +254,7 @@
 }
 
 .cerchi_skills {
+  margin-top: -10vw;
   position: absolute;
   display: flex;
 }
@@ -338,6 +346,12 @@
   .swiper-custom-pagination {
     display: none;
   }
+
+  .rettangolo_chisiamo {
+    width: 100%;
+    height: 115vw;
+    border-radius: 75px;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -367,6 +381,11 @@
     color: #ed6931;
     font-size: 3.5vw;
     text-decoration: underline;
+  }
+
+  .class_home_text img {
+    width: 38vw;
+    margin-left: 20vw;
   }
 
   .linee_main_section {
@@ -559,7 +578,8 @@
 
   /* <=========================== Section 3 ========================> */
   .servizi {
-    font-size: 5vw;
+    font-size: 4.5vw;
+    margin-top: 10vw;
   }
 
   .owl-carousel .item {
@@ -582,7 +602,7 @@
 
   .skill_text {
     margin-left: 1vw;
-    margin-top: 14vw;
+    margin-top: 18vw;
   }
 
   #skill_text_1 {
@@ -606,6 +626,7 @@
   }
 
   .cerchi_skills {
+    margin-top: 0vw;
     position: absolute;
     display: flex;
   }
@@ -665,56 +686,6 @@
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  /* <=========================== Header ========================> */
-
-  .header_menu {
-    position: relative;
-    height: initial;
-    width: auto;
-    background: none;
-    background-color: initial;
-    box-shadow: none;
-    backdrop-filter: none;
-    transition: none;
-  }
-
-  #check {
-    display: none;
-  }
-
-  .hamburger_icon {
-    display: none;
-  }
-
-  .hamburger_icon img {
-    width: 35px;
-    height: auto;
-  }
-
-  .header_logo {
-    max-width: 70%;
-    margin: 25px 0;
-    margin-left: 5vh;
-  }
-
-  .header_menu {
-    padding-bottom: 0;
-  }
-
-  .header_menu li {
-    display: inline-block;
-  }
-
-  .header_menu li a {
-    display: block;
-    padding: 45px;
-    color: #2a3a45;
-    font-size: 30px;
-    font-family: Montserrat;
-    font-weight: 500;
-    word-wrap: break-word;
-  }
-
   /* <=========================== Main Section ========================> */
 
   .class_home {
@@ -722,15 +693,15 @@
   }
 
   .class_home_text {
-    margin-left: 5vw;
-    margin-top: 15vw;
+    margin-left: 7vw;
+    margin-top: 12vw;
     z-index: 1;
   }
 
   .class_home_text img {
-    width: 30vw;
-    margin-top: -5px;
-    margin-left: 10.5vw;
+    width: 21vw;
+    margin-top: 3px;
+    margin-left: 9.5vw;
   }
 
   #home_text_mobile {
@@ -741,17 +712,17 @@
   }
 
   #home_text_1 {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 
   #home_text_2 {
-    padding-top: 5vw;
-    font-size: 2.2vw;
+    padding-top: 4vw;
+    font-size: 1.6vw;
   }
 
   #home_text_3 {
-    padding-top: 8.5vh;
-    font-size: 1.8vw;
+    padding-top: 5.5vh;
+    font-size: 1.4vw;
   }
 
   .linee_main_section {
@@ -799,21 +770,21 @@
   /* <=========================== Section 2 ========================> */
 
   .rettangolo_chisiamo {
-    width: 90vw;
-    height: 42vw;
-    border-radius: 10vw;
+    width: 100%;
+    height: 38vw;
+    border-radius: 8vw;
     margin-top: 8vw;
   }
 
   #testo1 {
     margin-top: 2vh;
-    font-size: 12vw;
+    font-size: 10vw;
   }
 
   #testo2 {
-    margin-left: 23vw;
-    margin-top: -9vw;
-    font-size: 4vw;
+    margin-left: 29vw;
+    margin-top: -7.5vw;
+    font-size: 3vw;
   }
   #testo3_mobile {
     display: none;
@@ -823,13 +794,13 @@
     padding-top: 1.2vw;
     margin-right: 3vw;
     margin-left: 3vw;
-    font-size: 1.8vw;
+    font-size: 1.6vw;
   }
 
   #testo4 {
-    padding-top: 3.2vw;
+    padding-top: 5vw;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.6vw;
   }
   /* =========================== Section 3 ======================== */
   .owl-carousel .item {
