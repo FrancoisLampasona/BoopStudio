@@ -112,13 +112,13 @@
 @media only screen and (min-width: 768px) {
   #logo-titolo {
     position: absolute;
-    transform: translate(-45%, -61vw);
+    transform: translate(-54%, -61vw);
     color: #2a3a45;
     font-size: 4.5vw;
     font-family: Champ;
     font-weight: 900;
     word-wrap: break-word;
-    text-align: center;
+    text-align: start;
   }
 
   #linea-testo {
@@ -130,8 +130,8 @@
   }
 
   #linea-testo-desktop img {
-    transform: translate(-45%, -2550%);
-    width: 40vw;
+    transform: translate(-60%, -3250%);
+    width: 32vw;
   }
 
   #logo-cerchio {
@@ -157,8 +157,9 @@
 
   #logo-description-desktop {
     display: block;
+
     transform: translate(-40%, -210%);
-    padding-top: 5vw;
+    padding-top: 6vw;
     color: #2a3a45;
     font-size: 2vw;
     font-family: Montserrat;
@@ -188,7 +189,7 @@
   .container-3 {
     grid-row: 3;
     grid-column: 1/4;
-    margin-top: 5vw;
+    margin-top: 2.5vw;
     width: 100%;
     height: 45.5vw;
     border-radius: 30px;
@@ -197,7 +198,7 @@
   .container-4 {
     grid-row: 4;
     grid-column: 1/2;
-    margin-top: 5vw;
+    margin-top: 2.5vw;
     width: 100%;
     height: 50vw;
     border-radius: 30px;
@@ -206,8 +207,9 @@
   .container-5 {
     grid-row: 4;
     grid-column: 2/4;
-    margin-left: 5vw;
-    width: 92%;
+    margin-top: 2.5vw;
+    margin-left: 2.5vw;
+    width: 95%;
     height: 50vw;
     border-radius: 30px;
   }
