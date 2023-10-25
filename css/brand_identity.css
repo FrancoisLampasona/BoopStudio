@@ -6,8 +6,8 @@
 }
 
 .brand-identity-text {
-  margin-left: 8.5vw;
-  margin-top: 25vw;
+  margin-left: 10vw;
+  margin-top: 28vw;
   z-index: 1;
 }
 
@@ -19,11 +19,29 @@
   word-wrap: break-word;
 }
 
+#brand-text-2 {
+  padding-top: 5vw;
+  color: #2a3a45;
+  font-size: 4vw;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+#brand-text-3 {
+  padding-top: 3vh;
+  color: #ed6931;
+  font-size: 4vw;
+  font-family: Champ;
+  font-weight: 900;
+  text-decoration: underline;
+  word-wrap: break-word;
+}
+
 .decorazione-main {
   transform: translate(-85%, -50%);
   position: absolute;
-  width: 7vw;
-  height: 7vw;
+  width: 10vw;
+  height: 10vw;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("../assets/decorazioni/tratti_gialli.png");
@@ -33,30 +51,12 @@
   width: 78vw;
 }
 
-#brand-text-2 {
-  padding-top: 10vw;
-  color: #2a3a45;
-  font-size: 4vw;
-  font-family: Montserrat;
-  font-weight: 500;
-}
-
 #brand-text-nomobile {
   display: none;
 }
 
-#brand-text-3 {
-  padding-top: 5vh;
-  color: #ed6931;
-  font-size: 4.5vw;
-  font-family: Champ;
-  font-weight: 900;
-  text-decoration: underline;
-  word-wrap: break-word;
-}
-
 .mini-logho-container {
-  margin-top: 3vh;
+  margin-top: 13vw;
   position: relative;
 }
 
@@ -143,15 +143,6 @@
 
 /* <=========================== Section 2 ========================> */
 
-.loghi-container {
-  padding-top: 120vw;
-  margin-bottom: 5vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .logo-1-desktop,
 .logo-2-desktop,
 .logo-3-desktop,
@@ -163,22 +154,12 @@
   display: none;
 }
 
-#logo-text-scopri {
-  padding-top: 5vh;
-  color: #ed6931;
-  font-size: 4.5vw;
-  font-family: Champ;
-  font-weight: 900;
-  text-decoration: underline;
-  word-wrap: break-word;
-}
-
 /* FLIP CARD DISPOSITIVI MOBILE */
 
 .flip-card {
   background-color: transparent;
   perspective: 1000px;
-  margin-top: 1000px;
+  margin-top: 15vw;
   margin-left: 10%;
   /* margin: 100px auto ; */
   width: 80vw;
@@ -199,24 +180,20 @@
 }
 
 .card-face {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
   position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow: hidden;
   border-radius: 16px;
-  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
-}
-
-#front {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: -1;
-  background-image: url("../assets/brand_identity/loghi/vito_logo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+  /* box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2); */
 }
 
 #back {
@@ -240,11 +217,10 @@
   position: absolute;
   margin-right: 1vw;
   z-index: 1;
-  width: 32rem;
-  height: 32rem;
+  width: 72vw;
+  height: 71vw;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url("../assets/brand_identity/loghi/cerchi/1_cerchio.png");
 }
 
 .numero {
@@ -254,11 +230,10 @@
   z-index: 2;
   align-self: start;
   position: absolute;
-  width: 10vw;
+  width: 16vw;
   height: 20vw;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../assets/brand_identity/loghi/numeri/1_num.png");
 }
 
 .card-content h1 {
@@ -270,18 +245,21 @@
 }
 
 .card-content p {
-  padding-top: 5vw;
+  margin-top: 5vw;
+  margin-left: 48px;
+  margin-right: 48px;
+  text-align: center;
   color: #2a3a45;
-  font-size: 2vw;
+  font-size: 3vw;
   font-family: Montserrat;
   font-weight: 500;
 }
 
 #logo-text-scopri {
-  margin-left: 18%;
-  padding-top: 5vh;
+  margin-left: 35%;
+  margin-top: 5.5vw;
   color: #ed6931;
-  font-size: 3vw;
+  font-size: 3.5vw;
   font-family: Champ;
   font-weight: 900;
   text-decoration: underline;
@@ -290,531 +268,91 @@
 
 /* FINE */
 
-.logo-2 {
-  margin-top: 10vh;
-  width: 80vw;
-  height: 75vw;
+#front-1 {
+  background-image: url("../assets/brand_identity/loghi/vito_logo.png");
 }
-
-.logo-2-mobile {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.9s;
-  transform-style: preserve-3d;
-}
-
-.logo-2:hover .logo-2-mobile {
-  transform: rotateY(180deg);
-}
-
-.logo-2-fronte,
-.logo-2-retro {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.logo-2-fronte {
-  background-size: cover;
+#front-2 {
   background-image: url("../assets/brand_identity/loghi/monroy_logo.png");
 }
-.logo-2-retro {
-  z-index: -1;
-  background-size: cover;
-  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
-  transform: rotateY(180deg);
-}
-
-.logo-2:hover .numero-2 {
-  opacity: 0;
-}
-
-.decorazione-2-mobile {
-  right: 0;
-  top: -1vw;
-  position: absolute;
-  width: 15vw;
-  height: 15vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("../assets/decorazioni/stelle_blu.png");
-}
-
-.cerchio-2 {
-  z-index: 1;
-  transform: translate(2%, 0%);
-  width: 75vw;
-  height: 75vw;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-image: url("../assets/brand_identity/loghi/cerchi/2_cerchio.png");
-}
-
-.numero-2 {
-  z-index: 2;
-  transform: translate(20%, 20%);
-  position: absolute;
-  width: 25vw;
-  height: 25vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("../assets/brand_identity/loghi/numeri/2_num.png");
-}
-
-.logo-2-retro {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-}
-
-.logo-3 {
-  margin-top: 10vh;
-  width: 80vw;
-  height: 75vw;
-}
-.logo-3-mobile {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.9s;
-  transform-style: preserve-3d;
-}
-
-.logo-3:hover .logo-3-mobile {
-  transform: rotateY(180deg);
-}
-
-.logo-3-fronte,
-.logo-3-retro {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.logo-3-fronte {
-  background-size: cover;
+#front-3 {
   background-image: url("../assets/brand_identity/loghi/visit_logo.png");
 }
-.logo-3-retro {
-  z-index: -1;
-  background-size: cover;
-  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
-  transform: rotateY(180deg);
-}
-
-.logo-3:hover .numero-3 {
-  opacity: 0;
-}
-
-.decorazione-3-mobile {
-  left: 0;
-  top: -1vw;
-  position: absolute;
-  width: 15vw;
-  height: 15vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("../assets/decorazioni/stella_arancio.png");
-}
-.cerchio-3 {
-  z-index: 1;
-  transform: translate(2%, 0%);
-  width: 75vw;
-  height: 75vw;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-image: url("../assets/brand_identity/loghi/cerchi/3_cerchio.png");
-}
-
-.numero-3 {
-  z-index: 2;
-  transform: translate(400%, 10%);
-  position: absolute;
-  width: 15vw;
-  height: 25vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("../assets/brand_identity/loghi/numeri/3_num.png");
-}
-
-.logo-4 {
-  margin-top: 10vh;
-  width: 80vw;
-  height: 75vw;
-}
-.logo-4-mobile {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.9s;
-  transform-style: preserve-3d;
-}
-
-.logo-4:hover .logo-4-mobile {
-  transform: rotateY(180deg);
-}
-
-.logo-4-fronte,
-.logo-4-retro {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.logo-4-fronte {
-  background-size: cover;
+#front-4 {
   background-image: url("../assets/brand_identity/loghi/cantina_logo.png");
 }
-.logo-4-retro {
-  z-index: -1;
-  background-size: cover;
-  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
-  transform: rotateY(180deg);
-}
-
-.logo-4:hover .numero-4 {
-  opacity: 0;
-}
-
-.decorazione-4-mobile {
-  right: 0;
-  top: -1vw;
-  position: absolute;
-  width: 15vw;
-  height: 15vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("../assets/decorazioni/stelle_gialle.png");
-}
-.cerchio-4 {
-  z-index: 1;
-  transform: translate(2%, 0%);
-  width: 75vw;
-  height: 75vw;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-image: url("../assets/brand_identity/loghi/cerchi/4_cerchio.png");
-}
-
-.numero-4 {
-  z-index: 2;
-  transform: translate(40%, 10%);
-  position: absolute;
-  width: 20vw;
-  height: 20vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("../assets/brand_identity/loghi/numeri/4_num.png");
-}
-
-.logo-5 {
-  margin-top: 10vh;
-  width: 80vw;
-  height: 75vw;
-}
-
-.logo-5-mobile {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.9s;
-  transform-style: preserve-3d;
-}
-
-.logo-5:hover .logo-5-mobile {
-  transform: rotateY(180deg);
-}
-
-.logo-5-fronte,
-.logo-5-retro {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.logo-5-fronte {
-  background-size: cover;
+#front-5 {
   background-image: url("../assets/brand_identity/loghi/moceri_logo.png");
 }
-.logo-5-retro {
-  z-index: -1;
-  background-size: cover;
-  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
-  transform: rotateY(180deg);
-}
-
-.logo-5:hover .numero-5 {
-  opacity: 0;
-}
-
-.decorazione-5-mobile {
-  left: 0;
-  top: -1vw;
-  position: absolute;
-  width: 15vw;
-  height: 15vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("../assets/decorazioni/farfalle_blu.png");
-}
-
-.cerchio-5 {
-  z-index: 1;
-  transform: translate(2%, 0%);
-  width: 75vw;
-  height: 75vw;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-image: url("../assets/brand_identity/loghi/cerchi/5_cerchio.png");
-}
-
-.numero-5 {
-  z-index: 2;
-  transform: translate(360%, -20%);
-  position: absolute;
-  width: 15vw;
-  height: 25vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("../assets/brand_identity/loghi/numeri/5_num.png");
-}
-
-.logo-6 {
-  margin-top: 10vh;
-  width: 80vw;
-  height: 75vw;
-}
-
-.logo-6-mobile {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.9s;
-  transform-style: preserve-3d;
-}
-
-.logo-6:hover .logo-6-mobile {
-  transform: rotateY(180deg);
-}
-
-.logo-6-fronte,
-.logo-6-retro {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.logo-6-fronte {
-  background-size: cover;
+#front-6 {
   background-image: url("../assets/brand_identity/loghi/pandi_logo.png");
 }
-.logo-6-retro {
-  z-index: -1;
-  background-size: cover;
-  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
-  transform: rotateY(180deg);
-}
-
-.logo-6:hover .numero-6 {
-  opacity: 0;
-}
-
-.decorazione-6-mobile {
-  right: 0;
-  top: -1vw;
-  position: absolute;
-  width: 15vw;
-  height: 15vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("../assets/decorazioni/tratti_arancio.png");
-}
-
-.cerchio-6 {
-  z-index: 1;
-  transform: translate(2%, 0%);
-  width: 75vw;
-  height: 75vw;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-image: url("../assets/brand_identity/loghi/cerchi/6_cerchio.png");
-}
-
-.numero-6 {
-  z-index: 2;
-  transform: translate(0%, 20%);
-  position: absolute;
-  width: 20vw;
-  height: 20vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("../assets/brand_identity/loghi/numeri/6_num.png");
-}
-
-.logo-7 {
-  margin-top: 10vh;
-  width: 80vw;
-  height: 75vw;
-}
-
-.logo-7-mobile {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.9s;
-  transform-style: preserve-3d;
-}
-
-.logo-7:hover .logo-7-mobile {
-  transform: rotateY(180deg);
-}
-
-.logo-7-fronte,
-.logo-7-retro {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.logo-7-fronte {
-  background-size: cover;
+#front-7 {
   background-image: url("../assets/brand_identity/loghi/laura_logo.png");
 }
-.logo-7-retro {
-  z-index: -1;
-  background-size: cover;
-  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
-  transform: rotateY(180deg);
-}
-
-.logo-7:hover .numero-7 {
-  opacity: 0;
-}
-
-.decorazione-7-mobile {
-  left: 0;
-  top: -1vw;
-  position: absolute;
-  width: 15vw;
-  height: 15vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("../assets/decorazioni/stella_gialla.png");
-}
-
-.cerchio-7 {
-  z-index: 1;
-  transform: translate(2%, 0%);
-  width: 75vw;
-  height: 75vw;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-image: url("../assets/brand_identity/loghi/cerchi/7_cerchio.png");
-}
-
-.numero-7 {
-  z-index: 2;
-  transform: translate(390%, 8%);
-  position: absolute;
-  width: 15vw;
-  height: 25vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("../assets/brand_identity/loghi/numeri/7_num.png");
-}
-
-.logo-8 {
-  margin-top: 10vh;
-  width: 80vw;
-  height: 75vw;
-}
-
-.logo-8-mobile {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.9s;
-  transform-style: preserve-3d;
-}
-
-.logo-8:hover .logo-8-mobile {
-  transform: rotateY(180deg);
-}
-
-.logo-8-fronte,
-.logo-8-retro {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.logo-8-fronte {
-  background-size: cover;
+#front-8 {
   background-image: url("../assets/brand_identity/loghi/convertable_logo.png");
 }
-.logo-8-retro {
-  z-index: -1;
-  background-size: cover;
-  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
-  transform: rotateY(180deg);
+
+#numero-1 {
+  background-image: url("../assets/brand_identity/loghi/numeri/1_num.png");
 }
 
-.logo-8:hover .numero-8 {
-  opacity: 0;
+#numero-2 {
+  margin-left: -60%;
+  margin-top: 5%;
+  background-image: url("../assets/brand_identity/loghi/numeri/2_num.png");
 }
-
-.decorazione-8-mobile {
-  right: 0;
-  top: -1vw;
-  position: absolute;
-  width: 15vw;
-  height: 15vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("../assets/decorazioni/farfalle_blu.png");
+#numero-3 {
+  margin-top: 4%;
+  background-image: url("../assets/brand_identity/loghi/numeri/3_num.png");
 }
-
-.cerchio-8 {
-  z-index: 1;
-  transform: translate(2%, 0%);
-  width: 75vw;
-  height: 75vw;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-image: url("../assets/brand_identity/loghi/cerchi/8_cerchio.png");
+#numero-4 {
+  margin-left: -60%;
+  margin-top: 5%;
+  background-image: url("../assets/brand_identity/loghi/numeri/4_num.png");
 }
-
-.numero-8 {
-  z-index: 2;
-  transform: translate(50%, 10%);
-  position: absolute;
-  width: 15vw;
-  height: 25vw;
-  background-size: contain;
-  background-repeat: no-repeat;
+#numero-5 {
+  margin-top: 4%;
+  background-image: url("../assets/brand_identity/loghi/numeri/5_num.png");
+}
+#numero-6 {
+  margin-left: -60%;
+  margin-top: 5%;
+  background-image: url("../assets/brand_identity/loghi/numeri/6_num.png");
+}
+#numero-7 {
+  margin-top: 4%;
+  background-image: url("../assets/brand_identity/loghi/numeri/7_num.png");
+}
+#numero-8 {
+  margin-left: -60%;
+  margin-top: 5%;
   background-image: url("../assets/brand_identity/loghi/numeri/8_num.png");
+}
+
+#cerchio-1 {
+  background-image: url("../assets/brand_identity/loghi/cerchi/1_cerchio.png");
+}
+#cerchio-2 {
+  background-image: url("../assets/brand_identity/loghi/cerchi/2_cerchio.png");
+}
+#cerchio-3 {
+  background-image: url("../assets/brand_identity/loghi/cerchi/3_cerchio.png");
+}
+#cerchio-4 {
+  background-image: url("../assets/brand_identity/loghi/cerchi/4_cerchio.png");
+}
+#cerchio-5 {
+  background-image: url("../assets/brand_identity/loghi/cerchi/5_cerchio.png");
+}
+#cerchio-6 {
+  background-image: url("../assets/brand_identity/loghi/cerchi/6_cerchio.png");
+}
+#cerchio-7 {
+  background-image: url("../assets/brand_identity/loghi/cerchi/7_cerchio.png");
+}
+#cerchio-8 {
+  background-image: url("../assets/brand_identity/loghi/cerchi/8_cerchio.png");
 }
 
 /* MEDIA QUERY */
@@ -906,26 +444,17 @@
 
   /* <=========================== Section 2 ========================> */
 
-  .logo-1:hover .logo-1-mobile,
-  .logo-2:hover .logo-2-mobile,
-  .logo-3:hover .logo-3-mobile,
-  .logo-4:hover .logo-4-mobile,
-  .logo-5:hover .logo-5-mobile,
-  .logo-6:hover .logo-6-mobile,
-  .logo-7:hover .logo-7-mobile,
-  .logo-8:hover .logo-8-mobile {
-    transform: none;
+  .flip-card {
+    display: none;
   }
 
-  .logo-1:hover .numero-1,
-  .logo-2:hover .numero-2,
-  .logo-3:hover .numero-3,
-  .logo-4:hover .numero-4,
-  .logo-5:hover .numero-5,
-  .logo-6:hover .numero-6,
-  .logo-7:hover .numero-7,
-  .logo-8:hover .numero-8 {
-    opacity: 100;
+  .loghi-container {
+    padding-top: 120vw;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .loghi-container {
