@@ -3,38 +3,20 @@
 .mobileApp {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  height: 210vw;
 }
 
 .mobileApp-text {
-  margin-left: 11vw;
-  margin-top: 33.35vw;
+  margin-left: 10vw;
+  margin-top: 28vw;
   z-index: 1;
 }
 
 #mobileApp-text-1 {
-  margin-left: 1.5vw;
   color: #2a3a45;
   font-size: 9.5vw;
   font-family: Champ;
   font-weight: 900;
   word-wrap: break-word;
-}
-
-.decorazione-main {
-  transform: translate(-85%, -50%);
-  position: absolute;
-  width: 7.5vw;
-  height: 7.5vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("../assets/decorazioni/tratti_gialli.png");
-}
-
-#linea-testo img {
-  margin-top: 1vw;
-  width: 60.5vw;
 }
 
 #mobileApp-text-2 {
@@ -45,29 +27,46 @@
   font-weight: 500;
 }
 
-#mobileApp-text-nomobile {
-  display: none;
-}
-
 #mobileApp-text-3 {
-  padding-top: 3.5vh;
+  padding-top: 3vh;
   color: #ed6931;
-  font-size: 4.5vw;
+  font-size: 4.2vw;
   font-family: Champ;
   font-weight: 900;
   text-decoration: underline;
   word-wrap: break-word;
 }
 
+.decorazione-main {
+  transform: translate(-85%, -50%);
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../assets/decorazioni/tratti_gialli.png");
+}
+
+#linea-testo img {
+  width: 75vw;
+}
+
+#mobileApp-text-nomobile {
+  display: none;
+}
+
+.elements-container {
+  margin-top: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .mobileApp-img {
-  z-index: 2;
-  margin-top: 8vw;
-  margin-left: -14vw;
-  position: relative;
-  width: 115%;
-  height: 110vw;
-  overflow: hidden;
-  background-size: cover;
+  margin-top: 5vw;
+  width: 100%;
+  height: 90vw;
+  background-size: 138%;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../assets/mobile_app/mobile_app_home.png");
@@ -81,171 +80,164 @@
 
 /* <=========================== Section 2 ========================> */
 
-.mobileapp-container {
-  margin-top: 34vw;
-  margin-bottom: 15vw;
-  height: 180vw;
-}
-
-.mobileapp-1-desktop {
+.desktop-container {
   display: none;
 }
 
-.mobileapp-2-desktop {
-  display: none;
-}
+/* FLIP CARD DISPOSITIVI MOBILE */
 
-.mobileapp-1-mobile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.mobileapp-2-mobile {
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
   margin-top: 15vw;
-  transform: translateY(-35%);
+  margin-left: 10%;
+  border-radius: 180px;
+  width: 80vw;
+  height: 75vw;
+}
+
+.interno-card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.interno-card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 90px;
+  /* box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2); */
+}
+
+#back {
+  z-index: 3;
+  background-color: white;
+  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotateY(180deg);
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cerchio {
+  position: absolute;
+  margin-right: 1vw;
+  z-index: 2;
+  width: 72vw;
+  height: 71vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .sfondo {
-  transform: translateY(-5%);
-  width: 75vw;
-  height: 75vw;
+  z-index: 0;
+  margin-bottom: 5px;
+  width: 72vw;
+  height: 72vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
-}
-
-.sfondo-2 {
-  transform: translateY(-2%);
-  width: 75vw;
-  height: 75vw;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
-}
-
-#mobileapp-text-scopri-mobile {
+  transform: rotateY(180deg);
   position: absolute;
-  padding-top: 15vw;
+}
+
+.MobileApp-img {
+  z-index: 2;
+  margin-top: 6vw;
+  margin-right: 3vw;
+  width: 100%;
+  height: 78vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotateY(180deg);
+  position: absolute;
+}
+
+.card-content h1 {
+  color: #2a3a45;
+  font-size: 5vw;
+  font-family: Champ;
+  font-weight: 900;
+  word-wrap: break-word;
+}
+
+.card-content p {
+  margin-top: 5vw;
+  margin-left: 48px;
+  margin-right: 48px;
+  text-align: center;
+  color: #2a3a45;
+  font-size: 3vw;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+#logo-text-scopri {
+  width: 25vw;
+  margin-left: 35%;
+  margin-top: 5.5vw;
   color: #ed6931;
-  font-size: 4.5vw;
+  font-size: 3.5vw;
   font-family: Champ;
   font-weight: 900;
   text-decoration: underline;
   word-wrap: break-word;
 }
 
-.cerchio-1 {
-  z-index: 0;
-  transform: translate(0%, -102%);
-  width: 75vw;
-  height: 75vw;
-  background-size: 100%;
-  background-repeat: no-repeat;
+/* FINE */
+
+#imgApp-1 {
+  background-image: url("../assets/mobile_app/MyFitness/myfitness_app.png");
+}
+
+#imgApp-2 {
+  background-image: url("../assets/mobile_app/Amat/amat_app.png");
+}
+
+#cerchio-1 {
+  margin-top: 1vw;
+  margin-right: 2vw;
   background-image: url("../assets/brand_identity/loghi/cerchi/1_cerchio.png");
 }
 
-.cerchio-2 {
-  z-index: 0;
-  transform: translate(0%, -102%);
-  width: 75vw;
-  height: 75vw;
-  background-size: 100%;
-  background-repeat: no-repeat;
+#cerchio-2 {
   background-image: url("../assets/brand_identity/loghi/cerchi/2_cerchio.png");
 }
 
-.mobileapp-1 {
-  margin-left: 8vw;
-  transform: translateY(-35%);
-  position: absolute;
-  width: 105vw;
-  margin-right: 5vw;
-  height: 110vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../assets/mobile_app/MyFitness/myfitness_app.png");
-  z-index: 1;
-}
-
-.mobileapp-2 {
-  margin-left: 8vw;
-  transform: translateY(-35%);
-  position: absolute;
-  width: 105vw;
-  margin-right: 5vw;
-  height: 110vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../assets/mobile_app/Amat/amat_app.png");
-  z-index: 1;
+#sfondo {
+  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
 }
 
 /* MEDIA QUERY */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  #ellisse-app {
-    display: none;
-  }
 }
 
 @media only screen and (min-width: 600px) {
-  /* <=========================== Main Section ========================> */
-
-  #mobileApp-text-1 {
-    margin-left: 3vw;
-    font-size: 8vw;
-  }
-
-  .decorazione-main {
-    margin-top: -1vw;
-    transform: translate(-55%, -50%);
-  }
-
-  #linea-testo img {
-    margin-top: 1.5vw;
-    margin-left: 2vw;
-    width: 52vw;
-  }
-
-  #mobileApp-text-2 {
-    margin-top: 2vw;
-    margin-left: 2vw;
-    font-size: 3vw;
-  }
-
-  #mobileApp-text-mobile {
-    display: block;
-  }
-
-  #mobileApp-text-nomobile {
-    display: none;
-  }
-
-  #mobileApp-text-3 {
-    margin-top: 2vw;
-    margin-left: 2vw;
-    font-size: 3.5vw;
-  }
-
-  #ellisse-app {
-    display: none;
-  }
-  /* <=========================== Section 2 ========================> */
-
-  .mobileapp-container {
-    margin-top: 20vw;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -253,28 +245,31 @@
   /* <=========================== Main Section ========================> */
 
   .mobileApp-text {
-    margin-left: 8.5vw;
-    margin-top: 25vw;
-  }
-
-  #mobileApp-text-1 {
-    margin-left: 3vw;
-    font-size: 7.5vw;
+    margin-left: 6vw;
+    margin-top: 16vw;
   }
 
   .decorazione-main {
-    transform: translate(-60%, -50%);
-    width: 7vw;
-    height: 7vw;
+    width: 6vw;
+    margin-top: 2vw;
   }
 
-  #linea-testo img {
-    width: 55vw;
+  #mobileApp-text-1 {
+    font-size: 4.5vw;
   }
 
   #mobileApp-text-2 {
-    padding-top: 5vw;
-    font-size: 3vw;
+    padding-top: 2vw;
+    font-size: 1.8vw;
+  }
+
+  #mobileApp-text-3 {
+    padding-top: 2.5vw;
+    font-size: 2vw;
+  }
+
+  #linea-testo img {
+    width: 38vw;
   }
 
   #mobileApp-text-mobile {
@@ -285,70 +280,199 @@
     display: block;
   }
 
-  #mobileApp-text-3 {
-    padding-top: 3vh;
-    font-size: 3.5vw;
+  .elements-container {
+    margin-top: 0vw;
+    top: -21vw;
+    left: 45%;
+    width: 58vw;
+    height: 75vw;
+    display: block;
+    position: absolute;
+    overflow: hidden;
   }
 
-  #ellisse-app {
-    display: none;
+  .mobileApp-img {
+    position: absolute;
+    margin-top: 5vw;
+    max-width: 100%;
+    background-size: 112%;
   }
 
   /* <=========================== Section 2 ========================> */
 
-  .mobileapp-container {
-    margin-top: 0vw;
+  .flip-card {
+    display: none;
   }
 
-  .mobileapp-2-mobile {
-    transform: translateY(0%);
-    padding-top: 20vw;
+  .desktop-container {
+    margin-top: 16.7vw;
+    display: block;
   }
 
-  .cerchio-1 {
-    z-index: 0;
-    transform: translate(2%, 0%);
-    width: 75vw;
-    height: 75vw;
+  .logo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    max-width: 100%;
+    height: 45vw;
   }
 
-  .cerchio-2 {
-    z-index: 0;
-    transform: translate(2%, 0%);
-    width: 75vw;
-    height: 75vw;
-  }
-
-  .sfondo {
-    transform: translateY(-5%);
+  .logo-img-left {
+    z-index: 3;
+    margin-left: -1vw;
+    width: 45vw;
+    height: 45vw;
     position: absolute;
-    width: 75vw;
-    height: 75vw;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
-  .sfondo-2 {
-    transform: translateY(-5%);
+  .logo-img-right {
+    z-index: 3;
+    align-self: end;
+    margin-right: 1vw;
+    width: 45vw;
+    height: 45vw;
     position: absolute;
-    width: 75vw;
-    height: 75vw;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
-  #mobileapp-text-scopri-mobile {
-    padding-top: 90vw;
+  .cerchio-left {
+    margin-top: 1vw;
+    margin-left: 4vw;
+    width: 35vw;
+    height: 35.5vw;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
   }
 
-  .mobileapp-1 {
-    transform: translateY(-5%);
-    height: 110vw;
-    width: 105vw;
-    margin-right: 5vw;
+  .cerchio-right {
+    align-self: end;
+    margin-top: 1vw;
+    margin-right: 6.5vw;
+    width: 35vw;
+    height: 35.5vw;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
   }
 
-  .mobileapp-2 {
-    transform: translateY(-5%);
-    height: 110vw;
-    width: 105vw;
-    margin-right: 5vw;
+  .decorazione {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .informazioni-left {
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    margin-left: 4vw;
+  }
+
+  .informazioni-right {
+    margin-top: 5vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-self: end;
+    margin-right: 4vw;
+  }
+
+  .text-h1-desktop {
+    color: #2a3a45;
+    font-size: 4vw;
+    font-family: Champ;
+    font-weight: 900;
+  }
+
+  .text-brand-desktop {
+    padding-top: 2.5vw;
+    color: #2a3a45;
+    font-size: 1.8vw;
+    font-family: Montserrat;
+    font-weight: 500;
+  }
+
+  .logo-text-scopri {
+    margin-left: 0px;
+    margin-top: 2.5vw;
+    color: #ed6931;
+    font-size: 2vw;
+    font-family: Champ;
+    font-weight: 900;
+    text-decoration: underline;
+    word-wrap: break-word;
+  }
+
+  #margine-1 {
+    margin-left: 0vw;
+    margin-right: 7vw;
+  }
+
+  #allineamento-1 {
+    text-align: right;
+  }
+
+  #allineamento-2 {
+    text-align: left;
+  }
+
+  #decorazione-1 {
+    transform: translate(300%, -435%);
+    background-image: url("../assets/decorazioni/tratti_gialli.png");
+  }
+  #decorazione-2 {
+    transform: translate(530%, -430%);
+    background-image: url("../assets/decorazioni/stelle_blu.png");
+  }
+  #decorazione-3 {
+    transform: translate(120%, -355%);
+    background-image: url("../assets/decorazioni/stella_arancio.png");
+  }
+  #decorazione-4 {
+    transform: translate(505%, -325%);
+    background-image: url("../assets/decorazioni/stelle_gialle.png");
+  }
+  #decorazione-5 {
+    transform: translate(225%, -325%);
+    background-image: url("../assets/decorazioni/farfalle_blu.png");
+  }
+  #decorazione-6 {
+    transform: translate(355%, -325%);
+    background-image: url("../assets/decorazioni/tratti_arancio.png");
+  }
+  #decorazione-7 {
+    transform: translate(205%, -385%);
+    background-image: url("../assets/decorazioni/stella_gialla.png");
+  }
+  #decorazione-8 {
+    transform: translate(400%, -355%);
+    background-image: url("../assets/decorazioni/farfalle_blu.png");
+  }
+  #sfondo-left {
+    transform: translateX(12%);
+    z-index: 0;
+    width: 35vw;
+    height: 35.5vw;
+    background-image: url("../assets/brand_identity/loghi/retro_logo.png");
+  }
+  #sfondo-right {
+    align-self: end;
+    transform: translate(-20%);
+    z-index: 0;
+    width: 35vw;
+    height: 35.5vw;
+    background-image: url("../assets/brand_identity/loghi/retro_logo.png");
   }
 }
 
@@ -356,245 +480,51 @@
 @media only screen and (min-width: 992px) {
   /* <=========================== Main Section ========================> */
 
-  .mobileApp {
-    height: 80vw;
-  }
-
   .mobileApp-text {
-    margin-left: 2vw;
-    margin-top: 25vw;
-    z-index: 1;
+    margin-left: 6.5vw;
+    margin-top: 20vw;
   }
 
   #mobileApp-text-1 {
     padding-left: 2vw;
-    font-size: 5vw;
-  }
-
-  .decorazione-main {
-    transform: translate(-10%, -40%);
-    position: absolute;
-    width: 7vw;
-    height: 7vw;
-  }
-
-  #linea-testo img {
-    margin-top: 0.8vw;
-    padding-left: 2vw;
-    width: 32vw;
-    height: 1.5vw;
+    font-size: 4vw;
   }
 
   #mobileApp-text-2 {
     padding-left: 2vw;
     padding-top: 2vw;
-    font-size: 1.8vw;
+    font-size: 1.6vw;
   }
-
-  /* #mobileApp-text-nomobile {
-    display: block;
-  } */
 
   #mobileApp-text-3 {
     padding-left: 2vw;
-    padding-top: 3.5vh;
-    font-size: 2vw;
+    padding-top: 2vh;
+    font-size: 1.5vw;
+  }
+
+  #linea-testo img {
+    width: 30vw;
+    padding-top: 1px;
+    padding-left: 2vw;
+  }
+
+  .decorazione-main {
+    transform: translate(-60%, -50%);
+  }
+
+  .elements-container {
+    top: -20vw;
+    width: 55vw;
   }
 
   .mobileApp-img {
-    transform: translate(120%, -52vw);
-    margin-left: -25vw;
-    width: 60%;
-    height: 50vw;
-  }
-
-  .decorazione-mobileapp {
-    display: block;
+    background-size: 118%;
   }
 
   /* <=========================== Section 2 ========================> */
-
-  .mobileapp-container {
-    margin-top: 0vw;
-    margin-bottom: 0vw;
-    overflow: hidden;
-    height: 90vw;
-  }
-
-  .mobileapp-1-mobile {
-    display: none;
-  }
-
-  .mobileapp-2-mobile {
-    display: none;
-  }
-
-  .mobileapp-1-desktop {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-  }
-
-  .mobileapp-2-desktop {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-  }
-
-  .cerchio-1 {
-    grid-row: 1;
-    grid-column: 1/2;
-    transform: translate(19%, -25%);
-    width: 40vw;
-    height: 40vw;
-  }
-
-  .cerchio-2 {
-    grid-row: 1;
-    grid-column: 3/4;
-    transform: translate(-158%, 4%);
-    width: 40vw;
-    height: 40vw;
-  }
-
-  .sfondo {
-    grid-row: 1;
-    grid-column: 1/2;
-    transform: translate(20%, -25%);
-    position: absolute;
-    width: 40vw;
-    height: 40vw;
-  }
-
-  .sfondo-2 {
-    grid-row: 1;
-    grid-column: 3/4;
-    transform: translate(144%, 5%);
-    position: absolute;
-    width: 40vw;
-    height: 40vw;
-  }
-
-  .mobileapp-1 {
-    transform: translate(-5%, -35%);
-    position: absolute;
-    width: 55vw;
-    height: 75vw;
-    margin-top: -1vw;
-    margin-left: 4vw;
-    margin-right: 5vw;
-  }
-
-  .mobileapp-2 {
-    margin-top: 0.4vw;
-    margin-left: 16vw;
-    margin-right: 5vw;
-    transform: translate(68%, -20%);
-    position: relative;
-    width: 52vw;
-    height: 75vw;
-  }
-
-  #mobileapp-2-img {
-    position: relative;
-    width:100%;
-    height: 45vw;
-  }
-
-  .decorazione-1 {
-    transform: translate(930%, -40%);
-    position: absolute;
-    width: 7vw;
-    height: 7vw;
-    background-size: contain;
-    background-repeat: no-repeat;
+  #decorazione-1 {
+    transform: translate(280%, -425%);
     background-image: url("../assets/decorazioni/tratti_gialli.png");
-  }
-
-  .decorazione-2 {
-    transform: translate(500%, 70%);
-    position: absolute;
-    width: 7vw;
-    height: 7vw;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url("../assets/decorazioni/stelle_blu.png");
-  }
-
-  .informazioni {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .informazioni-2 {
-    transform: translateX(-150%);
-    margin-top: 10vw;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .mobileapp-h1-desktop {
-    height: 10vw;
-    margin-right: 3vw;
-    color: #2a3a45;
-    font-size: 4vw;
-    font-family: Champ;
-    font-weight: 900;
-    word-wrap: break-word;
-    text-align: end;
-  }
-
-  .mobileapp-h1-desktop-2 {
-    height: 5vw;
-    margin-bottom: 5vw;
-    margin-left: 3vw;
-    color: #2a3a45;
-    font-size: 4vw;
-    font-family: Champ;
-    font-weight: 900;
-    word-wrap: break-word;
-    text-align: start;
-  }
-
-  .mobileapp-text-desktop {
-    margin-right: 3vw;
-    padding-top: 2vh;
-    text-align: end;
-    font-family: Montserrat;
-    font-weight: 500;
-  }
-
-  .mobileapp-text-desktop-2 {
-    width: 45vw;
-    margin-left: 3vw;
-    padding-top: 2vh;
-    text-align: start;
-    font-family: Montserrat;
-    font-weight: 500;
-  }
-
-  #mobileapp-text-scopri {
-    padding-top: 2vh;
-    margin-right: 3vw;
-    color: #ed6931;
-    font-size: 2.5vw;
-    font-family: Champ;
-    font-weight: 900;
-    text-decoration: underline;
-    word-wrap: break-word;
-    text-align: end;
-  }
-
-  #mobileapp-text-scopri-2 {
-    padding-top: 2vh;
-    margin-left: 3vw;
-    color: #ed6931;
-    font-size: 2.5vw;
-    font-family: Champ;
-    font-weight: 900;
-    text-decoration: underline;
-    word-wrap: break-word;
-    text-align: start;
   }
 }
 
@@ -602,149 +532,19 @@
 @media only screen and (min-width: 1200px) {
   /* <=========================== Main Section ========================> */
 
-  .mobileApp {
-    height: 80vw;
-  }
-
   .mobileApp-text {
-    margin-left: 5vw;
-    margin-top: 22vw;
-    z-index: 1;
-  }
-
-  #mobileApp-text-1 {
-    padding-left: 1vw;
-    font-size: 4vw;
-  }
-
-  .decorazione-main {
-    transform: translate(-5%, -40%);
-    position: absolute;
-    width: 5vw;
-    height: 5vw;
-  }
-
-  #linea-testo img {
-    padding-left: 1vw;
-    width: 25vw;
-    height: 1.2vw;
-  }
-
-  #mobileApp-text-2 {
-    padding-left: 1vw;
-    padding-top: 0vw;
-    font-size: 1.4vw;
-  }
-
-  #mobileApp-text-nomobile {
-    display: block;
-  }
-
-  #mobileApp-text-3 {
-    padding-left: 1vw;
-    padding-top: 2vh;
-    font-size: 1.5vw;
-  }
-
-  .mobileApp-img {
-    transform: translate(85%, -44vw);
-    margin-left: -25vw;
-    width: 75%;
-    height: 50vw;
-  }
-
-  #ellisse-app {
-    transform: translate(55%, -285%);
-    position: relative;
-    width: 65vw;
+    margin-left: 6.5vw;
+    margin-top: 16vw;
   }
 
   /* <=========================== Section 2 ========================> */
-
-
-  .decorazione-2 {
-    transform: translate(500%, 70%);
+  
+  .elements-container {
+    top: -24vw;
+    width: 55vw;
   }
 
-  .cerchio-2 {
-    transform: translate(-164%, 4%);
-  }
-
-  .sfondo-2 {
-    transform: translate(144%, 5%);
-  }
-
-  .informazioni-2 {
-    transform: translateX(-140%);
-    display: flex;
-    flex-direction: column;
-  }
-
-  .mobileapp-h1-desktop {
-    grid-row: 1;
-    height: 10vw;
-    margin-right: 3vw;
-    color: #2a3a45;
-    font-size: 4vw;
-    font-family: Champ;
-    font-weight: 900;
-    word-wrap: break-word;
-    text-align: end;
-  }
-
-  .mobileapp-h1-desktop-2 {
-    grid-row: 1;
-    height: 10vw;
-    margin-right: 3vw;
-    color: #2a3a45;
-    font-size: 4vw;
-    font-family: Champ;
-    font-weight: 900;
-    word-wrap: break-word;
-    text-align: start;
-  }
-
-  .mobileapp-text-desktop {
-    margin-right: 3vw;
-    font-size: 1.5vw;
-    padding-top: 2vh;
-    text-align: end;
-    color: #2a3a45;
-    font-family: Montserrat;
-    font-weight: 500;
-  }
-
-  .mobileapp-text-desktop-2 {
-    margin-right: 3vw;
-    font-size: 1.5vw;
-    padding-top: 3vh;
-    text-align: start;
-    color: #2a3a45;
-    font-family: Montserrat;
-    font-weight: 500;
-  }
-
-  #mobileapp-text-scopri {
-    padding-top: 5vh;
-    margin-right: 3vw;
-    color: #ed6931;
-    font-size: 2.5vw;
-    font-family: Champ;
-    font-weight: 900;
-    text-decoration: underline;
-    word-wrap: break-word;
-    text-align: end;
-  }
-
-  #mobileapp-text-scopri-2 {
-    padding-top: 5vh;
-    margin-right: 3vw;
-    color: #ed6931;
-    font-size: 2.5vw;
-    font-family: Champ;
-    font-weight: 900;
-    text-decoration: underline;
-    word-wrap: break-word;
-    text-align: start;
+  .mobileApp-img {
+    background-size: 125%;
   }
 }

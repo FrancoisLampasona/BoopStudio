@@ -4,12 +4,11 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  height: 210vw;
 }
 
 .website-text {
-  margin-left: 8.5vw;
-  margin-top: 25vw;
+  margin-left: 10vw;
+  margin-top: 28vw;
   z-index: 1;
 }
 
@@ -21,11 +20,29 @@
   word-wrap: break-word;
 }
 
+#website-text-2 {
+  padding-top: 5vw;
+  color: #2a3a45;
+  font-size: 4vw;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+#website-text-3 {
+  padding-top: 3vh;
+  color: #ed6931;
+  font-size: 4.2vw;
+  font-family: Champ;
+  font-weight: 900;
+  text-decoration: underline;
+  word-wrap: break-word;
+}
+
 .decorazione-main {
   transform: translate(-85%, -50%);
   position: absolute;
-  width: 7vw;
-  height: 7vw;
+  width: 10vw;
+  height: 10vw;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("../assets/decorazioni/tratti_gialli.png");
@@ -35,36 +52,21 @@
   width: 78vw;
 }
 
-#website-text-2 {
-  padding-top: 5vw;
-  color: #2a3a45;
-  font-size: 4vw;
-  font-family: Montserrat;
-  font-weight: 500;
-}
+
 
 #website-text-nomobile {
   display: none;
 }
 
-#website-text-3 {
-  padding-top: 3.5vh;
-  color: #ed6931;
-  font-size: 4.5vw;
-  font-family: Champ;
-  font-weight: 900;
-  text-decoration: underline;
-  word-wrap: break-word;
-}
+
 
 .website-img {
-  transform: translateY(-20vw);
-  margin-left: -25vw;
-  position: relative;
-  width: 150%;
-  height: 150vw;
+  margin-top: -20%;
+  margin-left: -32%;
+  width: 160%;
+  height: 140vw;
   overflow: hidden;
-  background-size: cover;
+  background-size: 120%;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../assets/web_site/site_image.png");
