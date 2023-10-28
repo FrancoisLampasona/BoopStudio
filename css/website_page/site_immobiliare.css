@@ -48,6 +48,18 @@
   text-align: start;
 }
 
+#logo-description {
+  margin-top: 5vw;
+  margin-left: 10vw;
+  margin-right: 8vw;
+  color: #2a3a45;
+  font-size: 4.2vw;
+  font-family: Montserrat;
+  font-weight: 500;
+  word-wrap: break-word;
+  text-align: start;
+}
+
 #linea-testo img {
   margin-left: 10vw;
   width: 65vw;
@@ -139,6 +151,16 @@
   text-align: center;
 }
 
+.text-mockup-es {
+  margin: 20.5vw 0px 5vw 0px;
+  color: #2a3a45;
+  font-size: 8vw;
+  font-family: Champ;
+  font-weight: 900;
+  word-wrap: break-word;
+  text-align: center;
+}
+
 .container-mockup {
   width: 90%;
   border-radius: 30px;
@@ -154,18 +176,18 @@
 }
 
 #mockup-2 {
-  margin-top: 10vw;
+  margin-top: 0vw;
   height: 140vw;
   background-size: 86%;
 }
 #mockup-3 {
-  margin-top: 10vw;
+  margin-top: 0vw;
   height: 132vw;
   background-size: 88%;
 }
 
 #mockup-4 {
-  margin-top: 10vw;
+  margin-top: 0vw;
   height: 196vw;
   background-size: 88%;
 }
@@ -178,6 +200,22 @@
   font-size: 4vw;
   font-family: Champ;
   font-weight: 900;
+}
+
+#CS-1-i {
+  display: none;
+}
+
+#CS-2-i {
+  display: none;
+}
+
+#CS-3-i {
+  display: none;
+}
+
+#CS-4-i {
+  display: none;
 }
 
 /* MEDIA QUERY */
@@ -248,9 +286,16 @@
     font-size: 4vw;
     text-align: start;
   }
-
-  #linea-testo {
-    display: none;
+  
+  #logo-description-desktop {
+    display: block;
+    padding-top: 2vw;
+    color: #2a3a45;
+    font-size: 1.6vw;
+    font-family: Montserrat;
+    font-weight: 500;
+    word-wrap: break-word;
+    text-align: left;
   }
 
   #linea-testo-desktop {
@@ -264,20 +309,15 @@
     background-image: url("../../assets/brand_identity/brand_page/linea_desktop_brand_page.png");
   }
 
+  #linea-testo {
+    display: none;
+  }
+
   #logo-description {
     display: none;
   }
 
-  #logo-description-desktop {
-    display: block;
-    padding-top: 2vw;
-    color: #2a3a45;
-    font-size: 1.6vw;
-    font-family: Montserrat;
-    font-weight: 500;
-    word-wrap: break-word;
-    text-align: left;
-  }
+
 
   /* <=========================== Perchè Section ========================> */
 
@@ -336,6 +376,10 @@
     text-align: center;
   }
 
+  .text-mockup-es {
+    display: none;
+  }
+
   .container-mockup {
     width: 65%;
     margin-left: 7%;
@@ -378,22 +422,26 @@
     grid-column: 2/4;
   }
 
-  #CS-1 {
+  #CS-1-i {
+    display: block;
     margin-left: 10%;
     margin-top: 69vw;
   }
 
-  #CS-2 {
+  #CS-2-i {
+    display: block;
     margin-left: 10%;
     margin-top: 69vw;
   }
 
-  #CS-3 {
+  #CS-3-i {
+    display: block;
     margin-left: 10%;
     margin-top: 66vw;
   }
 
-  #CS-4 {
+  #CS-4-i {
+    display: block;
     margin-left: 10%;
     margin-top: 96vw;
   }
@@ -402,6 +450,9 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   /* <=========================== Main Section ========================> */
+  .image-pc {
+    margin-top: 2vw;
+  }
 
   /* <=========================== Perchè Section ========================> */
   .container-perche {

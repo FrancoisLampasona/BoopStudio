@@ -10,40 +10,57 @@
 
 .logo-contenitore {
   width: 125vw;
-  height: 145vw;
+  height: 140vw;
   text-align: center;
   overflow: hidden;
 }
 
-.logo-contenitore img {
-  max-width: 110%;
-  height: auto;
+.logo-cerchio {
+  margin-top: 3vw;
+  margin-left: 25vw;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../assets/web_site/site_for_you/Ellisse_blu.png");
 }
 
-#logo-titolo {
-  padding-top: 15vw;
-  color: #2a3a45;
-  font-size: 10vw;
-  font-family: Champ;
-  font-weight: 900;
-  word-wrap: break-word;
-  text-align: center;
-}
-#logo-cerchio {
-  transform: translate(18%, 5%);
-  position: relative;
-  z-index: 1;
-  background-size: contain;
+.image-mobiile {
+  margin-top: 23vw;
+  margin-left: 12.7vw;
+  position: absolute;
+  width: 100%;
+  height: 100vw;
+  background-size: 135%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-#logo-cerchio img {
-  width: 180%;
+#logo-titolo {
+  margin-left: 10vw;
+  color: #2a3a45;
+  font-size: 9.5vw;
+  font-family: Champ;
+  font-weight: 900;
+  word-wrap: break-word;
+  text-align: start;
+}
+
+#logo-description {
+  margin-top: 5vw;
+  margin-left: 10vw;
+  margin-right: 5vw;
+  color: #2a3a45;
+  font-size: 4.2vw;
+  font-family: Montserrat;
+  font-weight: 500;
+  word-wrap: break-word;
+  text-align: start;
 }
 
 #linea-testo img {
-  transform: translateX(22%);
+  margin-left: 10vw;
   width: 70vw;
 }
 
@@ -51,22 +68,8 @@
   display: none;
 }
 
-#logo-description {
-  padding-top: 5vw;
-  color: #2a3a45;
-  font-size: 4.2vw;
-  font-family: Montserrat;
-  font-weight: 500;
-  word-wrap: break-word;
-  text-align: center;
-}
-
 #logo-description-desktop {
   display: none;
-}
-
-#image-mobile {
-  transform: translate(-18%, 0%);
 }
 
 /* <=========================== Perchè Section ========================> */
@@ -78,9 +81,10 @@
 }
 
 .container-perche {
+  margin: 0px 5vw;
   position: relative;
-  width: 90vw;
-  height: 154vw;
+  width: 100%;
+  height: 150vw;
   border-radius: 40px;
   background: #2a3a45;
   box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
@@ -105,24 +109,23 @@
   font-weight: 900;
 }
 
+#testo-3-mobile {
+  color: #f8fafa;
+  padding-top: 5vw;
+  margin: 0vw 8vw;
+  font-size: 3.8vw;
+  font-family: Montserrat;
+  font-weight: 400;
+  text-align: center;
+  word-wrap: break-word;
+}
+
 #testo-3-nomobile {
   display: none;
   padding-top: 5vw;
   margin-right: 3vw;
   margin-left: 3vw;
   color: #f8fafa;
-  font-family: Montserrat;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-#testo-3-mobile {
-  padding-top: 5vw;
-  text-align: center;
-  margin-right: 3vw;
-  margin-left: 3vw;
-  color: #f8fafa;
-  font-size: 4vw;
   font-family: Montserrat;
   font-weight: 400;
   word-wrap: break-word;
@@ -146,13 +149,13 @@
   width: 60vw;
   height: 130vw;
   padding: 1rem;
+  margin-top: 3vw;
 }
 
 .text-mockup {
-  padding-top: 15vw;
-  padding-bottom: 5vw;
+  margin: 20.5vw 0px 5vw 0px;
   color: #2a3a45;
-  font-size: 10vw;
+  font-size: 8vw;
   font-family: Champ;
   font-weight: 900;
   word-wrap: break-word;
@@ -163,7 +166,7 @@
   margin-top: 10vw;
   padding-right: 5px;
   width: 90%;
-  height: 140vw;
+  height: 145vw;
   border-radius: 30px;
   background-color: #2a3a45;
   background-size: 90%;
@@ -261,11 +264,11 @@
 }
 
 .mockup-container p {
-  text-align: start;
-  margin-top: 3vh;
+  text-align: center;
+  margin-top: 3.5vw;
   width: 85%;
   color: #2a3a45;
-  font-size: 5vw;
+  font-size: 4vw;
   font-family: Champ;
   font-weight: 900;
 }
@@ -281,14 +284,6 @@
 
 @media only screen and (min-width: 600px) {
   /* <=========================== Main Section ========================> */
-
-  .logo-contenitore {
-    width: 112vw;
-    height: 130vw;
-  }
-  .mockup-container-desktop {
-    display: none;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -296,90 +291,85 @@
   /* <=========================== Main Section ========================> */
 
   .logo-section {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    overflow: visible;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 5;
   }
 
   .logo-contenitore {
-    width: 100vw;
-    height: 60vw;
-    text-align: center;
-    overflow: hidden;
+    height: 70vw;
+    grid-row: 1;
+    grid-column: 3/4;
   }
 
-  .logo-contenitore img {
-    max-width: 120%;
-    height: auto;
-  }
-
-  #logo-titolo {
-    position: absolute;
-    transform: translate(-45%, -59vw);
-    color: #2a3a45;
-    font-size: 4.5vw;
-    font-family: Champ;
-    font-weight: 900;
-    word-wrap: break-word;
-    text-align: center;
-  }
-
-  #linea-testo {
-    display: none;
-  }
-
-  #linea-testo-desktop {
-    display: inline;
-  }
-
-  #linea-testo-desktop img {
-    transform: translate(-46%, -2450%);
-    width: 40vw;
-  }
-
-  #logo-cerchio {
-    transform: translate(30%, 10%);
-    position: relative;
-    z-index: 1;
-    background-size: contain;
+  .logo-cerchio {
+    margin-left: 40vw;
+    width: 85%;
+    height: 80%;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
+    background-image: url("../../assets/web_site/site_for_you/Ellisse_blu.png");
   }
 
-  #logo-cerchio img {
-    width: 65%;
-    transform: translate(0%, -10%);
+  .image-mobile {
+    margin-top: -62vw;
+    margin-left: 0vw;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url("../../assets/mobile_app/MyFitness/logo_1.png");
   }
 
   .text {
-    transform: translate(0%, 25%);
+    margin-left: 15%;
+    grid-row: 1;
+    grid-column: 1/4;
   }
 
-  #logo-description {
-    display: none;
+  #logo-titolo {
+    margin-left: 0px;
+    font-size: 4vw;
+    text-align: start;
   }
 
   #logo-description-desktop {
     display: block;
-    transform: translate(-40%, -240%);
-    padding-top: 5vw;
+    padding-top: 2vw;
     color: #2a3a45;
-    font-size: 2vw;
+    font-size: 1.6vw;
     font-family: Montserrat;
     font-weight: 500;
     word-wrap: break-word;
     text-align: left;
   }
 
-  #image-mobile {
-    transform: translate(-2%, 5%);
+  #linea-testo-desktop {
+    margin-left: -2vw;
+    display: block;
+    width: 32vw;
+    height: 1vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../assets/brand_identity/brand_page/linea_desktop_brand_page.png");
+  }
+
+  #linea-testo {
+    display: none;
+  }
+
+  #logo-description {
+    display: none;
   }
 
   /* <=========================== Perchè Section ========================> */
 
   .perche-section {
-    transform: translate(0%, -20%);
     padding-top: 0vw;
   }
 
@@ -401,9 +391,13 @@
 
   #testo-3-nomobile {
     display: block;
-    padding-top: 2vw;
+    padding-top: 0px;
+    margin-top: 1.5vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.6vw;
+    font-weight: 400;
   }
 
   #testo-3-mobile {
@@ -427,7 +421,7 @@
     background-color: #2a3a45;
     width: 95%;
     height: 50vw;
-    margin-top: 5vw;
+    margin-top: 1.5vw;
     margin-left: 2.35vw;
     z-index: 0;
   }
@@ -445,10 +439,9 @@
   }
 
   .text-mockup {
+    margin: 10vw 0px 2vw 0px;
     grid-row: 1;
     grid-column: 1/4;
-    padding-top: 0vw;
-    padding-bottom: 5vw;
     color: #2a3a45;
     font-size: 5vw;
     font-family: Champ;
@@ -463,7 +456,7 @@
     text-align: center;
     margin-top: 0vh;
     color: #ffffff;
-    font-size: 2.2vw;
+    font-size: 2vw;
     font-family: Champ;
     font-weight: 900;
     z-index: 1;
@@ -473,94 +466,23 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   /* <=========================== Main Section ========================> */
-  .logo-section {
-    transform: translateY(5%);
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    overflow: visible;
-  }
-
-  .logo-contenitore {
-    width: 100vw;
-    height: 62vw;
-    text-align: center;
-    overflow: hidden;
-  }
-
-  .logo-contenitore img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  #logo-titolo {
-    transform: translate(-72%, -230%);
-    color: #2a3a45;
-    font-size: 4vw;
-    text-align: left;
-  }
-
-  #linea-testo-desktop img {
-    transform: translate(-66%, -2600%);
-    width: 35vw;
-  }
-
-  #logo-cerchio {
-    transform: translate(32%, -4%);
-  }
-
-  #logo-cerchio img {
-    width: 55%;
-    transform: translate(0%, -10%);
-  }
-
-  .text {
-    transform: translate(5%, -50%);
-  }
-
-  #logo-description-desktop {
-    display: block;
-    transform: translate(-50%, -235%);
-    font-size: 1.8vw;
-  }
+  
 
   /* <=========================== Perchè Section ========================> */
 
-  .perche-section {
-    transform: translate(0%, -40%);
-    padding-top: 0vw;
-  }
-
   .container-perche {
-    width: 90%;
-    height: 35vw;
-    border-radius: 8vw;
-  }
-  #testo-1 {
-    margin-top: 1vh;
-    font-size: 7vw;
-  }
-
-  #testo-2 {
-    margin-left: 31vw;
-    margin-top: -5.9vw;
-    font-size: 3vw;
+    height: 40vw;
+    border-radius: 100px;
   }
 
   #testo-3-nomobile {
-    display: block;
-    padding-top: 1.5vw;
-    text-align: center;
-    font-size: 1.7vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
 
-  #testo-3-mobile {
-    display: none;
-  }
   /* <=========================== Mockup Section ========================> */
   .text-mockup {
     padding-top: 0vw;
-    padding-bottom: 5vw;
     font-size: 5vw;
     text-align: center;
   }
@@ -606,7 +528,7 @@
     background-color: #2a3a45;
     width: 95%;
     height: 40vw;
-    margin-top: 5vw;
+    margin-top: 1.5vw;
     margin-left: 2.35vw;
     z-index: 0;
   }
