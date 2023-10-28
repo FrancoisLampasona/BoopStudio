@@ -128,6 +128,7 @@
   background-color: white;
   background-image: url("../assets/brand_identity/loghi/retro_logo.png");
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   transform: rotateY(180deg);
 }
@@ -166,13 +167,12 @@
 .MobileApp-img {
   z-index: 2;
   margin-top: 6vw;
-  margin-right: 3vw;
+  margin-right: 1vw;
   width: 100%;
   height: 78vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  transform: rotateY(180deg);
   position: absolute;
 }
 
@@ -398,7 +398,7 @@
   .text-brand-desktop {
     padding-top: 2.5vw;
     color: #2a3a45;
-    font-size: 1.8vw;
+    font-size: 1.6vw;
     font-family: Montserrat;
     font-weight: 500;
   }
@@ -428,7 +428,7 @@
   }
 
   #decorazione-1 {
-    transform: translate(300%, -435%);
+    transform: translate(200%, -405%);
     background-image: url("../assets/decorazioni/tratti_gialli.png");
   }
   #decorazione-2 {
@@ -523,7 +523,7 @@
 
   /* <=========================== Section 2 ========================> */
   #decorazione-1 {
-    transform: translate(280%, -425%);
+    transform: translate(200%, -400%);
     background-image: url("../assets/decorazioni/tratti_gialli.png");
   }
 }
@@ -538,7 +538,7 @@
   }
 
   /* <=========================== Section 2 ========================> */
-  
+
   .elements-container {
     top: -24vw;
     width: 55vw;
