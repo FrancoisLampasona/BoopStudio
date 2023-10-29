@@ -26,7 +26,7 @@
   background-image: url("../../assets/web_site/site_for_you/Ellisse_blu.png");
 }
 
-.image-mobiile {
+.image-mobile-nodesktop {
   margin-top: 23vw;
   margin-left: 12.7vw;
   position: absolute;
@@ -35,6 +35,7 @@
   background-size: 135%;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url("../../assets/mobile_app/MyFitness/logo_1.png");
 }
 
 #logo-titolo {
@@ -313,7 +314,11 @@
     background-image: url("../../assets/web_site/site_for_you/Ellisse_blu.png");
   }
 
-  .image-mobile {
+  .image-mobile-nodesktop {
+    display: none;
+  }
+
+  .image-mobile-desktop {
     margin-top: -62vw;
     margin-left: 0vw;
     position: relative;
@@ -520,6 +525,30 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+
+  .logo-cerchio {
+    background-size: 45%;
+  }
+
+  .image-mobile-desktop {
+    margin-top: -60vw;
+    margin-left: -5vw;
+    background-size: 50%;
+  }
+
+    .container-mockup {
+    width: 65%;
+    margin-left: 7%;
+    border-radius: 80px;
+  }
+  .logo-section {
+    margin-top: -10vw;
+  }
+
+  .container-perche {
+    border-radius: 120px;
+    height: 40vw;
+  }
   /* <=========================== Mockup Section ========================> */
 
   .container-desktop {

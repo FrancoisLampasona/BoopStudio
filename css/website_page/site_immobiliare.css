@@ -286,7 +286,7 @@
     font-size: 4vw;
     text-align: start;
   }
-  
+
   #logo-description-desktop {
     display: block;
     padding-top: 2vw;
@@ -316,8 +316,6 @@
   #logo-description {
     display: none;
   }
-
-
 
   /* <=========================== Perchè Section ========================> */
 
@@ -369,7 +367,6 @@
     grid-row: 1;
     grid-column: 1/4;
     color: #2a3a45;
-    font-size: 5vw;
     font-family: Champ;
     font-weight: 900;
     word-wrap: break-word;
@@ -391,7 +388,7 @@
   }
 
   .container-mockup p {
-    font-size: 2vw;
+    font-size: 1.6vw;
     color: white;
   }
 
@@ -471,37 +468,37 @@
   }
 
   #mockup-1 {
-    height: 70vw;
+    height: 72vw;
   }
   #mockup-2 {
-    height: 70vw;
+    height: 72vw;
   }
 
   #mockup-3 {
-    height: 65vw;
+    height: 67vw;
   }
   #mockup-4 {
-    height: 95vw;
+    height: 98vw;
   }
 
-  #CS-1 {
+  #CS-1-i {
     margin-left: 10%;
-    margin-top: 67.2vw;
+    margin-top: 68.8vw;
   }
 
-  #CS-2 {
+  #CS-2-i {
     margin-left: 10%;
-    margin-top: 67.2vw;
+    margin-top: 68.8vw;
   }
 
-  #CS-3 {
+  #CS-3-i {
     margin-left: 10%;
-    margin-top: 62.5vw;
+    margin-top: 63.8vw;
   }
 
-  #CS-4 {
+  #CS-4-i {
     margin-left: 10%;
-    margin-top: 92.8vw;
+    margin-top: 94.8vw;
   }
 }
 
