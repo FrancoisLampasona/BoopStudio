@@ -1,13 +1,14 @@
 /* <=========================== Main Section ========================> */
 
 #logo-titolo {
-  padding-top: 15vw;
+  margin-top: 12vw;
+  margin-left: 10vw;
   color: #2a3a45;
-  font-size: 10vw;
+  font-size: 9.5vw;
   font-family: Champ;
   font-weight: 900;
   word-wrap: break-word;
-  text-align: center;
+  text-align: start;
 }
 #logo-cerchio {
   transform: translate(15%, 25%);
@@ -23,8 +24,8 @@
 }
 
 #linea-testo img {
-  transform: translateX(23%);
-  width: 70vw;
+  margin-left: 10vw;
+  width: 80vw;
 }
 
 #linea-testo-desktop {
@@ -32,17 +33,28 @@
 }
 
 #logo-description {
-  padding-top: 5vw;
+  margin-top: 5vw;
+  margin-left: 10vw;
+  margin-right: 6vw;
   color: #2a3a45;
   font-size: 4.2vw;
   font-family: Montserrat;
   font-weight: 500;
   word-wrap: break-word;
-  text-align: center;
+  text-align: start;
 }
 
 #logo-description-desktop {
   display: none;
+}
+
+.container-monroy {
+  height: 105vw;
+}
+
+.testo-mobile-monroy{
+  padding-top: 5vw;
+  margin-right: 5vw;
 }
 
 /* <=========================== Mockup Section ========================> */
@@ -207,6 +219,7 @@
   /* <=========================== Mockup Section ========================> */
 
   .container-1 {
+    margin-top: 2vw;
     grid-row: 2;
     grid-column: 1/3;
     width: 100%;
@@ -219,7 +232,7 @@
     grid-column: 3/4;
     margin-left: 2.5vw;
     margin-top: 2.5vw;
-    width: 95%;
+    width: 90%;
     height: 50vw;
     border-radius: 30px;
   }
@@ -247,17 +260,17 @@
     grid-column: 2/4;
     margin-top: 2.5vw;
     margin-left: 2.5vw;
-    width: 98%;
+    width: 95%;
     height: 50vw;
     border-radius: 30px;
   }
   .container-6 {
     display: inline;
     grid-row: 2;
-    margin-top: 0vw;
+    margin-top: 2vw;
     grid-column: 3/4;
     margin-left: 2.5vw;
-    width: 96%;
+    width: 90%;
     height: 45vw;
     border-radius: 30px;
   }
@@ -303,56 +316,33 @@
   /* <=========================== Mockup Section ========================> */
 
   .container-1 {
-    grid-row: 2;
-    grid-column: 1/3;
-    width: 100%;
-    height: 38vw;
-    border-radius: 30px;
+    height: 35vw;
+    border-radius: 40px;
   }
 
   .container-2 {
-    grid-row: 4;
-    grid-column: 3/4;
-    margin-top: 5vw;
-    width: 94%;
-    height: 42vw;
-    border-radius: 30px;
+    height: 40vw;
+    border-radius: 40px;
   }
 
   .container-3 {
-    grid-row: 4;
-    grid-column: 1/3;
-    margin-top: 5vw;
-    width: 95%;
-    height: 42vw;
+    height: 40vw;
+    border-radius: 40px;
   }
 
   .container-4 {
-    grid-row: 3;
-    grid-column: 1/2;
-    margin-top: 5vw;
-    width: 100%;
-    height: 40vw;
-    border-radius: 30px;
+    height: 38vw;
+    border-radius: 40px;
   }
 
   .container-5 {
-    grid-row: 3;
-    grid-column: 2/4;
-    margin-left: 5vw;
-    width: 92%;
-    height: 40vw;
-    background-size: auto;
-    border-radius: 30px;
+    height: 38vw;
+    border-radius: 40px;
   }
 
   .container-6 {
-    grid-row: 2;
-    grid-column: 3/4;
-    width: 92%;
-    height: 38vw;
-    background-size: auto;
-    border-radius: 30px;
+    height: 35vw;
+    border-radius: 40px;
   }
 
   #logo-titolo {

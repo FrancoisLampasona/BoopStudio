@@ -325,7 +325,7 @@
 
   .container-perche {
     width: 90vw;
-    height: 45vw;
+    height: 40vw;
     border-radius: 60px;
   }
   #testo-1 {
@@ -363,9 +363,10 @@
     justify-content: center;
   }
   .text-mockup {
-    margin: 10vw 0px 5vw 0px;
+    margin: 10vw 0px 2vw 0px;
     grid-row: 1;
     grid-column: 1/4;
+    font-size: 5vw;
     color: #2a3a45;
     font-family: Champ;
     font-weight: 900;
@@ -448,12 +449,20 @@
 @media only screen and (min-width: 992px) {
   /* <=========================== Main Section ========================> */
   .image-pc {
-    margin-top: 2vw;
+    margin-top: 8vw;
+    margin-left: 10vw;
+    width: 85%;
+    height: 80%;
+  }
+
+  .logo-cerchio{
+    margin-left: 45vw;
+    width: 78%;
   }
 
   /* <=========================== Perchè Section ========================> */
   .container-perche {
-    border-radius: 80px;
+    border-radius: 60px;
   }
 
   /* <=========================== Mockup Section ========================> */
@@ -505,9 +514,9 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .container-mockup {
-    width: 65%;
+    width: 60%;
     margin-left: 7%;
-    border-radius: 80px;
+    border-radius: 70px;
   }
   .logo-section {
     margin-top: -10vw;

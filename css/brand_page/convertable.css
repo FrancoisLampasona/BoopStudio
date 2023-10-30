@@ -170,19 +170,20 @@
   /* <=========================== Mockup Section ========================> */
 
   .container-1 {
+    margin-top: 2vw;
     grid-row: 2;
     grid-column: 1/3;
-    width: 74%;
+    width: 72%;
     height: 45vw;
     border-radius: 30px;
   }
 
   .container-2 {
+    margin-top: 2vw;
     grid-row: 2;
     grid-column: 2/4;
-    margin-left: 16vw;
-    margin-top: 0vw;
-    width: 74%;
+    margin-left: 15.5vw;
+    width: 74.5%;
     height: 45vw;
     border-radius: 30px;
   }
@@ -190,7 +191,7 @@
   .container-3 {
     grid-row: 3;
     grid-column: 1/4;
-    margin-top: 5vw;
+    margin-top: 2.5vw;
     width: 100%;
     height: 45.5vw;
     border-radius: 30px;
@@ -199,7 +200,7 @@
   .container-4 {
     grid-row: 4;
     grid-column: 3/4;
-    margin-top: 5vw;
+    margin-top: 2.5vw;
     width: 100%;
     height: 50vw;
     border-radius: 30px;
@@ -208,6 +209,7 @@
   .container-5 {
     grid-row: 4;
     grid-column: 1/3;
+    margin-top: 2.5vw;
     width: 95%;
     height: 50vw;
     border-radius: 30px;
@@ -253,42 +255,28 @@
   /* <=========================== Mockup Section ========================> */
 
   .container-1 {
-    grid-row: 2;
-    grid-column: 1/3;
-    width: 72%;
+
     height: 39vw;
     border-radius: 40px;
   }
 
   .container-2 {
-    grid-row: 2;
-    grid-column: 2/4;
-    margin-left: 16.5vw;
-    width: 72%;
+    
     height: 39vw;
     border-radius: 40px;
   }
   .container-3 {
-    grid-row: 3;
-    grid-column: 1/4;
-    margin-top: 5vw;
-    width: 100%;
+    border-radius: 40px;
+
     height: 39vw;
   }
 
   .container-4 {
-    grid-row: 4;
-    grid-column: 3/4;
-    margin-top: 5vw;
-    width: 100%;
     height: 39vw;
     border-radius: 40px;
   }
 
   .container-5 {
-    grid-row: 4;
-    grid-column: 1/3;
-    width: 95%;
     height: 39vw;
     border-radius: 40px;
   }

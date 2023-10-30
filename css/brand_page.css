@@ -68,12 +68,12 @@
 }
 
 #testo-3-mobile {
-  padding-top: 5vw;
+  padding-top: 4vw;
   text-align: center;
   margin-right: 3vw;
   margin-left: 3vw;
   color: #f8fafa;
-  font-size: 3.7vw;
+  font-size: 3.8vw;
   font-family: Montserrat;
   font-weight: 400;
   word-wrap: break-word;
@@ -88,10 +88,9 @@
   flex-direction: column;
 }
 .text-mockup {
-  padding-top: 15vw;
-  padding-bottom: 15vw;
+  margin: 20.5vw 0px 5vw 0px;
   color: #2a3a45;
-  font-size: 10vw;
+  font-size: 8vw;
   font-family: Champ;
   font-weight: 900;
   word-wrap: break-word;
@@ -183,10 +182,9 @@
     justify-content: center;
   }
   .text-mockup {
+    margin: 10vw 0px 2vw 0px;
     grid-row: 1;
     grid-column: 1/4;
-    padding-top: 0vw;
-    padding-bottom: 10vw;
     color: #2a3a45;
     font-size: 5vw;
     font-family: Champ;
@@ -258,12 +256,7 @@
     transform: translate(0%, -2.5%);
   }
 
-  .text-mockup {
-    padding-top: 0vw;
-    padding-bottom: 10vw;
-    font-size: 5vw;
-    text-align: center;
-  }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
