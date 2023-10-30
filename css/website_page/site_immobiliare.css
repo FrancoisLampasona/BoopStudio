@@ -265,11 +265,11 @@
 
   .image-pc {
     margin-top: -2vw;
-    margin-left: 0vw;
+    margin-left: 50vw;
     position: relative;
-    width: 100%;
+    width: 60%;
     height: 100%;
-    background-size: 60%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: right;
     background-image: url("../../assets/web_site/my_house_immobiliare/immobiliaremacbook.png");
@@ -448,14 +448,17 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   /* <=========================== Main Section ========================> */
+  .text{
+    margin-top: -14vw;
+  }
   .image-pc {
-    margin-top: 8vw;
-    margin-left: 10vw;
-    width: 85%;
+    margin-top: 3vw;
+    margin-left: 50vw;
+    width: 55%;
     height: 80%;
   }
 
-  .logo-cerchio{
+  .logo-cerchio {
     margin-left: 45vw;
     width: 78%;
   }
@@ -513,6 +516,17 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+
+  .text{
+    margin-top: 0vw;
+  }
+
+  .image-pc {
+    margin-top: 8vw;
+    margin-left: 55vw;
+    width: 50%;
+    height: 80%;
+  }
   .container-mockup {
     width: 60%;
     margin-left: 7%;
