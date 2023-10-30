@@ -1,352 +1,304 @@
 /* <=========================== Main Section ========================> */
 
 #logo-titolo {
-    padding-top: 15vw;
+  margin-top: 11vw;
+  margin-left: 10vw;
+  color: #2a3a45;
+  font-size: 9.5vw;
+  font-family: Champ;
+  font-weight: 900;
+  word-wrap: break-word;
+  text-align: start;
+}
+
+#linea-testo img {
+  margin-left: 10vw;
+  width: 60vw;
+}
+
+#linea-testo-desktop {
+  display: none;
+}
+
+#logo-description {
+  margin-top: 5vw;
+  margin-left: 10vw;
+  margin-right: 6vw;
+  color: #2a3a45;
+  font-size: 4.2vw;
+  font-family: Montserrat;
+  font-weight: 500;
+  word-wrap: break-word;
+  text-align: start;
+}
+
+#logo-description-desktop {
+  display: none;
+}
+
+#img-PN {
+  background-image: url("../../assets/brand_identity/loghi/pandi_logo.png");
+}
+
+/* <=========================== Mockup Section ========================> */
+
+.container-1 {
+  width: 93%;
+  height: 64vw;
+  border-radius: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
+}
+
+.container-2 {
+  margin-top: 5vw;
+  width: 90%;
+  height: 135vw;
+  border-radius: 30px;
+  background: #566172;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
+}
+.container-3 {
+  margin-top: 5vw;
+  width: 90%;
+  height: 45.5vw;
+  border-radius: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
+}
+
+.container-4 {
+  margin-top: 5vw;
+  width: 90%;
+  height: 135vw;
+  border-radius: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
+}
+
+.container-5 {
+  margin-top: 5vw;
+  width: 90%;
+  height: 64vw;
+  border-radius: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
+}
+
+.container-6 {
+  display: none;
+  margin-top: 5vw;
+  width: 90%;
+  height: 64vw;
+  border-radius: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* MEDIA QUERY */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container-1 {
+    width: 90%;
+    height: 100vw;
+  }
+  .container-2 {
+    width: 90%;
+    height: 120vw;
+  }
+  .container-3 {
+    width: 90%;
+    height: 60vw;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container-1 {
+    width: 90%;
+    height: 100vw;
+  }
+  .container-2 {
+    width: 90%;
+    height: 120vw;
+  }
+  .container-3 {
+    width: 90%;
+    height: 60vw;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .logo-section {
+    flex-direction: row-reverse;
+  }
+
+  .text {
+    margin-left: -40vw;
+    height: 60vw;
+  }
+
+  #logo-titolo {
+    margin-top: 20vw;
+    margin-left: 5vw;
+    position: absolute;
     color: #2a3a45;
-    font-size: 10vw;
+    font-size: 4vw;
     font-family: Champ;
     font-weight: 900;
     word-wrap: break-word;
-    text-align: center;
+    text-align: start;
   }
-  #logo-cerchio {
-    transform: translate(15%, 25%);
-    position: relative;
-    z-index: 1;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  #logo-cerchio img {
-    width: 90%;
-  }
-  
-  #linea-testo img {
-    transform: translateX(23%);
-    width: 70vw;
-  }
-  
-  #linea-testo-desktop {
+
+  #linea-testo {
     display: none;
   }
-  
-  #logo-description {
-    padding-top: 5vw;
+
+  #linea-testo-desktop {
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 2vw;
+    display: block;
+    width: 30%;
+    height: 1vw;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../assets/brand_identity/brand_page/linea_desktop_brand_page.png");
+  }
+
+  #logo-description-desktop {
+    display: block;
+    margin-top: 28vw;
+    margin-left: 5vw;
+    margin-right: 15vw;
     color: #2a3a45;
-    font-size: 4.2vw;
+    font-size: 1.6vw;
     font-family: Montserrat;
     font-weight: 500;
     word-wrap: break-word;
-    text-align: center;
+    text-align: start;
   }
-  
-  #logo-description-desktop {
-    display: none;
-  }
-  
-  /* <=========================== Mockup Section ========================> */
-  
-  .container-1 {
-    width: 93%;
-    height: 64vw;
-    border-radius: 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
-  }
-  
-  .container-2 {
-    margin-top: 5vw;
-    width: 90%;
-    height: 135vw;
-    border-radius: 30px;
-    background: #566172;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
-  }
-  .container-3 {
-    margin-top: 5vw;
-    width: 90%;
-    height: 45.5vw;
-    border-radius: 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
-  }
-  
-  .container-4 {
-    margin-top: 5vw;
-    width: 90%;
-    height: 135vw;
-    border-radius: 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
-  }
-  
-  .container-5 {
-    margin-top: 5vw;
-    width: 90%;
-    height: 64vw;
-    border-radius: 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
-  }
-  
-  .container-6 {
-    display: none;
-    margin-top: 5vw;
-    width: 90%;
-    height: 64vw;
-    border-radius: 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* MEDIA QUERY */
-  
-  /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) {
-    .container-1 {
-      width: 90%;
-      height: 100vw;
-    }
-    .container-2 {
-      width: 90%;
-      height: 120vw;
-    }
-    .container-3 {
-      width: 90%;
-      height: 60vw;
-    }
-  }
-  
-  @media only screen and (min-width: 600px) {
-    .container-1 {
-      width: 90%;
-      height: 100vw;
-    }
-    .container-2 {
-      width: 90%;
-      height: 120vw;
-    }
-    .container-3 {
-      width: 90%;
-      height: 60vw;
-    }
-  }
-  
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    #logo-titolo {
-      position: absolute;
-      transform: translate(-45%, -60vw);
-      color: #2a3a45;
-      font-size: 4.5vw;
-      font-family: Champ;
-      font-weight: 900;
-      word-wrap: break-word;
-      text-align: center;
-    }
-  
-    #linea-testo {
-      display: none;
-    }
-  
-    #linea-testo-desktop {
-      display: inline;
-    }
-  
-    #linea-testo-desktop img {
-      transform: translate(-45%, -2850%);
-      width: 40vw;
-    }
-    #logo-cerchio {
-      transform: translate(30%, 6%);
-      position: relative;
-      z-index: 1;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-  
-    #logo-cerchio img {
-      width: 52%;
-    }
-  
-    .text {
-      transform: translate(0%, 40%);
-    }
-  
-    #logo-description {
-      display: none;
-    }
-  
-    #logo-description-desktop {
-      display: block;
-      transform: translate(-40%, -225%);
-      padding-top: 5vw;
-      color: #2a3a45;
-      font-size: 2vw;
-      font-family: Montserrat;
-      font-weight: 500;
-      word-wrap: break-word;
-      text-align: left;
-    }
 
-    
-  
-    /* <=========================== Mockup Section ========================> */
-  
-    .container-1 {
-      margin-top: 2vw;
-      grid-row: 2;
-      grid-column: 1/3;
-      width: 72%;
-      height: 45vw;
-      border-radius: 30px;
-    }
-  
-    .container-2 {
-      margin-top: 2vw;
-      grid-row: 2;
-      grid-column: 2/4;
-      margin-left: 15.5vw;
-      width: 72%;
-      height: 45vw;
-      border-radius: 30px;
-    }
-  
-    .container-3 {
-      grid-row: 3;
-      grid-column: 1/2;
-      margin-top: 2.5vw;
-      width: 100%;
-      height: 50vw;
-      border-radius: 30px;
-    }
-  
-    .container-4 {
-      grid-row: 3;
-      grid-column: 2/4;
-      margin-top: 2.5vw;
-      margin-left: 2.5vw;
-      width: 95%;
-      height: 50vw;
-      border-radius: 30px;
-    }
-  
-    .container-5 {
-      grid-row: 4;
-      grid-column: 1/3;
-      margin-top: 2.5vw;
-      width: 72%;
-      height: 50vw;
-      border-radius: 30px;
-    }
-    .container-6 {
-      display: inline;
-      grid-row: 4;
-      grid-column: 2/4;
-      margin-left: 15.5vw;
-      margin-top: 2.5vw;
-      width: 72%;
-      height: 50vw;
-      border-radius: 30px;
-    }
+  #logo-description {
+    display: none;
   }
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    /* <=========================== Main Section ========================> */
-  
-    #logo-titolo {
-      transform: translate(-66%, -260%);
-      color: #2a3a45;
-      font-size: 4vw;
-      text-align: left;
-    }
-  
-    #linea-testo-desktop img {
-      transform: translate(-60%, -2600%);
-      width: 35vw;
-    }
-  
-    #logo-cerchio {
-      transform: translate(32%, 5%);
-    }
-  
-    #logo-cerchio img {
-      width: 55%;
-    }
-  
-    .text {
-      transform: translate(0%, -50%);
-    }
-  
-    #logo-description-desktop {
-      display: block;
-      transform: translate(-50%, -200%);
-      font-size: 1.8vw;
-    }
+
+  /* <=========================== Mockup Section ========================> */
+
+  .container-1 {
+    margin-top: 2vw;
+    grid-row: 2;
+    grid-column: 1/3;
+    width: 72%;
+    height: 45vw;
+    border-radius: 30px;
   }
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    /* <=========================== Mockup Section ========================> */
-  
-    .container-1 {
-      height: 39vw;
-      border-radius: 40px;
-    }
-  
-    .container-2 {
-      height: 39vw;
-      border-radius: 40px;
-    }
-  
-    .container-3 {
-      width: 95%;
-      height: 38vw;
-    }
-  
-    .container-4 {
-      margin-left: 1vw;
-      width: 97%;
-      height: 38vw;
-      border-radius: 40px;
-    }
-  
-    .container-5 {
-      height: 39vw;
-      border-radius: 40px;
-    }
-  
-    .container-6 {
-      height: 39vw;
-      border-radius: 40px;
-    }
-  
-    #logo-titolo {
-      transform: translate(-65%, -260%);
-      color: #2a3a45;
-      font-size: 4vw;
-      text-align: left;
-    }
-  
-    #linea-testo-desktop img {
-      transform: translate(-60%, -2600%);
-      width: 35vw;
-    }
+
+  .container-2 {
+    margin-top: 2vw;
+    grid-row: 2;
+    grid-column: 2/4;
+    margin-left: 15.5vw;
+    width: 72%;
+    height: 45vw;
+    border-radius: 30px;
   }
-  
+
+  .container-3 {
+    grid-row: 3;
+    grid-column: 1/2;
+    margin-top: 2.5vw;
+    width: 100%;
+    height: 50vw;
+    border-radius: 30px;
+  }
+
+  .container-4 {
+    grid-row: 3;
+    grid-column: 2/4;
+    margin-top: 2.5vw;
+    margin-left: 2.5vw;
+    width: 95%;
+    height: 50vw;
+    border-radius: 30px;
+  }
+
+  .container-5 {
+    grid-row: 4;
+    grid-column: 1/3;
+    margin-top: 2.5vw;
+    width: 72%;
+    height: 50vw;
+    border-radius: 30px;
+  }
+  .container-6 {
+    display: inline;
+    grid-row: 4;
+    grid-column: 2/4;
+    margin-left: 15.5vw;
+    margin-top: 2.5vw;
+    width: 72%;
+    height: 50vw;
+    border-radius: 30px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .text {
+    margin-top: -6vw;
+  }
+  /* <=========================== Mockup Section ========================> */
+
+  .container-1 {
+    height: 39vw;
+    border-radius: 40px;
+  }
+
+  .container-2 {
+    height: 39vw;
+    border-radius: 40px;
+  }
+
+  .container-3 {
+    width: 95%;
+    height: 38vw;
+  }
+
+  .container-4 {
+    margin-left: 1vw;
+    width: 97%;
+    height: 38vw;
+    border-radius: 40px;
+  }
+
+  .container-5 {
+    height: 39vw;
+    border-radius: 40px;
+  }
+
+  .container-6 {
+    height: 39vw;
+    border-radius: 40px;
+  }
+
+}

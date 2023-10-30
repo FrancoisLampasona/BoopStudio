@@ -15,9 +15,26 @@
   overflow: hidden;
 }
 
-.logo-contenitore img {
-  max-width: 100%;
-  height: auto;
+.logo-cerchio {
+  z-index: 2;
+  margin-top: -130vw;
+  margin-left: 20vw;
+  width: 93%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../assets/brand_identity/loghi/cerchi/3_cerchio.png");
+}
+
+.logo-img {
+  margin-top: 20vw;
+  margin-left: 15vw;
+  width: 100%;
+  height: 120vw;
+  background-size: 97%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* <=========================== Nascita Section ========================> */
@@ -105,12 +122,6 @@
 
 @media only screen and (min-width: 600px) {
   /* <=========================== Main Section ========================> */
-
-  .logo-contenitore {
-    width: 112vw;
-    height: 122vw;
-  }
-
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -129,19 +140,37 @@
     height: 60vw;
     text-align: center;
     overflow: hidden;
+    position: absolute;
   }
 
-  .logo-contenitore img {
-    max-width: 100%;
-    height: auto;
+  .logo-cerchio {
+    z-index: 2;
+    margin-top: -61vw;
+    margin-left: 30vw;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../assets/brand_identity/loghi/cerchi/3_cerchio.png");
   }
 
-  
+  .logo-img {
+    z-index: 1;
+    margin-top: -2vw;
+    margin-left: 45vw;
+    width: 65%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   /* <=========================== Nascita Section ========================> */
 
   .nascita-section {
-    transform: translate(0%, -20%);
-    padding-top: 0vw;
+    padding-top: 0px;
+    margin-top: 10vw;
   }
 
   .container-nascita {
@@ -162,9 +191,13 @@
 
   #testo-3-nomobile {
     display: block;
-    padding-top: 2vw;
+    padding-top: 0px;
+    margin-top: 1.5vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.6vw;
+    font-weight: 400;
   }
 
   #testo-3-mobile {
@@ -197,69 +230,42 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   /* <=========================== Main Section ========================> */
-  .logo-section {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    overflow: visible;
+
+  .logo-img {
+    background-size: 105%;
+    margin-left: 50%;
+    width: 58%;
   }
 
-  .logo-contenitore {
-    width: 100vw;
-    height: 62vw;
-    text-align: center;
-    overflow: hidden;
+  .logo-cerchio {
+    margin-left: 50%;
+    width: 58%;
   }
-
-  .logo-contenitore img {
-    max-width: 100%;
-    height: auto;
-  }
-
 
   /* <=========================== Nascita Section ========================> */
 
-  .nascita-section {
-    transform: translate(0%, -40%);
-    padding-top: 0vw;
-  }
-
   .container-nascita {
-    width: 90%;
-    height: 35vw;
-    border-radius: 8vw;
+    width: 90vw;
+    height: 40vw;
+    border-radius: 60px;
   }
-  #testo-1 {
-    margin-top: 1vh;
-    font-size: 7vw;
-  }
-
-  #testo-2 {
-    margin-left: 33.5vw;
-    margin-top: -5.5vw;
-    font-size: 2.5vw;
+  .nascita-section {
+    padding-top: 0px;
+    margin-top: 6vw;
   }
 
-  #testo-3-nomobile {
-    display: block;
-    padding-top: 3vw;
-    text-align: center;
-    font-size: 1.7vw;
-  }
-
-  #testo-3-mobile {
-    display: none;
-  }
   /* <=========================== Mockup Section ========================> */
 
   .mockup-container {
     transform: translate(0%, -2.5%);
   }
-
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+
+  .container-nascita {
+    border-radius: 150px;
+  }
 
 }

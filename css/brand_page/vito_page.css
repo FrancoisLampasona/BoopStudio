@@ -10,18 +10,6 @@
   word-wrap: break-word;
   text-align: start;
 }
-#logo-cerchio {
-  transform: translate(15%, 25%);
-  position: relative;
-  z-index: 1;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#logo-cerchio img {
-  width: 88%;
-}
 
 #linea-testo img {
   margin-left: 10vw;
@@ -47,6 +35,12 @@
 #logo-description-desktop {
   display: none;
 }
+
+
+#img-VA{
+  background-image: url("../../assets/brand_identity/loghi/vito_logo.png");
+}
+
 /* <=========================== Mockup Section ========================> */
 
 .container-1 {
@@ -113,9 +107,19 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .logo-section {
+    flex-direction: row-reverse;
+  }
+
+  .text {
+    margin-left: -40vw;
+    height: 60vw;
+  }
+
   #logo-titolo {
+    margin-top: 20vw;
+    margin-left: 5vw;
     position: absolute;
-    transform: translate(-111%, -450%);
     color: #2a3a45;
     font-size: 4vw;
     font-family: Champ;
@@ -129,41 +133,34 @@
   }
 
   #linea-testo-desktop {
-    display: inline;
-  }
-
-  #linea-testo-desktop img {
-    transform: translate(-78%, -2780%);
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 4vw;
+    display: block;
     width: 32vw;
-  }
-
-  #logo-cerchio {
-    transform: translate(30%, 6%);
-    position: relative;
-    z-index: 1;
+    height: 1vw;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    background-image: url("../../assets/brand_identity/brand_page/linea_desktop_brand_page.png");
   }
 
-  #logo-cerchio img {
-    width: 52%;
-  }
-
-  #logo-description {
-    display: none;
-  }
 
   #logo-description-desktop {
     display: block;
-    transform: translate(-65%, -210%);
-    padding-top: 6vw;
+    margin-top: 33vw;
+    margin-left: 5vw;
+    margin-right: 15vw;
     color: #2a3a45;
     font-size: 1.6vw;
     font-family: Montserrat;
     font-weight: 500;
     word-wrap: break-word;
-    text-align: left;
+    text-align: start;
+  }
+
+  #logo-description {
+    display: none;
   }
 
   /* <=========================== Mockup Section ========================> */
@@ -216,41 +213,14 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  /* <=========================== Main Section ========================> */
-
-  #logo-titolo {
-    transform: translate(-90%, -500%);
-    color: #2a3a45;
-    font-size: 4vw;
-    text-align: left;
-    width: 100%;
-  }
-
-  #linea-testo-desktop img {
-    transform: translate(-82%, -3400%);
-    width: 30vw;
-  }
-  #logo-cerchio {
-    transform: translate(32%, 5%);
-  }
-
-  #logo-cerchio img {
-    width: 55%;
-  }
-
-  .text {
-    transform: translate(0%, -20%);
-  }
-
-  #logo-description-desktop {
-    display: block;
-    transform: translate(-65%, -232%);
-    font-size: 1.6vw;
-  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+
+  .text{
+    margin-top: -6vw;
+  }
   /* <=========================== Mockup Section ========================> */
 
   .container-1 {

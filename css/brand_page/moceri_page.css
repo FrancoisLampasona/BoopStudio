@@ -1,29 +1,18 @@
 /* <=========================== Main Section ========================> */
 
 #logo-titolo {
-  padding-top: 15vw;
+  margin-top: 11vw;
+  margin-left: 10vw;
   color: #2a3a45;
-  font-size: 10vw;
+  font-size: 9.5vw;
   font-family: Champ;
   font-weight: 900;
   word-wrap: break-word;
-  text-align: center;
-}
-#logo-cerchio {
-  transform: translate(15%, 25%);
-  position: relative;
-  z-index: 1;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#logo-cerchio img {
-  width: 90%;
+  text-align: start;
 }
 
 #linea-testo img {
-  transform: translateX(23%);
+  margin-left: 10vw;
   width: 70vw;
 }
 
@@ -32,17 +21,23 @@
 }
 
 #logo-description {
-  padding-top: 5vw;
+  margin-top: 5vw;
+  margin-left: 10vw;
+  margin-right: 6vw;
   color: #2a3a45;
   font-size: 4.2vw;
   font-family: Montserrat;
   font-weight: 500;
   word-wrap: break-word;
-  text-align: center;
+  text-align: start;
 }
 
 #logo-description-desktop {
   display: none;
+}
+
+#img-MI {
+  background-image: url("../../assets/brand_identity/loghi/moceri_logo.png");
 }
 
 /* <=========================== Mockup Section ========================> */
@@ -147,15 +142,25 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .logo-section {
+    flex-direction: row-reverse;
+  }
+
+  .text {
+    margin-left: -40vw;
+    height: 60vw;
+  }
+
   #logo-titolo {
+    margin-top: 20vw;
+    margin-left: 5vw;
     position: absolute;
-    transform: translate(-45%, -57vw);
     color: #2a3a45;
-    font-size: 4.5vw;
+    font-size: 4vw;
     font-family: Champ;
     font-weight: 900;
     word-wrap: break-word;
-    text-align: center;
+    text-align: start;
   }
 
   #linea-testo {
@@ -163,44 +168,37 @@
   }
 
   #linea-testo-desktop {
-    display: inline;
-  }
-
-  #linea-testo-desktop img {
-    transform: translate(-45%, -2650%);
-    width: 40vw;
-  }
-  #logo-cerchio {
-    transform: translate(30%, 6%);
-    position: relative;
-    z-index: 1;
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 4vw;
+    display: block;
+    width: 32vw;
+    height: 1vw;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    background-image: url("../../assets/brand_identity/brand_page/linea_desktop_brand_page.png");
   }
 
-  #logo-cerchio img {
-    width: 52%;
-  }
-
-  .text {
-    transform: translate(0%, 25%);
-  }
-
-  #logo-description {
-    display: none;
+  #linea-testo-desktop img {
+    width: 32vw;
   }
 
   #logo-description-desktop {
     display: block;
-    transform: translate(-40%, -220%);
-    padding-top: 5vw;
+    margin-top: 28vw;
+    margin-left: 5vw;
+    margin-right: 15vw;
     color: #2a3a45;
-    font-size: 2vw;
+    font-size: 1.6vw;
     font-family: Montserrat;
     font-weight: 500;
     word-wrap: break-word;
-    text-align: left;
+    text-align: start;
+  }
+
+  #logo-description {
+    display: none;
   }
 
   /* <=========================== Mockup Section ========================> */
@@ -265,41 +263,13 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  /* <=========================== Main Section ========================> */
-
-  #logo-titolo {
-    transform: translate(-63%, -260%);
-    color: #2a3a45;
-    font-size: 4vw;
-    text-align: left;
-  }
-
-  #linea-testo-desktop img {
-    transform: translate(-60%, -2600%);
-    width: 35vw;
-  }
-
-  #logo-cerchio {
-    transform: translate(32%, 5%);
-  }
-
-  #logo-cerchio img {
-    width: 55%;
-  }
-
-  .text {
-    transform: translate(0%, -50%);
-  }
-
-  #logo-description-desktop {
-    display: block;
-    transform: translate(-50%, -210%);
-    font-size: 1.8vw;
-  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .text {
+    margin-top: -6vw;
+  }
   /* <=========================== Mockup Section ========================> */
 
   .container-1 {
@@ -329,17 +299,5 @@
   .container-6 {
     border-radius: 30px;
     height: 39vw;
-  }
-
-  #logo-titolo {
-    transform: translate(-62%, -260%);
-    color: #2a3a45;
-    font-size: 4vw;
-    text-align: left;
-  }
-
-  #linea-testo-desktop img {
-    transform: translate(-60%, -2600%);
-    width: 35vw;
   }
 }
