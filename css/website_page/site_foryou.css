@@ -53,7 +53,7 @@
   margin-left: 10vw;
   margin-right: 8vw;
   color: #2a3a45;
-  font-size: 4.2vw;
+  font-size: 4vw;
   font-family: Montserrat;
   font-weight: 500;
   word-wrap: break-word;
@@ -85,7 +85,7 @@
   margin: 0px 5vw;
   position: relative;
   width: 100%;
-  height: 120vw;
+  height: 125vw;
   border-radius: 40px;
   background: #2a3a45;
   box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
@@ -112,9 +112,9 @@
 
 #testo-3-mobile {
   color: #f8fafa;
-  padding-top: 5vw;
-  margin: 0vw 8vw;
-  font-size: 3.8vw;
+  margin-top: 6vw;
+  margin: 0vw 6vw;
+  font-size: 4vw;
   font-family: Montserrat;
   font-weight: 400;
   text-align: center;
@@ -163,7 +163,7 @@
 }
 
 .container-2 {
-  margin-top: 10vw;
+  margin-top: 5vw;
   width: 90%;
   height: 80vw;
   border-radius: 30px;
@@ -174,7 +174,7 @@
   box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
 }
 .container-3 {
-  margin-top: 10vw;
+  margin-top: 5vw;
   width: 90%;
   height: 80vw;
   border-radius: 30px;
@@ -186,7 +186,7 @@
 }
 
 .container-4 {
-  margin-top: 10vw;
+  margin-top: 5vw;
   width: 90%;
   height: 105vw;
   border-radius: 30px;
@@ -199,7 +199,7 @@
 
 .mockup-container p {
   text-align: center;
-  margin-top: 3vh;
+  margin-top: 5vw;
   width: 85%;
   color: #2a3a45;
   font-size: 5vw;

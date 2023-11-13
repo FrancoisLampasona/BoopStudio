@@ -48,7 +48,7 @@
 .container-nascita {
   position: relative;
   width: 90vw;
-  height: 125vw;
+  height: 130vw;
   border-radius: 40px;
   background: #2a3a45;
   box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
@@ -90,7 +90,7 @@
   margin-right: 3vw;
   margin-left: 3vw;
   color: #f8fafa;
-  font-size: 3.8vw;
+  font-size: 4vw;
   font-family: Montserrat;
   font-weight: 400;
   word-wrap: break-word;

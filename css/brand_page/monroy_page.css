@@ -24,7 +24,7 @@
   margin-left: 10vw;
   margin-right: 6vw;
   color: #2a3a45;
-  font-size: 4.2vw;
+  font-size: 4vw;
   font-family: Montserrat;
   font-weight: 500;
   word-wrap: break-word;
@@ -37,6 +37,10 @@
 
 #img-my {
   background-image: url("../../assets/brand_identity/loghi/monroy_logo.png");
+}
+
+#container-monroy{
+  height: 120vw;
 }
 
 /* <=========================== Mockup Section ========================> */
@@ -200,6 +204,10 @@
     display: none;
   }
 
+  #container-monroy{
+    height: 40vw;
+  }
+
   /* <=========================== Mockup Section ========================> */
 
   .container-1 {
@@ -262,6 +270,11 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  
+  #container-monroy{
+    height: 45vw;
+  }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

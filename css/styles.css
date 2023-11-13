@@ -55,9 +55,12 @@ header {
   left: 0;
   z-index: 10000;
   width: 100%;
+  height: 11%;
+  /* height: 12.5vw; */
 }
 
 .header_content {
+  margin-top: 3vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -69,6 +72,7 @@ header {
 }
 
 .hamburger_icon {
+  margin-top: 4px;
   display: none;
 }
 
@@ -127,7 +131,7 @@ header {
 
 .linee_orizzontali img {
   pointer-events: none;
-  width: 200vw;
+  width: 250vw;
 }
 
 .rettangolo_contenitore_contattaci {
@@ -137,15 +141,15 @@ header {
   border-radius: 40px;
   background: #2a3a45;
   box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.15);
-  margin-top: 6.5vh;
+  margin-top: 9.4vh;
 }
 
 #testo-contattacci {
-  margin-top: 3.5vh;
+  margin-top: 6vh;
   display: flex;
   justify-content: center;
   color: #f8fafa;
-  font-size: 10vw;
+  font-size: 8vw;
   font-family: Champ;
   font-weight: 900;
 }
@@ -166,7 +170,7 @@ header {
 
 .content_form {
   background-color: transparent;
-  color:#f8fafac0;
+  color: rgba(248, 250, 250, 0.4);
   font-size: 5vw;
   font-family: Montserrat;
   font-weight: 500;
@@ -174,11 +178,15 @@ header {
   border: none;
 }
 
+.content_form.active {
+  color: #ffffff;
+}
+
 .bottom_form {
   border: none;
   background-color: transparent;
   color: #2c9bd8;
-  font-size: 4.446vw;
+  font-size: 5.5vw;
   font-family: Champ;
   font-weight: 900;
   text-decoration: underline;
@@ -193,7 +201,7 @@ header {
   position: absolute;
   color: #f8fafa;
   width: 110px;
-  height: 10px;
+  height: 5px;
   border: 2px;
   z-index: 100;
 }
@@ -204,32 +212,35 @@ header {
   grid-row: 1;
   position: relative;
   border-radius: 0 0 2px 2px;
-  border-bottom: 3px solid #f8fafa;
+  border-bottom: 1.8px solid #f8fafa;
 }
 
 #cognome {
+  margin-top: 3vw;
   margin-right: 10px;
   grid-column: 1/4;
   grid-row: 2;
   border-radius: 0 0 2px 2px;
-  border-bottom: 3px solid #f8fafa;
+  border-bottom: 1.8px solid #f8fafa;
 }
 
 #email {
+  margin-top: 3vw;
   margin-right: 10px;
   grid-column: 1/4;
   grid-row: 3;
   border-radius: 0 0 2px 2px;
-  border-bottom: 3px solid #f8fafa;
+  border-bottom: 1.8px solid #f8fafa;
 }
 
 #messaggio {
+  margin-top: 3vw;
   margin-right: 10px;
   margin-top: 20px;
   grid-column: 1/4;
   grid-row: 4;
   border-radius: 0 0 2px 2px;
-  border-bottom: 3px solid #f8fafa;
+  border-bottom: 1.8px solid #f8fafa;
   resize: none;
 }
 
@@ -312,13 +323,28 @@ header {
     transition: 0.5s ease;
   }
   .header_menu li {
+    padding-top: 5vw;
     display: block;
   }
-  .header_menu li a {
-    padding: 4vh;
+
+  .header_menu li:first-child a {
+    padding: 1vw;
     color: rgba(42, 58, 69, 1);
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 22px;
+    font-family: Montserrat;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+
+  .header_menu li:first-child a {
+    padding-top: 3vw;
+  }
+  .header_menu li a {
+    padding: 1vw;
+    color: rgba(42, 58, 69, 1);
+    text-align: center;
+    font-size: 22px;
     font-family: Montserrat;
     font-weight: 500;
     word-wrap: break-word;
@@ -334,9 +360,8 @@ header {
     display: block;
   }
   #check:checked ~ .header_menu {
-    height: 52vh;
+    height: 70vw;
   }
-  
 
   .header_content {
     justify-content: space-between;
@@ -345,17 +370,24 @@ header {
 
   .hamburger_icon {
     display: block;
-    margin-right: 6vw;
+    margin-right: 7vw;
     margin-bottom: 1vh;
   }
   .hamburger_icon img {
-    max-width: 92%;
+    max-width: 80%;
   }
+
+  .hamburger_icon #close_icon {
+    max-width: 120%;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+  }
+
   .header_logo {
-    max-width: 70%;
+    max-width: 74%;
   }
   .header_logo img {
-    width: 60%;
+    width: 42%;
     margin-top: 0.5vh;
     margin-left: 1vh;
   }
@@ -409,14 +441,14 @@ header {
     display: block;
   }
   #check:checked ~ .header_menu {
-    height: 55vh;
+    height: 80vw;
   }
 
   .hamburger_icon {
     position: fixed;
     display: block;
-    margin-left: 5vh;
-    margin-bottom: 1vh;
+    margin-left: 88.5%;
+    margin-bottom: 2.5vw;
   }
   #close_icon {
     width: 40%;
@@ -424,13 +456,18 @@ header {
   #menu_icon {
     width: 65%;
   }
+  .hamburger_icon #close_icon {
+    transform: translateX(-15%);
+    width: 70%;
+    margin-right: 5vw;
+    margin-bottom: 0vw;
+  }
   .header_logo {
     text-align: center;
     max-width: 80%;
-    margin: 10px auto;
   }
   .header_logo img {
-    width: 80%;
+    width: 60%;
     margin-left: 0px;
   }
   /* <=========================== Contattacci ========================> */
@@ -510,14 +547,14 @@ header {
     display: block;
   }
   #check:checked ~ .header_menu {
-    height: 60vw;
+    height: 62vw;
   }
 
   .hamburger_icon {
     position: fixed;
     display: block;
-    margin-left: 3vh;
-    margin-bottom: 1vh;
+    margin-left: 88.5%;
+    margin-bottom: 1vw;
   }
   #close_icon {
     width: 40%;
@@ -531,28 +568,48 @@ header {
   .header_logo {
     text-align: center;
     max-width: 80%;
-    margin: 10px auto;
+  }
+  .header_logo img {
+    width: 80%;
+    margin-left: 0px;
   }
 
   /* <=========================== Contattacci ========================> */
 
+  .linee_orizzontali img {
+    pointer-events: none;
+    width: 210vw;
+  }
+
   .rettangolo_contenitore_contattaci {
-    margin-top: 12vw;
+    margin-top: 14.7vw;
     width: 78vw;
     height: 80vw;
   }
   .dati {
-    padding-top: 2vh;
+    padding-top: 0vh;
   }
   #testo-contattacci {
     font-size: 5vw;
   }
   .content_form {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .bottom_form {
-    font-size: 2.5vw;
+    font-size: 3vw;
+  }
+  #cognome{
+    margin-top: -1vw;
+  }
+  #email{
+    margin-top: -1vw;
+  }
+  #messaggio{
+    margin-top: -1vw;
+  }
+  #invia {
+    margin-top: 1vw;
   }
   #linea_5_orizzontale {
     display: none;
@@ -592,83 +649,15 @@ header {
 }
 
 @media only screen and (max-device-width: 812px) and (orientation: landscape) {
-   /* <=========================== Header ========================> */
+  /* <=========================== Header ========================> */
 
-   .header {
-    opacity: 0.96;
-  }
-
-  .header_content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 5.5rem;
-  }
-
-  .header_menu {
-    top: 0px;
-    position: relative;
-    height: initial;
-    width: auto;
-    background: none;
-    background-color: initial;
-    box-shadow: none;
-    backdrop-filter: none;
-    transition: none;
-  }
-
-  #check {
-    display: none;
-  }
-
-  .hamburger_icon {
-    display: none;
-  }
-
-  .hamburger_icon img {
-    width: 35px;
+  header {
     height: auto;
   }
 
-  .header_logo {
-    max-width: 70%;
-    margin: 40px 0px 30px 0px;
-    margin-left: 40px;
+  .header_content {
+    margin-top: 0vw;
   }
-
-  .header_logo img {
-    width: 74%;
-  }
-
-  .header_menu {
-    padding-bottom: 0;
-  }
-
-  .header_menu li {
-    display: inline-block;
-  }
-
-  .header_menu li a {
-    display: block;
-    padding: 0px;
-    margin-left: 40px;
-    color: #2a3a45;
-    font-size: 22px;
-    font-family: Montserrat;
-    font-weight: 500;
-    word-wrap: break-word;
-  }
-
-  #contattati {
-    margin-right: 60px;
-  }
-}
-
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  /* <=========================== Header ========================> */
 
   .header {
     opacity: 0.96;
@@ -739,10 +728,96 @@ header {
   #contattati {
     margin-right: 60px;
   }
+}
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* <=========================== Header ========================> */
+
+  header {
+    height: auto;
+  }
+
+  .header_content {
+    margin-top: 0vw;
+  }
+
+  .header {
+    opacity: 0.96;
+  }
+
+  .header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5.5rem;
+  }
+
+  .header_menu {
+    top: 0px;
+    position: relative;
+    height: initial;
+    width: auto;
+    background: none;
+    background-color: initial;
+    box-shadow: none;
+    backdrop-filter: none;
+    transition: none;
+  }
+
+  #check {
+    display: none;
+  }
+
+  .hamburger_icon {
+    display: none;
+  }
+
+  .hamburger_icon img {
+    width: 35px;
+    height: auto;
+  }
+
+  .header_logo {
+    max-width: 70%;
+    margin: 40px 0px 30px 0px;
+    margin-left: 1.5vw;
+  }
+
+  .header_logo img {
+    width: 55%;
+  }
+
+  .header_menu {
+    padding-bottom: 0;
+  }
+
+  .header_menu li {
+    display: inline-block;
+  }
+
+  .header_menu li a {
+    display: block;
+    padding: 0px;
+    margin-left: 35px;
+    color: #2a3a45;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+
+  #contattati {
+    margin-right: 75px;
+  }
 
   /* <=========================== Contattacci ========================> */
 
+  .Contattaci{
+    margin-top: 6vw;
+  }
+  
   #linea_5_orizzontale {
     display: none;
   }
@@ -763,25 +838,26 @@ header {
   }
 
   .linee_orizzontali img {
-    max-width: 100%;
+    max-width: 110%;
   }
   .rettangolo_contenitore_contattaci {
-    margin-top: 6.5vw;
+    margin-top: 7.3vw;
     border-radius: 95px;
     width: 90%;
     height: 32vw;
   }
   .dati {
-    width: 70%;
-    gap: 1.5vw;
-    margin: 40px auto;
+    width: 75%;
+    gap: 1.2vw;
+    margin: 20px auto;
     padding-top: 2vw;
   }
   #testo-contattacci {
+    margin-top: 3vw;
     font-size: 3vw;
   }
   .content_form {
-    font-size: 1.3vw;
+    font-size: 1.8vw;
   }
   .bottom_form {
     font-size: 1.5vw;
@@ -803,37 +879,54 @@ header {
     grid-column: 1/4;
   }
   #invia {
-    margin-top: 2vh;
+    font-size: 1.8vw;
+    margin-top: 2vw;
     grid-row: 3;
   }
 
   /* <=========================== Footer ========================> */
-
-  .footer-col2 {
+  .container {
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+  .footer-col1 {
     grid-column: 1/2;
+  }
+  .footer-col2 {
+    grid-column: 2/3;
+    grid-row: 1;
   }
 
   .footer-col3 {
     grid-column: 3/4;
-    grid-row: 2;
+    grid-row: 1;
   }
 
   .footer-text {
-    font-size: 4vw;
-  }
-
-  .contatti-text h1 {
+    padding-top: 5px;
     font-size: 2.5vw;
   }
 
+  .contatti-text h1 {
+    font-size: 2.2vw;
+  }
+
   .contatti-text p {
-    font-size: 2vw;
+    font-size: 1vw;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   /* <=========================== Header ========================> */
+
+  header {
+    height: auto;
+  }
+
+  .header_content {
+    margin-top: 0vw;
+  }
 
   .header {
     opacity: 0.96;
@@ -875,11 +968,11 @@ header {
   .header_logo {
     max-width: 70%;
     margin: 40px 0px 30px 0px;
-    margin-left: 60px;
+    margin-left: 48px;
   }
 
   .header_logo img {
-    width: 74%;
+    width: 60%;
   }
 
   .header_menu {
@@ -893,15 +986,24 @@ header {
   .header_menu li a {
     display: block;
     padding: 0px;
-    margin-left: 60px;
+    margin-left: 45px;
     color: #2a3a45;
-    font-size: 24px;
+    font-size: 23px;
     font-family: Montserrat;
     font-weight: 500;
     word-wrap: break-word;
   }
 
+  #contattati {
+    margin-right: 80px;
+  }
+
   /* <=========================== Contattacci ========================> */
+
+  .Contattaci{
+    margin-top: 8vw;
+  }
+
   #linea_5_orizzontale {
     display: none;
   }
@@ -921,25 +1023,26 @@ header {
     display: none;
   }
   .linee_orizzontali img {
-    max-width: 100%;
+    max-width: 110%;
   }
   .rettangolo_contenitore_contattaci {
-    margin-top: 5vw;
+    margin-top: 6.4vw;
     border-radius: 150px;
     width: 88%;
     height: 32vw;
   }
   .dati {
-    width: 70%;
+    width: 80%;
     gap: 1.5vw;
-    margin: 50px auto;
-    padding-top: 2vw;
+    /* margin: 50px auto; */
+    padding-top: 4vw;
   }
   #testo-contattacci {
+    padding-top: 0vw;
     font-size: 2.8vw;
   }
   .content_form {
-    font-size: 1.3vw;
+    font-size: 1.6vw;
   }
   .bottom_form {
     font-size: 1.5vw;
@@ -956,45 +1059,16 @@ header {
     grid-row: 1;
   }
   #messaggio {
-    margin-top: 50px;
+    margin-top: 15px;
     grid-row: 2;
     grid-column: 1/4;
   }
   #invia {
-    margin-top: 3vh;
+    margin-top: 2.5vw;
     grid-row: 3;
   }
 
   /* <=========================== Footer ========================> */
-
-  .container {
-    padding-top: 10px;
-    padding-bottom: 50px;
-  }
-  .footer-col1 {
-    grid-column: 1/2;
-  }
-  .footer-col2 {
-    grid-column: 2/3;
-    grid-row: 1;
-  }
-
-  .footer-col3 {
-    grid-column: 3/4;
-    grid-row: 1;
-  }
-
-  .footer-text {
-    font-size: 2.8vw;
-  }
-
-  .contatti-text h1 {
-    font-size: 2.2vw;
-  }
-
-  .contatti-text p {
-    font-size: 1vw;
-  }
 }
 
 /* <=========================== Animation ========================> */

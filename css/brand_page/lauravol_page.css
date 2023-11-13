@@ -2,7 +2,7 @@
 
 #logo-titolo {
   margin-top: 5vw;
-  margin-left: 10vw;
+  margin-left: 5vw;
   color: #2a3a45;
   font-size: 9.5vw;
   font-family: Champ;
@@ -12,7 +12,7 @@
 }
 
 #linea-testo img {
-  margin-left: 10vw;
+  margin-left: 5vw;
   width: 70vw;
 }
 
@@ -22,10 +22,10 @@
 
 #logo-description {
   margin-top: 5vw;
-  margin-left: 10vw;
+  margin-left: 5vw;
   margin-right: 6vw;
   color: #2a3a45;
-  font-size: 4.2vw;
+  font-size: 4vw;
   font-family: Montserrat;
   font-weight: 500;
   word-wrap: break-word;

@@ -41,7 +41,7 @@
 #home_text_3 {
   padding-top: 4vh;
   color: #ed6931;
-  font-size: 4.5vw;
+  font-size: 5vw;
   font-family: Champ;
   font-weight: 900;
   text-decoration: underline;
@@ -50,7 +50,7 @@
 
 .linee_main_section {
   max-width: 100%;
-  margin-top: 15vw;
+  margin-top: 12vw;
   overflow: hidden;
   margin-bottom: 20vw;
 }
@@ -58,7 +58,7 @@
 .linee_main_section img {
   width: 150vw;
   height: auto;
-  padding-top: 5px;
+  padding-top: 0px;
   margin-bottom: 1px;
 }
 
@@ -239,7 +239,7 @@
   text-align: center;
   padding-top: 5vw;
   color: #2a3a45;
-  font-size: 3.6vw;
+  font-size: 4vw;
   font-family: Montserrat;
   font-weight: 500;
   word-wrap: break-word;
@@ -358,15 +358,15 @@
 @media only screen and (min-width: 768px) {
   /* <=========================== Main Section ========================> */
   .class_home_text {
-    margin-top: 28vw;
+    margin-top: 25vw;
   }
 
   #home_text_1 {
-    font-size: 8vw;
+    font-size: 7.5vw;
   }
 
   #home_text_2 {
-    padding-top: 12vw;
+    padding-top: 5vw;
     font-size: 3vw;
   }
 
@@ -378,9 +378,9 @@
   }
 
   #home_text_3 {
-    padding-top: 7vh;
+    padding-top: 5vw;
     color: #ed6931;
-    font-size: 3.5vw;
+    font-size: 3vw;
     text-decoration: underline;
   }
 
@@ -390,10 +390,11 @@
   }
 
   .linee_main_section {
-    margin-top: 15vw;
+    margin-top: 8vw;
   }
 
   .linee_main_section img {
+    width: 130vw;
     opacity: unset;
   }
   /* <=========================== Section 3 ========================> */
@@ -406,11 +407,11 @@
 
   #card-text {
     transform: translate(2vw, 58vw);
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 
   /* <=========================== Section 2 ========================> */
-  
+
   .rettangolo_chisiamo {
     width: 85vw;
     height: 100vw;
@@ -421,17 +422,17 @@
     margin-top: 2vh;
     opacity: 0.1;
     color: #f8fafa;
-    font-size: 14vw;
+    font-size: 13vw;
     font-family: Champ;
     font-weight: 900;
   }
 
   #testo2 {
     position: absolute;
-    margin-left: 20vw;
-    margin-top: -10.5vw;
+    margin-left: 16vw;
+    margin-top: -10vw;
     color: #f8fafa;
-    font-size: 4.5vw;
+    font-size: 5vw;
     font-family: Champ;
     font-weight: 900;
   }
@@ -452,11 +453,79 @@
     padding-top: 8vw;
     text-align: center;
     color: #2c9bd8;
-    font-size: 4vw;
+    font-size: 3vw;
     font-family: Champ;
     font-weight: 900;
     text-decoration: underline;
     word-wrap: break-word;
+  }
+
+  #skill_text_2 {
+    text-align: center;
+    padding-top: 5vw;
+    color: #2a3a45;
+    font-size: 3vw;
+    font-family: Montserrat;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+
+  .item {
+    margin-left: 1vw;
+  }
+
+  .pallini_skills {
+    margin-top: 8vw;
+    align-self: center;
+    max-width: 80%;
+  }
+
+  .cerchi_skills {
+    margin-top: -2.5vw;
+    position: absolute;
+    display: flex;
+  }
+
+  #Cerchio_1 {
+    width: 21vw;
+    margin-top: -6vw;
+    padding-left: 28vw;
+  }
+
+  #Cerchio_2 {
+    width: 24vw;
+    margin-top: -8vw;
+    padding-left: 56.8vw;
+  }
+
+  #Cerchio_3 {
+    width: 17vw;
+    margin-top: 13vw;
+    margin-left: 8vw;
+  }
+
+  #Cerchio_4 {
+    width: 22vw;
+    margin-top: 17vw;
+    padding-left: 38vw;
+  }
+
+  #Cerchio_5 {
+    width: 22vw;
+    margin-top: 17vw;
+    padding-left: 67.5vw;
+  }
+
+  #Cerchio_6 {
+    width: 20vw;
+    margin-top: 34vw;
+    padding-left: 19.5vw;
+  }
+
+  #Cerchio_7 {
+    width: 22vw;
+    padding-left: 55vw;
+    margin-top: 38vw;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -530,7 +599,7 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    animation: 10s carousel-bottom-to-top infinite linear;
+    animation: 20s carousel-bottom-to-top infinite linear;
     animation-delay: 0ms;
   }
 
@@ -538,7 +607,7 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    animation: 10s carousel-top-to-bottom infinite linear;
+    animation: 20s carousel-top-to-bottom infinite linear;
     animation-delay: 0ms;
   }
 
@@ -606,7 +675,7 @@
 
   .skill_text {
     margin-left: 1vw;
-    margin-top: 18vw;
+    margin-top: 12vw;
   }
 
   #skill_text_1 {
@@ -615,7 +684,7 @@
 
   #skill_text_2 {
     text-align: center;
-    padding-top: 5vw;
+    padding-top: 3vw;
     font-size: 1.7vw;
   }
 
@@ -721,7 +790,7 @@
 
   #home_text_2 {
     padding-top: 3vw;
-    font-size: 1.68vw;
+    font-size: 1.5vw;
   }
 
   #home_text_3 {
@@ -760,7 +829,7 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    animation: 10s carousel-bottom-to-top infinite linear;
+    animation: 20s carousel-bottom-to-top infinite linear;
     animation-delay: 0ms;
   }
 
@@ -768,7 +837,7 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    animation: 10s carousel-top-to-bottom infinite linear;
+    animation: 20s carousel-top-to-bottom infinite linear;
     animation-delay: 0ms;
   }
   /* <=========================== Section 2 ========================> */
@@ -798,13 +867,13 @@
     padding-top: 1.2vw;
     margin-right: 3vw;
     margin-left: 3vw;
-    font-size: 1.6vw;
+    font-size: 1.5vw;
   }
 
   #testo4 {
     padding-top: 4vw;
     text-align: center;
-    font-size: 1.6vw;
+    font-size: 1.8vw;
   }
   /* =========================== Section 3 ======================== */
 
@@ -845,12 +914,12 @@
   #skill_text_2 {
     text-align: left;
     padding-top: 2.5vw;
-    font-size: 1.3vw;
+    font-size: 1.5vw;
   }
 
   .pallini_skills {
     margin-top: 5vw;
-    margin-left: 10vw;
+    margin-left: 6vw;
     max-width: 100%;
   }
 

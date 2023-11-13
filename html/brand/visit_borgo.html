@@ -45,6 +45,8 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script src="/js/contattacci.js"></script>
+    <script src="/js/scroll.js"></script>
   </head>
   <body>
     <!-- =========================== Header Content la Navigation Bar ======================== -->
@@ -101,8 +103,8 @@
         <div id="linea-testo-desktop"></div>
         <p id="logo-description">
           Il logo è una rappresentazione di Piazza Alicia, dove i simboli
-          iconici della città, il castello e l'ex chiesa<br />
-          madre, si uniscono in una disposizione unica, simboleggiando l'essenza
+          iconici della città, il castello e l'ex chiesa
+          madre, si uniscono in una disposizione unica, simboleggiando l'essenza<br>
           di Salemi.
         </p>
         <p id="logo-description-desktop">
@@ -116,7 +118,7 @@
 
     <!-- =========================== Nascita Section ======================== -->
     <div class="nascita-section">
-      <div class="container-nascita">
+      <div class="container-nascita" id="container-borgo">
         <div id="testo-1">Concept</div>
         <div id="testo-2">Com’è nato il logo?</div>
         <div id="testo-3-mobile">
@@ -125,15 +127,13 @@
           rappresentazione di Piazza Alicia. Qui, i simboli iconici di Salemi,
           il castello e l'ex chiesa madre, sono fedelmente riprodotti con una
           disposizione unica: il castello è ruotato di 90° rispetto all'ex
-          chiesa madre. <br />
-          <br />Questo design è ulteriormente arricchito <br />da una grafica
-          coordinata, composta <br />da 25 "piastrelle", ognuna delle quali
-          <br />simboleggia altri aspetti caratteristici di Salemi. L'obiettivo
-          di questo logo è chiaro: trasmettere il messaggio che Salemi è<br />
-          molto più di quanto si possa vedere inizialmente, invitando a scoprire
-          tutti<br />
-          i tesori nascosti che questa città<br />
-          ha da offrire.
+          chiesa madre. <br /><br />
+          Questo design è ulteriormente arricchito da una grafica coordinata,
+          composta da 25 "piastrelle", ognuna delle quali simboleggia altri
+          aspetti caratteristici di Salemi. L'obiettivo di questo logo è chiaro:
+          trasmettere il messaggio che Salemi è molto più di quanto si possa
+          vedere inizialmente, invitando a scoprire tutti i tesori nascosti che
+          questa città ha da offrire.
         </div>
         <div id="testo-3-nomobile">
           Il logo creato per l'associazione salemitana, impegnata nella
@@ -141,13 +141,13 @@
           rappresentazione di Piazza Alicia. Qui, i simboli iconici di Salemi,
           il castello e l'ex chiesa madre, sono fedelmente riprodotti con una
           disposizione unica: il castello è ruotato di 90° rispetto all'ex
-          chiesa madre. <br />
-          <br />Questo design è ulteriormente arricchito da una grafica
-          coordinata, composta da 25 "piastrelle", ognuna delle quali
-          simboleggia altri aspetti caratteristici di Salemi. L'obiettivo di
-          questo logo è chiaro: trasmettere il messaggio che Salemi è molto più
-          di quanto si possa vedere inizialmente, invitando a scoprire tutti i
-          tesori nascosti che questa città ha da offrire.
+          chiesa madre. <br /><br />
+          Questo design è ulteriormente arricchito da una grafica coordinata,
+          composta da 25 "piastrelle", ognuna delle quali simboleggia altri
+          aspetti caratteristici di Salemi. L'obiettivo di questo logo è chiaro:
+          trasmettere il messaggio che Salemi è molto più di quanto si possa
+          vedere inizialmente, invitando a scoprire tutti i tesori nascosti che
+          questa città ha da offrire.
         </div>
       </div>
     </div>
@@ -253,17 +253,7 @@
             alt="linea_2_orizzontale"
           />
         </div>
-        <div id="linee_animation_right">
-          <img
-            id="linea_7_orizzontale"
-            src="../../assets/linee_orizzontali/linea_1_orizzontale.png"
-            alt="linea_3_orizzontale"
-          /><img
-            id="linea_7_animazione"
-            src="../../assets/linee_orizzontali/linea_1_orizzontale.png"
-            alt="linea_3_orizzontale"
-          />
-        </div>
+
       </div>
       <div class="rettangolo_contenitore_contattaci">
         <div id="testo-contattacci">Contattaci</div>
@@ -311,7 +301,7 @@
               id="messaggio"
               name="messaggio"
               placeholder="Messaggio"
-              rows="4"
+              rows="3"
               cols="50"
               onfocus="if (this.value == 'Messaggio') this.value = ''"
               onblur="if (this.value == '') this.value = 'Messaggio'"

@@ -45,6 +45,8 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script src="/js/contattacci.js"></script>
+    <script src="/js/scroll.js"></script>
   </head>
   <body>
     <!-- =========================== Header Content la Navigation Bar ======================== -->
@@ -102,7 +104,7 @@
         <p id="logo-description">
           Il branding per la nuova cantina di Mazzarino, denominata "Kyklos,"
           celebra l'essenza di questa terra attraverso un logo che incarna il
-          <br />ciclo lunare e la produzione vinicola.
+          ciclo lunare e la produzione vinicola.
         </p>
         <p id="logo-description-desktop">
           Il branding per la nuova cantina di Mazzarino,<br />
@@ -115,14 +117,14 @@
 
     <!-- =========================== Nascita Section ======================== -->
     <div class="nascita-section">
-      <div class="container-nascita">
+      <div class="container-nascita" id="container-ky">
         <div id="testo-1">Concept</div>
         <div id="testo-2">Com’è nato il logo?</div>
         <div id="testo-3-mobile">
           <br />
           Il branding realizzato per una nuova cantina di Mazzarino, nata senza
           nemmeno un nome. Dopo un'approfondita ricerca, insieme al
-          proprietario, abbiamo scelto <br>il nome "Kyklos," derivato dal greco
+          proprietario, abbiamo scelto il nome "Kyklos," derivato dal greco
           "ciclo." Questa scelta richiama non solo le origini greche di
           Mazzarino, ex colonia greca, ma anche la pratica della raccolta
           dell'uva, che in questa cantina segue il ciclo lunare.<br /><br />
@@ -256,17 +258,6 @@
             alt="linea_2_orizzontale"
           />
         </div>
-        <div id="linee_animation_right">
-          <img
-            id="linea_7_orizzontale"
-            src="../../assets/linee_orizzontali/linea_1_orizzontale.png"
-            alt="linea_3_orizzontale"
-          /><img
-            id="linea_7_animazione"
-            src="../../assets/linee_orizzontali/linea_1_orizzontale.png"
-            alt="linea_3_orizzontale"
-          />
-        </div>
       </div>
       <div class="rettangolo_contenitore_contattaci">
         <div id="testo-contattacci">Contattaci</div>
@@ -314,7 +305,7 @@
               id="messaggio"
               name="messaggio"
               placeholder="Messaggio"
-              rows="4"
+              rows="3"
               cols="50"
               onfocus="if (this.value == 'Messaggio') this.value = ''"
               onblur="if (this.value == '') this.value = 'Messaggio'"

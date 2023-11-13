@@ -53,6 +53,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/contattacci.js"></script>
+    <script src="js/scroll.js"></script>
   </head>
 
   <body>
@@ -259,21 +261,36 @@
 
     <!-- Swiper -->
     <div class="owl-carousel owl-theme">
-      <div class="item" id="item-1">
+      <div
+        class="item"
+        id="item-1"
+        onclick="redirectToPage('/html/brand_indentity.html')"
+      >
         <a href="/html/brand_indentity.html" id="card-text">Brand Identity</a>
       </div>
-      <div class="item" id="item-2">
+      <div
+        class="item"
+        id="item-2"
+        onclick="redirectToPage('/html/web_site.html')"
+      >
         <a href="/html/web_site.html" id="card-text">Web-Site</a>
       </div>
       <!-- <div class="item" id="item-3">
         <a href="/html/social_media.html" id="card-text">Social Media</a>
       </div> -->
-      <div class="item" id="item-4">
+      <div
+        class="item"
+        id="item-4"
+        onclick="redirectToPage('/html/mobile_app.html')"
+      >
         <a href="/html/mobile_app.html" id="card-text">Mobile App</a>
       </div>
     </div>
 
     <script>
+      function redirectToPage(url) {
+        window.location.href = url;
+      }
       $(".owl-carousel").owlCarousel({
         stagePadding: 42,
         loop: true,
@@ -288,10 +305,12 @@
             items: 1,
           },
           768: {
-            items: 2,
+            stagePadding: 215,
+            items: 1,
           },
           992: {
             items: 3,
+            loop: false,
           },
           1200: {
             stagePadding: 70,
@@ -363,7 +382,7 @@
 
     <!-- =========================== Contattacci ======================== -->
 
-    <div class="Contattaci" id="contattacci-section" style="margin-top: 10vh">
+    <div class="Contattaci" id="contattacci-section">
       <div class="linee_orizzontali">
         <div id="linee_animation_right">
           <img
@@ -435,7 +454,7 @@
             alt="linea_2_orizzontale"
           />
         </div>
-        <div id="linee_animation_right">
+        <!-- <div id="linee_animation_right">
           <img
             id="linea_7_orizzontale"
             src="assets/linee_orizzontali/linea_1_orizzontale.png"
@@ -445,7 +464,7 @@
             src="assets/linee_orizzontali/linea_1_orizzontale.png"
             alt="linea_3_orizzontale"
           />
-        </div>
+        </div> -->
       </div>
       <div class="rettangolo_contenitore_contattaci">
         <div id="testo-contattacci">Contattaci</div>
@@ -493,7 +512,7 @@
               id="messaggio"
               name="messaggio"
               placeholder="Messaggio"
-              rows="4"
+              rows="3"
               cols="50"
               onfocus="if (this.value == 'Messaggio') this.value = ''"
               onblur="if (this.value == '') this.value = 'Messaggio'"

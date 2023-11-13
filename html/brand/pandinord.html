@@ -45,6 +45,8 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script src="/js/contattacci.js"></script>
+    <script src="/js/scroll.js"></script>
   </head>
   <body>
     <!-- =========================== Header Content la Navigation Bar ======================== -->
@@ -116,7 +118,7 @@
 
     <!-- =========================== Nascita Section ======================== -->
     <div class="nascita-section">
-      <div class="container-nascita">
+      <div class="container-nascita" id="container-pandi">
         <div id="testo-1">Concept</div>
         <div id="testo-2">Com’è nato il logo?</div>
         <div id="testo-3-mobile">
@@ -139,16 +141,15 @@
           Il logo di Pandinord è stato concepito per comunicare l'entusiasmante
           viaggio di tre giovani avventurieri, che si proponevano di percorrere
           la strada da Salemi a Capo Nord, il punto più settentrionale d'Europa,
-          a bordo della loro iconica<br />
-          Fiat Panda arancione.<br /><br />
+          a bordo della loro iconica Fiat Panda arancione.<br /><br />
           Al centro del logo, è evidente la presenza del loro pandino,
           circondato da due sfondi distinti che raffigurano la Sicilia e Capo
           Nord. Questo simbolo cattura l'essenza del viaggio, dalla partenza al
           raggiungimento della meta, utilizzando la loro modesta ma iconica auto
           come mezzo di trasporto. Come payoff, è stata scelta la frase "questo
           è il nostro viaggio," richiamando l'inizio tradizionale dei loro video
-          sui social media: "Questo è..." - una testimonianza autentica
-          <br />del loro percorso unico.
+          sui social media: "Questo è..." - una testimonianza autentica del loro
+          percorso unico.
         </div>
       </div>
     </div>
@@ -266,17 +267,7 @@
             alt="linea_2_orizzontale"
           />
         </div>
-        <div id="linee_animation_right">
-          <img
-            id="linea_7_orizzontale"
-            src="../../assets/linee_orizzontali/linea_1_orizzontale.png"
-            alt="linea_3_orizzontale"
-          /><img
-            id="linea_7_animazione"
-            src="../../assets/linee_orizzontali/linea_1_orizzontale.png"
-            alt="linea_3_orizzontale"
-          />
-        </div>
+
       </div>
       <div class="rettangolo_contenitore_contattaci">
         <div id="testo-contattacci">Contattaci</div>
@@ -324,7 +315,7 @@
               id="messaggio"
               name="messaggio"
               placeholder="Messaggio"
-              rows="4"
+              rows="3"
               cols="50"
               onfocus="if (this.value == 'Messaggio') this.value = ''"
               onblur="if (this.value == '') this.value = 'Messaggio'"

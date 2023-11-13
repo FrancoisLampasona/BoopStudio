@@ -30,7 +30,7 @@
 #brand-text-3 {
   padding-top: 3vh;
   color: #ed6931;
-  font-size: 4.2vw;
+  font-size: 5vw;
   font-family: Champ;
   font-weight: 900;
   text-decoration: underline;
@@ -56,7 +56,7 @@
 }
 
 .mini-logo-container {
-  margin-top: 13vw;
+  margin-top: 10vw;
   position: relative;
 }
 
@@ -66,9 +66,9 @@
 
 .mini-logo-1 {
   top: 50%;
-  transform: translate(120%, -40%);
-  width: 45vw;
-  height: 50vw;
+  transform: translate(100%, -50%);
+  width: 50vw;
+  height: 45vw;
   background-size: cover;
   background-image: url("../assets/brand_identity/mini_loghi/mini_convertable.png");
   z-index: 5;
@@ -76,18 +76,18 @@
 
 .mini-logo-2 {
   left: 50%;
-  transform: translate(-50%, -9%);
-  width: 48vw;
-  height: 48vw;
+  transform: translate(-60%, -30%);
+  width: 40vw;
+  height: 40vw;
   background-size: cover;
   background-image: url("../assets/brand_identity/mini_loghi/mini_monroy.png");
   z-index: 4;
 }
 
 .mini-logo-3 {
-  transform: translate(-10%, 16%);
-  width: 50vw;
-  height: 50vw;
+  transform: translate(-10%, -5%);
+  width: 39vw;
+  height: 45vw;
   background-size: cover;
   background-image: url("../assets/brand_identity/mini_loghi/mini_vito.png");
   z-index: 7;
@@ -96,9 +96,9 @@
 .mini-logo-4 {
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 58%);
-  width: 50vw;
-  height: 50vw;
+  transform: translate(-50%, 30%);
+  width: 42vw;
+  height: 45vw;
   background-size: cover;
   background-image: url("../assets/brand_identity/mini_loghi/mini_pandi.png");
   z-index: 11;
@@ -106,36 +106,36 @@
 
 .mini-logo-5 {
   top: 50%;
-  transform: translate(120%, 25%);
-  width: 45vw;
-  height: 50vw;
+  transform: translate(134%, 15%);
+  width: 42vw;
+  height: 45vw;
   background-size: cover;
   background-image: url("../assets/brand_identity/mini_loghi/mini_visit.png");
   z-index: 7;
 }
 
 .mini-logo-6 {
-  transform: translate(-10%, 74%);
-  width: 50vw;
-  height: 50vw;
+  transform: translate(0%, 50%);
+  width: 39vw;
+  height: 45vw;
   background-size: cover;
   background-image: url("../assets/brand_identity/mini_loghi/mini_laura.png");
   z-index: 10;
 }
 
 .mini-logo-7 {
-  transform: translate(50%, 110%);
-  width: 50vw;
-  height: 50vw;
+  transform: translate(50%, 90%);
+  width: 39vw;
+  height: 45vw;
   background-size: cover;
   background-image: url("../assets/brand_identity/mini_loghi/mini_cantina.png");
   z-index: 9;
 }
 
 .mini-logo-8 {
-  transform: translate(120%, 92%);
-  width: 45vw;
-  height: 50vw;
+  transform: translate(130%, 82%);
+  width: 39vw;
+  height: 45vw;
   background-size: cover;
   background-image: url("../assets/brand_identity/mini_loghi/mini_moceri.png");
   z-index: 8;
@@ -246,6 +246,10 @@
   font-size: 3vw;
   font-family: Montserrat;
   font-weight: 500;
+}
+
+.card-text{
+  z-index: 10;
 }
 
 #logo-text-scopri {

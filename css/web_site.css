@@ -31,7 +31,7 @@
 #website-text-3 {
   padding-top: 3vh;
   color: #ed6931;
-  font-size: 4.2vw;
+  font-size: 4.5vw;
   font-family: Champ;
   font-weight: 900;
   text-decoration: underline;
@@ -140,6 +140,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.card-text{
+  z-index: 10;
 }
 
 .cerchio {
@@ -500,12 +504,13 @@
   #website-text-2 {
     padding-left: 2vw;
     padding-top: 2vw;
-    font-size: 1.6vw;
+    font-size: 1.5vw;
   }
 
   #website-text-3 {
     padding-left: 2vw;
-    padding-top: 2vh;
+    padding-top: 0vh;
+    margin-top: 2.5vw;
     font-size: 1.5vw;
   }
 
@@ -529,8 +534,21 @@
   }
 
   /* <=========================== Section 2 ========================> */
+
+  .text-brand-desktop {
+    font-size: 1.5vw;
+  }
+
+  .logo-text-scopri {
+    color: #ed6931;
+    font-size: 1.5vw;
+    font-family: Champ;
+    font-weight: 900;
+    word-wrap: break-word;
+  }
+
   #decorazione-1 {
-    transform: translate(230%, -405%);
+    transform: translate(195%, -390%);
     background-image: url("../assets/decorazioni/tratti_gialli.png");
   }
 }
