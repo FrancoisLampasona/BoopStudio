@@ -144,7 +144,7 @@
   padding-top: 10vw;
   text-align: center;
   color: #2c9bd8;
-  font-size: 5.5vw;
+  font-size: 5vw;
   font-family: Champ;
   font-weight: 900;
   text-decoration: underline;
@@ -795,7 +795,7 @@
 
   #home_text_3 {
     padding-top: 5.5vh;
-    font-size: 1.4vw;
+    font-size: 1.8vw;
   }
 
   .linee_main_section {
@@ -928,6 +928,7 @@
   }
 
   .cerchi_skills {
+    margin-left: 2.5vw;
     position: absolute;
     display: flex;
   }

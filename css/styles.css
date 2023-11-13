@@ -186,7 +186,7 @@ header {
   border: none;
   background-color: transparent;
   color: #2c9bd8;
-  font-size: 5.5vw;
+  font-size: 5vw;
   font-family: Champ;
   font-weight: 900;
   text-decoration: underline;
@@ -972,7 +972,7 @@ header {
   }
 
   .header_logo img {
-    width: 60%;
+    width: 64%;
   }
 
   .header_menu {
@@ -1064,6 +1064,7 @@ header {
     grid-column: 1/4;
   }
   #invia {
+    font-size: 1.8vw;
     margin-top: 2.5vw;
     grid-row: 3;
   }

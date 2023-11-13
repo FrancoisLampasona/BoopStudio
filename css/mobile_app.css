@@ -142,7 +142,7 @@
   flex-direction: column;
 }
 
-.card-text{
+.card-text {
   z-index: 10;
 }
 
@@ -411,7 +411,7 @@
     margin-left: 0px;
     margin-top: 2.5vw;
     color: #ed6931;
-    font-size: 2vw;
+    font-size: 1.8vw;
     font-family: Champ;
     font-weight: 900;
     text-decoration: underline;
@@ -550,5 +550,9 @@
 
   .mobileApp-img {
     background-size: 125%;
+  }
+
+  #mobileApp-text-3 {
+    font-size: 1.8vw;
   }
 }

@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
       tablet768: 180,
       tablet992: 50,
       desktop1200: -100,
+      desktop1700: -280,
     },
     {
       href: "#sevizi-section",
@@ -14,7 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
       mobile600: 90,
       tablet768: 190,
       tablet992: 130,
-      desktop1200: -20,
+      desktop1200: 110,
+      desktop1700: -20,
     },
     {
       href: "#skill",
@@ -22,7 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
       mobile600: 50,
       tablet768: 80,
       tablet992: 140,
-      desktop1200: -5,
+      desktop1200: 80,
+      desktop1700: 5,
     },
     {
       href: "#contattacci-section",
@@ -30,7 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
       mobile600: 32,
       tablet768: 150,
       tablet992: 70,
-      desktop1200: 100,
+      desktop1200: 120,
+      desktop1700: 80,
     },
   ];
 
@@ -83,8 +87,13 @@ document.addEventListener("DOMContentLoaded", function () {
       window.matchMedia("(max-width: 1199px)").matches
     ) {
       offset = linkData.tablet992;
-    } else if (window.matchMedia("(min-width: 1200px)").matches) {
+    } else if (
+      window.matchMedia("(min-width: 1200px)").matches &&
+      window.matchMedia("(max-width: 1699px)").matches
+    ) {
       offset = linkData.desktop1200;
+    } else if (window.matchMedia("(min-width: 1700px)").matches) {
+      offset = linkData.desktop1700;
     }
 
     return offset;
