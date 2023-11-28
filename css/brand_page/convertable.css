@@ -37,7 +37,7 @@
 }
 
 #img-CB {
-  background-image: url("../../assets/brand_identity/loghi/convertable_logo.png");
+  background-image: url("../../assets/brand_identity/loghi/convertable_logo.webp");
 }
 /* <=========================== Mockup Section ========================> */
 
@@ -140,7 +140,7 @@
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../../assets/brand_identity/brand_page/linea_desktop_brand_page.png");
+    background-image: url("../../assets/brand_identity/brand_page/linea_desktop_brand_page.webp");
   }
 
   #logo-description-desktop {

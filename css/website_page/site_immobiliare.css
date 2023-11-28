@@ -23,7 +23,7 @@
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../../assets/web_site/site_for_you/Ellisse_blu.png");
+  background-image: url("../../assets/web_site/site_for_you/Ellisse_blu.webp");
 }
 
 .image-pc {
@@ -35,7 +35,7 @@
   background-size: 135%;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../../assets/web_site/my_house_immobiliare/immobiliaremacbook.png");
+  background-image: url("../../assets/web_site/my_house_immobiliare/immobiliaremacbook.webp");
 }
 
 #logo-titolo {
@@ -260,7 +260,7 @@
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../../assets/web_site/site_for_you/Ellisse_blu.png");
+    background-image: url("../../assets/web_site/site_for_you/Ellisse_blu.webp");
   }
 
   .image-pc {
@@ -272,7 +272,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: right;
-    background-image: url("../../assets/web_site/my_house_immobiliare/immobiliaremacbook.png");
+    background-image: url("../../assets/web_site/my_house_immobiliare/immobiliaremacbook.webp");
   }
 
   .text {
@@ -306,7 +306,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../../assets/brand_identity/brand_page/linea_desktop_brand_page.png");
+    background-image: url("../../assets/brand_identity/brand_page/linea_desktop_brand_page.webp");
   }
 
   #linea-testo {

@@ -23,7 +23,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../../assets/web_site/site_for_you/Ellisse_blu.png");
+  background-image: url("../../assets/web_site/site_for_you/Ellisse_blu.webp");
 }
 
 .image-mobile-nodesktop {
@@ -35,7 +35,7 @@
   background-size: 135%;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../../assets/mobile_app/MyFitness/logo_1.png");
+  background-image: url("../../assets/mobile_app/MyFitness/logo_1.webp");
 }
 
 #logo-titolo {
@@ -179,89 +179,89 @@
 /* Versione 1 - Admin  */
 
 #item-1-admin-1 {
-  background-image: url("/assets/mobile_app/MyFitness/versione_1/admin/admin_1.png");
+  background-image: url("/assets/mobile_app/MyFitness/versione_1/admin/admin_1.webp");
 }
 
 #item-2-admin-1 {
-  background-image: url("/assets/mobile_app/MyFitness/versione_1/admin/admin_2.png");
+  background-image: url("/assets/mobile_app/MyFitness/versione_1/admin/admin_2.webp");
 }
 
 #item-3-admin-1 {
-  background-image: url("/assets/mobile_app/MyFitness/versione_1/admin/admin_3.png");
+  background-image: url("/assets/mobile_app/MyFitness/versione_1/admin/admin_3.webp");
 }
 
 #item-4-admin-1 {
-  background-image: url("/assets/mobile_app/MyFitness/versione_1/admin/admin_4.png");
+  background-image: url("/assets/mobile_app/MyFitness/versione_1/admin/admin_4.webp");
 }
 
 #item-5-admin-1 {
-  background-image: url("/assets/mobile_app/MyFitness/versione_1/admin/admin_5.png");
+  background-image: url("/assets/mobile_app/MyFitness/versione_1/admin/admin_5.webp");
 }
 
 /* Versione 1 - Utente  */
 
 #item-1-utente-1 {
-  background-image: url("/assets/mobile_app/MyFitness/versione_1/utente/utente_1.png");
+  background-image: url("/assets/mobile_app/MyFitness/versione_1/utente/utente_1.webp");
 }
 
 #item-2-utente-1 {
-  background-image: url("/assets/mobile_app/MyFitness/versione_1/utente/utente_2.png");
+  background-image: url("/assets/mobile_app/MyFitness/versione_1/utente/utente_2.webp");
 }
 
 #item-3-utente-1 {
-  background-image: url("/assets/mobile_app/MyFitness/versione_1/utente/utente_3.png");
+  background-image: url("/assets/mobile_app/MyFitness/versione_1/utente/utente_3.webp");
 }
 
 #item-4-utente-1 {
-  background-image: url("/assets/mobile_app/MyFitness/versione_1/utente/utente_4.png");
+  background-image: url("/assets/mobile_app/MyFitness/versione_1/utente/utente_4.webp");
 }
 
 #item-5-utente-1 {
-  background-image: url("/assets/mobile_app/MyFitness/versione_1/utente/utente_5.png");
+  background-image: url("/assets/mobile_app/MyFitness/versione_1/utente/utente_5.webp");
 }
 
 /* Versione 2 - Admin  */
 
 #item-1-admin-2 {
-  background-image: url("/assets/mobile_app/MyFitness/versione_2/admin/admin_1.png");
+  background-image: url("/assets/mobile_app/MyFitness/versione_2/admin/admin_1.webp");
 }
 
 #item-2-admin-2 {
-  background-image: url("/assets/mobile_app/MyFitness/versione_2/admin/admin_2.png");
+  background-image: url("/assets/mobile_app/MyFitness/versione_2/admin/admin_2.webp");
 }
 
 #item-3-admin-2 {
-  background-image: url("/assets/mobile_app/MyFitness/versione_2/admin/admin_3.png");
+  background-image: url("/assets/mobile_app/MyFitness/versione_2/admin/admin_3.webp");
 }
 
 #item-4-admin-2 {
-  background-image: url("/assets/mobile_app/MyFitness/versione_2/admin/admin_4.png");
+  background-image: url("/assets/mobile_app/MyFitness/versione_2/admin/admin_4.webp");
 }
 
 #item-5-admin-2 {
-  background-image: url("/assets/mobile_app/MyFitness/versione_2/admin/admin_5.png");
+  background-image: url("/assets/mobile_app/MyFitness/versione_2/admin/admin_5.webp");
 }
 
 /* Versione 2 - Utente  */
 
 #item-1-utente-2 {
-  background-image: url("/assets/mobile_app/MyFitness/versione_2/utente/utente_1.png");
+  background-image: url("/assets/mobile_app/MyFitness/versione_2/utente/utente_1.webp");
 }
 
 #item-2-utente-2 {
-  background-image: url("/assets/mobile_app/MyFitness/versione_2/utente/utente_2.png");
+  background-image: url("/assets/mobile_app/MyFitness/versione_2/utente/utente_2.webp");
 }
 
 #item-3-utente-2 {
-  background-image: url("/assets/mobile_app/MyFitness/versione_2/utente/utente_3.png");
+  background-image: url("/assets/mobile_app/MyFitness/versione_2/utente/utente_3.webp");
 }
 
 #item-4-utente-2 {
-  background-image: url("/assets/mobile_app/MyFitness/versione_2/utente/utente_4.png");
+  background-image: url("/assets/mobile_app/MyFitness/versione_2/utente/utente_4.webp");
 }
 
 #item-5-utente-2 {
-  background-image: url("/assets/mobile_app/MyFitness/versione_2/utente/utente_5.png");
+  background-image: url("/assets/mobile_app/MyFitness/versione_2/utente/utente_5.webp");
 }
 
 .mockup-container p {
@@ -311,7 +311,7 @@
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../../assets/web_site/site_for_you/Ellisse_blu.png");
+    background-image: url("../../assets/web_site/site_for_you/Ellisse_blu.webp");
   }
 
   .image-mobile-nodesktop {
@@ -327,7 +327,7 @@
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: right;
-    background-image: url("../../assets/mobile_app/MyFitness/logo_1.png");
+    background-image: url("../../assets/mobile_app/MyFitness/logo_1.webp");
   }
 
   .text {
@@ -361,7 +361,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../../assets/brand_identity/brand_page/linea_desktop_brand_page.png");
+    background-image: url("../../assets/brand_identity/brand_page/linea_desktop_brand_page.webp");
   }
 
   #linea-testo {

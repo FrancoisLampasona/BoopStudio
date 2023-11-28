@@ -52,9 +52,9 @@
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/contattacci.js"></script>
-    <script src="js/scroll.js"></script>
+    <script async src="js/main.js"></script>
+    <script async src="js/contattacci.js"></script>
+    <script async src="js/scroll.js"></script>
   </head>
 
   <body>
@@ -64,14 +64,17 @@
       <header class="header">
         <div class="header_content">
           <input type="checkbox" id="check" />
-          <label for="check" class="hamburger_icon">
-            <img src="assets/simbolo_x.svg" id="close_icon" alt="Close Icon" />
-            <img
-              src="assets/hamburgermenu.svg"
-              id="menu_icon"
-              alt="Hamburger Icon"
-            />
+          <label for="check" class="menu_linee" id="menuToggle">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
           </label>
+          <ul class="header_menu">
+            <li><a href="#chisiamo-section">Chi siamo</a></li>
+            <li><a href="#sevizi-section">Servizi</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li id="contattati"><a href="#contattacci-section">Contatti</a></li>
+          </ul>
           <div class="header_logo">
             <a href="../index.html"
               ><img
@@ -79,16 +82,10 @@
                 alt="Boop Studio Logo"
             /></a>
           </div>
-
-          <ul class="header_menu">
-            <li><a href="#chisiamo-section">Chi siamo</a></li>
-            <li><a href="#sevizi-section">Servizi</a></li>
-            <li><a href="#skill">Skills</a></li>
-            <li id="contattati"><a href="#contattacci-section">Contatti</a></li>
-          </ul>
         </div>
       </header>
     </nav>
+    <script src="/js/menu.js"></script>
 
     <!-- =========================== Main Section ======================== -->
 
@@ -116,52 +113,52 @@
           <a href="#contattacci-section">Scopri di più</a>
         </div>
       </div>
-      <div class="linee_main_section">
+      <div class="linee_main_section hidden">
         <div class="linee_main_mobile">
           <div id="linee_animation_right">
             <img
               id="linea_1_orizzontale"
-              src="assets/linee_orizzontali/linea_1_orizzontale.png"
+              src="assets/linee_orizzontali/linea_1_orizzontale.webp"
               alt="linea_1_orizzontale"
             />
             <img
               id="linea_1_animazione"
-              src="assets/linee_orizzontali/linea_1_orizzontale.png"
+              src="assets/linee_orizzontali/linea_1_orizzontale.webp"
               alt="linea_1_orizzontale"
             />
           </div>
           <div id="linee_animation_left">
             <img
               id="linea_2_orizzontale"
-              src="assets/linee_orizzontali/linea_2_orizzontale.png"
+              src="assets/linee_orizzontali/linea_2_orizzontale.webp"
               alt="linea_2_orizzontale"
             />
             <img
               id="linea_2_animazione"
-              src="assets/linee_orizzontali/linea_2_orizzontale.png"
+              src="assets/linee_orizzontali/linea_2_orizzontale.webp"
               alt="linea_2_orizzontale"
             />
           </div>
           <div id="linee_animation_right">
             <img
               id="linea_3_orizzontale"
-              src="assets/linee_orizzontali/linea_3_orizzontale.png"
+              src="assets/linee_orizzontali/linea_3_orizzontale.webp"
               alt="linea_3_orizzontale"
             /><img
               id="linea_3_animazione"
-              src="assets/linee_orizzontali/linea_3_orizzontale.png"
+              src="assets/linee_orizzontali/linea_3_orizzontale.webp"
               alt="linea_3_orizzontale"
             />
           </div>
           <div id="linee_animation_left">
             <img
               id="linea_4_orizzontale"
-              src="assets/linee_orizzontali/linea_4_orizzontale.png"
+              src="assets/linee_orizzontali/linea_4_orizzontale.webp"
               alt="linea_4_orizzontale"
             />
             <img
               id="linea_4_animazione"
-              src="assets/linee_orizzontali/linea_4_orizzontale.png"
+              src="assets/linee_orizzontali/linea_4_orizzontale.webp"
               alt="linea_4_orizzontale"
             />
           </div>
@@ -170,24 +167,24 @@
           <div id="linee_animation_top">
             <img
               id="linea_1_veritcale"
-              src="assets/linee_verticali/linea_2_verticale.png"
+              src="assets/linee_verticali/linea_2_verticale.webp"
               alt="linea_1_verticale"
             />
             <img
               id="linea_1_veritcale_animation"
-              src="assets/linee_verticali/linea_2_verticale.png"
+              src="assets/linee_verticali/linea_2_verticale.webp"
               alt="linea_1_verticale"
             />
           </div>
           <div id="linee_animation_bottom">
             <img
               id="linea_2_veritcale"
-              src="assets/linee_verticali/linea_3_verticale.png"
+              src="assets/linee_verticali/linea_3_verticale.webp"
               alt="linea_2_verticale"
             />
             <img
               id="linea_2_veritcale_animation"
-              src="assets/linee_verticali/linea_3_verticale.png"
+              src="assets/linee_verticali/linea_3_verticale.webp"
               alt="linea_2_verticale"
             />
           </div>
@@ -195,13 +192,13 @@
             <img
               id="linea_3_veritcale"
               class="penultima_linea_verticale"
-              src="assets/linee_verticali/linea_4_verticale.png"
+              src="assets/linee_verticali/linea_4_verticale.webp"
               alt="linea_3_verticale"
             />
             <img
               id="linea_3_veritcale_animation"
               class="penultima_linea_verticale"
-              src="assets/linee_verticali/linea_4_verticale.png"
+              src="assets/linee_verticali/linea_4_verticale.webp"
               alt="linea_3_verticale"
             />
           </div>
@@ -209,13 +206,13 @@
             <img
               id="linea_4_veritcale"
               class="ultima_linea_verticale"
-              src="assets/linee_verticali/linea_1_verticale.png"
+              src="assets/linee_verticali/linea_1_verticale.webp"
               alt="linea_4_verticale"
             />
             <img
               id="linea_4_veritcale_animation"
               class="ultima_linea_verticale"
-              src="assets/linee_verticali/linea_1_verticale.png"
+              src="assets/linee_verticali/linea_1_verticale.webp"
               alt="linea_4_verticale"
             />
           </div>
@@ -266,14 +263,14 @@
         id="item-1"
         onclick="redirectToPage('/html/brand_indentity.html')"
       >
-        <a href="/html/brand_indentity.html" id="card-text">Brand Identity</a>
+        <h1 id="card-text">Brand Identity</h1>
       </div>
       <div
         class="item"
         id="item-2"
         onclick="redirectToPage('/html/web_site.html')"
       >
-        <a href="/html/web_site.html" id="card-text">Web-Site</a>
+        <h1 id="card-text">Web-Site</h1>
       </div>
       <!-- <div class="item" id="item-3">
         <a href="/html/social_media.html" id="card-text">Social Media</a>
@@ -283,7 +280,7 @@
         id="item-4"
         onclick="redirectToPage('/html/mobile_app.html')"
       >
-        <a href="/html/mobile_app.html" id="card-text">Mobile App</a>
+        <h1 id="card-text">Mobile App</h1>
       </div>
     </div>
 
@@ -335,45 +332,45 @@
         </div>
       </div>
       <div class="pallini_skills">
-        <img src="assets/pallini/pallini.png" alt="pallini_skills" />
+        <img src="assets/pallini/pallini.webp" alt="pallini_skills" />
       </div>
       <div class="cerchi_skills">
         <div class="cerchietto" id="Cerchio_1">
           <img
-            src="assets/pallini/cerchi/cerchio_innovazione.png"
+            src="assets/pallini/cerchi/cerchio_innovazione.webp"
             alt="cerchio_innovazione"
           />
         </div>
         <div id="Cerchio_2">
-          <img src="assets/pallini/cerchi/cerchio_UX.png" alt="cerchio_UX" />
+          <img src="assets/pallini/cerchi/cerchio_UX.webp" alt="cerchio_UX" />
         </div>
         <div id="Cerchio_3">
           <img
-            src="assets/pallini/cerchi/cerchio_team.png"
+            src="assets/pallini/cerchi/cerchio_team.webp"
             alt="cerchio_team"
           />
         </div>
         <div id="Cerchio_4">
           <img
-            src="assets/pallini/cerchi/cerchio_strategia.png"
+            src="assets/pallini/cerchi/cerchio_strategia.webp"
             alt="cerchio_strategia"
           />
         </div>
         <div id="Cerchio_5">
           <img
-            src="assets/pallini/cerchi/cerchio_formazione.png"
+            src="assets/pallini/cerchi/cerchio_formazione.webp"
             alt="cerchio_formazione"
           />
         </div>
         <div id="Cerchio_6">
           <img
-            src="assets/pallini/cerchi/cerchio_sviluppo.png"
+            src="assets/pallini/cerchi/cerchio_sviluppo.webp"
             alt="cerchio_sviluppo"
           />
         </div>
         <div id="Cerchio_7">
           <img
-            src="assets/pallini/cerchi/cerchio_clienti.png"
+            src="assets/pallini/cerchi/cerchio_clienti.webp"
             alt="cerchio_clienti"
           />
         </div>
@@ -387,81 +384,81 @@
         <div id="linee_animation_right">
           <img
             id="linea_1_orizzontale"
-            src="assets/linee_orizzontali/linea_1_orizzontale.png"
+            src="assets/linee_orizzontali/linea_1_orizzontale.webp"
             alt="linea_1_orizzontale"
           />
           <img
             id="linea_1_animazione"
-            src="assets/linee_orizzontali/linea_1_orizzontale.png"
+            src="assets/linee_orizzontali/linea_1_orizzontale.webp"
             alt="linea_1_orizzontale"
           />
         </div>
         <div id="linee_animation_left">
           <img
             id="linea_2_orizzontale"
-            src="assets/linee_orizzontali/linea_2_orizzontale.png"
+            src="assets/linee_orizzontali/linea_2_orizzontale.webp"
             alt="linea_2_orizzontale"
           />
           <img
             id="linea_2_animazione"
-            src="assets/linee_orizzontali/linea_2_orizzontale.png"
+            src="assets/linee_orizzontali/linea_2_orizzontale.webp"
             alt="linea_2_orizzontale"
           />
         </div>
         <div id="linee_animation_right">
           <img
             id="linea_3_orizzontale"
-            src="assets/linee_orizzontali/linea_3_orizzontale.png"
+            src="assets/linee_orizzontali/linea_3_orizzontale.webp"
             alt="linea_3_orizzontale"
           /><img
             id="linea_3_animazione"
-            src="assets/linee_orizzontali/linea_3_orizzontale.png"
+            src="assets/linee_orizzontali/linea_3_orizzontale.webp"
             alt="linea_3_orizzontale"
           />
         </div>
         <div id="linee_animation_left">
           <img
             id="linea_4_orizzontale"
-            src="assets/linee_orizzontali/linea_4_orizzontale.png"
+            src="assets/linee_orizzontali/linea_4_orizzontale.webp"
             alt="linea_4_orizzontale"
           />
           <img
             id="linea_4_animazione"
-            src="assets/linee_orizzontali/linea_4_orizzontale.png"
+            src="assets/linee_orizzontali/linea_4_orizzontale.webp"
             alt="linea_4_orizzontale"
           />
         </div>
         <div id="linee_animation_right">
           <img
             id="linea_5_orizzontale"
-            src="assets/linee_orizzontali/linea_3_orizzontale.png"
+            src="assets/linee_orizzontali/linea_3_orizzontale.webp"
             alt="linea_3_orizzontale"
           /><img
             id="linea_5_animazione"
-            src="assets/linee_orizzontali/linea_3_orizzontale.png"
+            src="assets/linee_orizzontali/linea_3_orizzontale.webp"
             alt="linea_3_orizzontale"
           />
         </div>
         <div id="linee_animation_left">
           <img
             id="linea_6_orizzontale"
-            src="assets/linee_orizzontali/linea_2_orizzontale.png"
+            src="assets/linee_orizzontali/linea_2_orizzontale.webp"
             alt="linea_4_orizzontale"
           />
           <img
             id="linea_6_animazione"
-            src="assets/linee_orizzontali/linea_2_orizzontale.png"
+            src="assets/linee_orizzontali/linea_2_orizzontale.webp"
             alt="linea_2_orizzontale"
           />
         </div>
         <!-- <div id="linee_animation_right">
           <img
             id="linea_7_orizzontale"
-            src="assets/linee_orizzontali/linea_1_orizzontale.png"
+            src="assets/linee_orizzontali/linea_1_orizzontale.webp"
             alt="linea_3_orizzontale"
           /><img
             id="linea_7_animazione"
-            src="assets/linee_orizzontali/linea_1_orizzontale.png"
+            src="assets/linee_orizzontali/linea_1_orizzontale.webp"
             alt="linea_3_orizzontale"
           />
         </div> -->
@@ -533,7 +530,7 @@
 
     <!-- =========================== Footer ======================== -->
 
-    <footer class="footer" style="margin-top: 12vh">
+    <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="footer-col1">

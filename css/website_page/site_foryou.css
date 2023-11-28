@@ -23,7 +23,7 @@
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../../assets/web_site/site_for_you/Ellisse_blu.png");
+  background-image: url("../../assets/web_site/site_for_you/Ellisse_blu.webp");
 }
 
 .image-pc {
@@ -35,7 +35,7 @@
   background-size: 135%;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../../assets/web_site/site_for_you/siteforyoumacbook.png");
+  background-image: url("../../assets/web_site/site_for_you/siteforyoumacbook.webp");
 }
 
 #logo-titolo {
@@ -241,7 +241,7 @@
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../../assets/web_site/site_for_you/Ellisse_blu.png");
+    background-image: url("../../assets/web_site/site_for_you/Ellisse_blu.webp");
   }
 
   .image-pc {
@@ -286,7 +286,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../../assets/brand_identity/brand_page/linea_desktop_brand_page.png");
+    background-image: url("../../assets/brand_identity/brand_page/linea_desktop_brand_page.webp");
   }
 
   #linea-testo {

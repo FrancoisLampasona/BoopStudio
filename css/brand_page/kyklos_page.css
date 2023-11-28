@@ -37,7 +37,7 @@
 }
 
 #img-KY {
-  background-image: url("../../assets/brand_identity/loghi/cantina_logo.png");
+  background-image: url("../../assets/brand_identity/loghi/cantina_logo.webp");
 }
 
 #container-ky{
@@ -145,7 +145,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../../assets/brand_identity/brand_page/linea_desktop_brand_page.png");
+    background-image: url("../../assets/brand_identity/brand_page/linea_desktop_brand_page.webp");
   }
 
   #linea-testo-desktop img {

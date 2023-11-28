@@ -65,7 +65,7 @@
   background-size: 120%;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../assets/web_site/site_image.png");
+  background-image: url("../assets/web_site/site_image.webp");
 }
 
 .website-img-2 {
@@ -76,7 +76,7 @@
   background-size: 138%;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../assets/web_site/site_image.png");
+  background-image: url("../assets/web_site/site_image.webp");
 }
 
 /* <=========================== Section 2 ========================> */
@@ -127,7 +127,7 @@
 #back {
   z-index: 3;
   background-color: white;
-  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
+  background-image: url("../assets/brand_identity/loghi/retro_logo.webp");
   background-size: contain;
   background-repeat: no-repeat;
   transform: rotateY(180deg);
@@ -215,25 +215,25 @@
 /* FINE */
 
 #imgApp-1 {
-  background-image: url("../assets/web_site/sito_1.png");
+  background-image: url("../assets/web_site/sito_1.webp");
 }
 
 #imgApp-2 {
-  background-image: url("../assets/web_site/sito_2.png");
+  background-image: url("../assets/web_site/sito_2.webp");
 }
 
 #cerchio-1 {
   margin-top: 1vw;
   margin-right: 2vw;
-  background-image: url("../assets/brand_identity/loghi/cerchi/1_cerchio.png");
+  background-image: url("../assets/brand_identity/loghi/cerchi/1_cerchio.webp");
 }
 
 #cerchio-2 {
-  background-image: url("../assets/brand_identity/loghi/cerchi/2_cerchio.png");
+  background-image: url("../assets/brand_identity/loghi/cerchi/2_cerchio.webp");
 }
 
 #sfondo {
-  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
+  background-image: url("../assets/brand_identity/loghi/retro_logo.webp");
 }
 
 /* MEDIA QUERY */
@@ -475,7 +475,7 @@
     z-index: 0;
     width: 35vw;
     height: 35.5vw;
-    background-image: url("../assets/brand_identity/loghi/retro_logo.png");
+    background-image: url("../assets/brand_identity/loghi/retro_logo.webp");
   }
   #sfondo-right {
     align-self: end;
@@ -483,7 +483,7 @@
     z-index: 0;
     width: 35vw;
     height: 35.5vw;
-    background-image: url("../assets/brand_identity/loghi/retro_logo.png");
+    background-image: url("../assets/brand_identity/loghi/retro_logo.webp");
   }
 }
 

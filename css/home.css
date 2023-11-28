@@ -179,26 +179,26 @@
   background-size: 112% 112%;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/assets/immagini_card_carosello/brand_id_carosello.png");
+  background-image: url("/assets/immagini_card_carosello/brand_id_carosello.webp");
 }
 
 #item-2 {
   background-size: 112% 112%;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/assets/immagini_card_carosello/site_web_carosello.png");
+  background-image: url("/assets/immagini_card_carosello/site_web_carosello.webp");
 }
 #item-3 {
   background-size: 112% 112%;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/assets/immagini_card_carosello/C.png");
+  background-image: url("/assets/immagini_card_carosello/C.webp");
 }
 #item-4 {
   background-size: 112% 112%;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/assets/immagini_card_carosello/mobile_app_carosello.png");
+  background-image: url("/assets/immagini_card_carosello/mobile_app_carosello.webp");
 }
 
 #card-text {
@@ -267,7 +267,7 @@
 #Cerchio_1 {
   position: absolute;
   width: 25vw;
-  margin-top: -5vw;
+  margin-top: -4.5vw;
   padding-left: 24vw;
 }
 
@@ -289,8 +289,7 @@
   width: 22vw;
   position: absolute;
   margin-top: 19vw;
-  padding-left: 2vw;
-  animation: spin 4s infinite linear;
+  padding-left: 1vw;
 }
 #Cerchio_3 img {
   animation: spin 4s infinite linear;
@@ -308,7 +307,7 @@
   width: 25vw;
   position: absolute;
   margin-top: 25vw;
-  padding-left: 70vw;
+  padding-left: 73vw;
 }
 #Cerchio_5 img {
   animation: spin 4s infinite linear;
@@ -501,7 +500,7 @@
   #Cerchio_3 {
     width: 17vw;
     margin-top: 13vw;
-    margin-left: 8vw;
+    margin-left: 10vw;
   }
 
   #Cerchio_4 {
@@ -560,13 +559,13 @@
   }
 
   #home_text_2 {
-    padding-top: 5vw;
-    font-size: 2.2vw;
+    padding-top: 3.5vw;
+    font-size: 1.8vw;
   }
 
   #home_text_3 {
-    padding-top: 5vh;
-    font-size: 2.2vw;
+    padding-top: 3.5vw;
+    font-size: 1.8vw;
   }
 
   .linee_main_section {
@@ -651,7 +650,7 @@
   /* <=========================== Section 3 ========================> */
   .servizi {
     font-size: 3.5vw;
-    margin-top: 12vw;
+    margin-top: 8vw;
     margin-bottom: 3.5vw;
   }
 
@@ -719,7 +718,7 @@
     position: absolute;
     width: 15vw;
     margin-top: 5.5vw;
-    padding-left: 23vw;
+    padding-left: 23.5vw;
   }
 
   #Cerchio_3 {
@@ -733,21 +732,21 @@
     width: 13vw;
     position: absolute;
     margin-top: 21.4vw;
-    padding-left: 12vw;
+    padding-left: 12.7vw;
   }
 
   #Cerchio_5 {
     width: 12.5vw;
     position: absolute;
     margin-top: 21.8vw;
-    padding-left: 30.2vw;
+    padding-left: 31.2vw;
   }
 
   #Cerchio_6 {
     width: 12.5vw;
     position: absolute;
     margin-top: 32vw;
-    padding-left: 0.3vw;
+    padding-left: 0.8vw;
   }
 
   #Cerchio_7 {
@@ -879,7 +878,7 @@
 
   .servizi {
     font-size: 3.5vw;
-    margin-top: 9.5vw;
+    margin-top: 8vw;
     margin-bottom: 2.58vw;
   }
 
@@ -889,7 +888,7 @@
     height: 39vw;
     background: #4dc7a0;
     padding: 1rem;
-    margin-left: 10px;
+    margin-left: 1.5vw;
   }
 
   #card-text {
@@ -918,7 +917,7 @@
   }
 
   .pallini_skills {
-    margin-top: 5vw;
+    margin-top: 3vw;
     margin-left: 6vw;
     max-width: 100%;
   }
@@ -940,50 +939,50 @@
   #Cerchio_1 {
     position: absolute;
     width: 13vw;
-    margin-top: 6.5vw;
-    padding-left: 6.5vw;
+    margin-top: 5vw;
+    padding-left: 6vw;
   }
 
   #Cerchio_2 {
     position: absolute;
     width: 15vw;
-    margin-top: 5.5vw;
+    margin-top: 3vw;
     padding-left: 23vw;
   }
 
   #Cerchio_3 {
     width: 11vw;
     position: absolute;
-    margin-top: 18.7vw;
+    margin-top: 16.7vw;
     margin-left: -6.2vw;
   }
 
   #Cerchio_4 {
     width: 13vw;
     position: absolute;
-    margin-top: 21.4vw;
+    margin-top: 19.4vw;
     padding-left: 12vw;
   }
 
   #Cerchio_5 {
     width: 12.5vw;
     position: absolute;
-    margin-top: 21.8vw;
-    padding-left: 30.2vw;
+    margin-top: 19.8vw;
+    padding-left: 30.5vw;
   }
 
   #Cerchio_6 {
     width: 12.5vw;
     position: absolute;
-    margin-top: 32vw;
+    margin-top: 30vw;
     padding-left: 0.3vw;
   }
 
   #Cerchio_7 {
     width: 13vw;
     position: absolute;
-    padding-left: 23.3vw;
-    margin-top: 34.4vw;
+    padding-left: 22.3vw;
+    margin-top: 32.4vw;
   }
 }
 

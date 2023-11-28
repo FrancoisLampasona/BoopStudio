@@ -38,7 +38,7 @@
 
 
 #img-VA{
-  background-image: url("../../assets/brand_identity/loghi/vito_logo.png");
+  background-image: url("../../assets/brand_identity/loghi/vito_logo.webp");
 }
 
 /* <=========================== Mockup Section ========================> */
@@ -142,7 +142,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../../assets/brand_identity/brand_page/linea_desktop_brand_page.png");
+    background-image: url("../../assets/brand_identity/brand_page/linea_desktop_brand_page.webp");
   }
 
 

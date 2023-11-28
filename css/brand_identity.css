@@ -70,7 +70,7 @@
   width: 50vw;
   height: 45vw;
   background-size: cover;
-  background-image: url("../assets/brand_identity/mini_loghi/mini_convertable.png");
+  background-image: url("../assets/brand_identity/mini_loghi/mini_convertable.webp");
   z-index: 5;
 }
 
@@ -80,7 +80,7 @@
   width: 40vw;
   height: 40vw;
   background-size: cover;
-  background-image: url("../assets/brand_identity/mini_loghi/mini_monroy.png");
+  background-image: url("../assets/brand_identity/mini_loghi/mini_monroy.webp");
   z-index: 4;
 }
 
@@ -89,7 +89,7 @@
   width: 39vw;
   height: 45vw;
   background-size: cover;
-  background-image: url("../assets/brand_identity/mini_loghi/mini_vito.png");
+  background-image: url("../assets/brand_identity/mini_loghi/mini_vito.webp");
   z-index: 7;
 }
 
@@ -100,7 +100,7 @@
   width: 42vw;
   height: 45vw;
   background-size: cover;
-  background-image: url("../assets/brand_identity/mini_loghi/mini_pandi.png");
+  background-image: url("../assets/brand_identity/mini_loghi/mini_pandi.webp");
   z-index: 11;
 }
 
@@ -110,7 +110,7 @@
   width: 42vw;
   height: 45vw;
   background-size: cover;
-  background-image: url("../assets/brand_identity/mini_loghi/mini_visit.png");
+  background-image: url("../assets/brand_identity/mini_loghi/mini_visit.webp");
   z-index: 7;
 }
 
@@ -119,7 +119,7 @@
   width: 39vw;
   height: 45vw;
   background-size: cover;
-  background-image: url("../assets/brand_identity/mini_loghi/mini_laura.png");
+  background-image: url("../assets/brand_identity/mini_loghi/mini_laura.webp");
   z-index: 10;
 }
 
@@ -128,7 +128,7 @@
   width: 39vw;
   height: 45vw;
   background-size: cover;
-  background-image: url("../assets/brand_identity/mini_loghi/mini_cantina.png");
+  background-image: url("../assets/brand_identity/mini_loghi/mini_cantina.webp");
   z-index: 9;
 }
 
@@ -137,7 +137,7 @@
   width: 39vw;
   height: 45vw;
   background-size: cover;
-  background-image: url("../assets/brand_identity/mini_loghi/mini_moceri.png");
+  background-image: url("../assets/brand_identity/mini_loghi/mini_moceri.webp");
   z-index: 8;
 }
 
@@ -191,7 +191,7 @@
 
 #back {
   background-color: white;
-  background-image: url("../assets/brand_identity/loghi/retro_logo.png");
+  background-image: url("../assets/brand_identity/loghi/retro_logo.webp");
   background-size: contain;
   background-repeat: no-repeat;
   transform: rotateY(180deg);
@@ -267,90 +267,90 @@
 /* FINE */
 
 #front-1 {
-  background-image: url("../assets/brand_identity/loghi/vito_logo.png");
+  background-image: url("../assets/brand_identity/loghi/vito_logo.webp");
 }
 #front-2 {
-  background-image: url("../assets/brand_identity/loghi/monroy_logo.png");
+  background-image: url("../assets/brand_identity/loghi/monroy_logo.webp");
 }
 #front-3 {
-  background-image: url("../assets/brand_identity/loghi/visit_logo.png");
+  background-image: url("../assets/brand_identity/loghi/visit_logo.webp");
 }
 #front-4 {
-  background-image: url("../assets/brand_identity/loghi/cantina_logo.png");
+  background-image: url("../assets/brand_identity/loghi/cantina_logo.webp");
 }
 #front-5 {
-  background-image: url("../assets/brand_identity/loghi/moceri_logo.png");
+  background-image: url("../assets/brand_identity/loghi/moceri_logo.webp");
 }
 #front-6 {
-  background-image: url("../assets/brand_identity/loghi/pandi_logo.png");
+  background-image: url("../assets/brand_identity/loghi/pandi_logo.webp");
 }
 #front-7 {
-  background-image: url("../assets/brand_identity/loghi/laura_logo.png");
+  background-image: url("../assets/brand_identity/loghi/laura_logo.webp");
 }
 #front-8 {
-  background-image: url("../assets/brand_identity/loghi/convertable_logo.png");
+  background-image: url("../assets/brand_identity/loghi/convertable_logo.webp");
 }
 
 #numero-1 {
-  background-image: url("../assets/brand_identity/loghi/numeri/1_num.png");
+  background-image: url("../assets/brand_identity/loghi/numeri/1_num.webp");
 }
 
 #numero-2 {
   margin-left: -60%;
   margin-top: 5%;
-  background-image: url("../assets/brand_identity/loghi/numeri/2_num.png");
+  background-image: url("../assets/brand_identity/loghi/numeri/2_num.webp");
 }
 #numero-3 {
   margin-top: 4%;
-  background-image: url("../assets/brand_identity/loghi/numeri/3_num.png");
+  background-image: url("../assets/brand_identity/loghi/numeri/3_num.webp");
 }
 #numero-4 {
   margin-left: -60%;
   margin-top: 5%;
-  background-image: url("../assets/brand_identity/loghi/numeri/4_num.png");
+  background-image: url("../assets/brand_identity/loghi/numeri/4_num.webp");
 }
 #numero-5 {
   margin-top: 4%;
-  background-image: url("../assets/brand_identity/loghi/numeri/5_num.png");
+  background-image: url("../assets/brand_identity/loghi/numeri/5_num.webp");
 }
 #numero-6 {
   margin-left: -60%;
   margin-top: 5%;
-  background-image: url("../assets/brand_identity/loghi/numeri/6_num.png");
+  background-image: url("../assets/brand_identity/loghi/numeri/6_num.webp");
 }
 #numero-7 {
   margin-top: 4%;
-  background-image: url("../assets/brand_identity/loghi/numeri/7_num.png");
+  background-image: url("../assets/brand_identity/loghi/numeri/7_num.webp");
 }
 #numero-8 {
   margin-left: -60%;
   margin-top: 5%;
-  background-image: url("../assets/brand_identity/loghi/numeri/8_num.png");
+  background-image: url("../assets/brand_identity/loghi/numeri/8_num.webp");
 }
 
 #cerchio-1 {
-  background-image: url("../assets/brand_identity/loghi/cerchi/1_cerchio.png");
+  background-image: url("../assets/brand_identity/loghi/cerchi/1_cerchio.webp");
 }
 #cerchio-2 {
-  background-image: url("../assets/brand_identity/loghi/cerchi/2_cerchio.png");
+  background-image: url("../assets/brand_identity/loghi/cerchi/2_cerchio.webp");
 }
 #cerchio-3 {
-  background-image: url("../assets/brand_identity/loghi/cerchi/3_cerchio.png");
+  background-image: url("../assets/brand_identity/loghi/cerchi/3_cerchio.webp");
 }
 #cerchio-4 {
-  background-image: url("../assets/brand_identity/loghi/cerchi/4_cerchio.png");
+  background-image: url("../assets/brand_identity/loghi/cerchi/4_cerchio.webp");
 }
 #cerchio-5 {
-  background-image: url("../assets/brand_identity/loghi/cerchi/5_cerchio.png");
+  background-image: url("../assets/brand_identity/loghi/cerchi/5_cerchio.webp");
 }
 #cerchio-6 {
-  background-image: url("../assets/brand_identity/loghi/cerchi/6_cerchio.png");
+  background-image: url("../assets/brand_identity/loghi/cerchi/6_cerchio.webp");
 }
 #cerchio-7 {
-  background-image: url("../assets/brand_identity/loghi/cerchi/7_cerchio.png");
+  background-image: url("../assets/brand_identity/loghi/cerchi/7_cerchio.webp");
 }
 #cerchio-8 {
-  background-image: url("../assets/brand_identity/loghi/cerchi/8_cerchio.png");
+  background-image: url("../assets/brand_identity/loghi/cerchi/8_cerchio.webp");
 }
 
 /* MEDIA QUERY */

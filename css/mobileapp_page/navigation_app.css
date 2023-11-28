@@ -23,7 +23,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../../assets/web_site/site_for_you/Ellisse_blu.png");
+  background-image: url("../../assets/web_site/site_for_you/Ellisse_blu.webp");
 }
 
 .image-mobile-nodesktop {
@@ -35,7 +35,7 @@
   background-size: 135%;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../../assets/mobile_app/Amat/logo_2.png");
+  background-image: url("../../assets/mobile_app/Amat/logo_2.webp");
 }
 
 #logo-titolo {
@@ -179,79 +179,79 @@
 /* Home  */
 
 #item-1-home {
-  background-image: url("/assets/mobile_app/Amat/home_1.png");
+  background-image: url("/assets/mobile_app/Amat/home_1.webp");
 }
 
 #item-2-home {
-  background-image: url("/assets/mobile_app/Amat/home_2.png");
+  background-image: url("/assets/mobile_app/Amat/home_2.webp");
 }
 
 #item-3-home {
-  background-image: url("/assets/mobile_app/Amat/home_3.png");
+  background-image: url("/assets/mobile_app/Amat/home_3.webp");
 }
 
 /* Dove vuoi andare ?  */
 
 #item-1-dove {
-  background-image: url("/assets/mobile_app/Amat/dove_1.png");
+  background-image: url("/assets/mobile_app/Amat/dove_1.webp");
 }
 
 #item-2-dove {
-  background-image: url("/assets/mobile_app/Amat/dove_2.png");
+  background-image: url("/assets/mobile_app/Amat/dove_2.webp");
 }
 
 #item-3-dove {
-  background-image: url("/assets/mobile_app/Amat/dove_3.png");
+  background-image: url("/assets/mobile_app/Amat/dove_3.webp");
 }
 
 /* Scopri Palermo */
 
 #item-1-scopri {
-  background-image: url("/assets/mobile_app/Amat/scopri_1.png");
+  background-image: url("/assets/mobile_app/Amat/scopri_1.webp");
 }
 
 #item-2-scopri {
-  background-image: url("/assets/mobile_app/Amat/scopri_2.png");
+  background-image: url("/assets/mobile_app/Amat/scopri_2.webp");
 }
 
 #item-3-scopri {
-  background-image: url("/assets/mobile_app/Amat/scopri_3.png");
+  background-image: url("/assets/mobile_app/Amat/scopri_3.webp");
 }
 
 /* Linee Bus  */
 
 #item-1-bus {
-  background-image: url("/assets/mobile_app/Amat/lineb_1.png");
+  background-image: url("/assets/mobile_app/Amat/lineb_1.webp");
 }
 
 #item-2-bus {
-  background-image: url("/assets/mobile_app/Amat/lineb_2.png");
+  background-image: url("/assets/mobile_app/Amat/lineb_2.webp");
 }
 
 #item-3-bus {
-  background-image: url("/assets/mobile_app/Amat/lineb_3.png");
+  background-image: url("/assets/mobile_app/Amat/lineb_3.webp");
 }
 
 /* Acquista Ticket  */
 
 #item-1-acquista {
-  background-image: url("/assets/mobile_app/Amat/tick_1.png");
+  background-image: url("/assets/mobile_app/Amat/tick_1.webp");
 }
 
 #item-2-acquista {
-  background-image: url("/assets/mobile_app/Amat/tick_2.png");
+  background-image: url("/assets/mobile_app/Amat/tick_2.webp");
 }
 
 #item-3-acquista {
-  background-image: url("/assets/mobile_app/Amat/tick_3.png");
+  background-image: url("/assets/mobile_app/Amat/tick_3.webp");
 }
 
 #item-4-acquista {
-  background-image: url("/assets/mobile_app/Amat/tick_4.png");
+  background-image: url("/assets/mobile_app/Amat/tick_4.webp");
 }
 
 #item-5-acquista {
-  background-image: url("/assets/mobile_app/Amat/tick_5.png");
+  background-image: url("/assets/mobile_app/Amat/tick_5.webp");
 }
 
 .mockup-container p {
@@ -301,7 +301,7 @@
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../../assets/web_site/site_for_you/Ellisse_blu.png");
+    background-image: url("../../assets/web_site/site_for_you/Ellisse_blu.webp");
   }
 
   .image-mobile-nodesktop {
@@ -317,7 +317,7 @@
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: right;
-    background-image: url("../../assets/mobile_app/Amat/logo_2.png");
+    background-image: url("../../assets/mobile_app/Amat/logo_2.webp");
   }
 
   .text {
@@ -351,7 +351,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../../assets/brand_identity/brand_page/linea_desktop_brand_page.png");
+    background-image: url("../../assets/brand_identity/brand_page/linea_desktop_brand_page.webp");
   }
 
   #linea-testo {
