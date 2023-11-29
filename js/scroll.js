@@ -35,9 +35,9 @@ const linksToHandle = [
     desktop1200: 120,
     desktop1700: 70,
   },
-];
+]
 
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+;document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
 
@@ -78,11 +78,35 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
       const targetPosition =
         targetElement.getBoundingClientRect().top + window.scrollY - offset;
+      const startPosition = window.scrollY;
 
-      window.scrollTo({
-        top: targetPosition,
-        behavior: "smooth",
-      });
+      const duration = 1000; // Durata dello scorrimento in millisecondi
+      const startTime = performance.now();
+
+      function scrollStep(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+
+        const easedProgress = easeInOutQuad(progress);
+        const newOffset = (targetPosition - startPosition) * easedProgress;
+
+        window.scrollTo(0, startPosition + newOffset);
+
+        if (progress < 1) {
+          requestAnimationFrame(scrollStep);
+        }
+      }
+
+      function easeInOutQuad(t) {
+        return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+      }
+
+      requestAnimationFrame(scrollStep);
+
+      // Aggiungi la gestione del cambio hash solo alla fine dell'animazione
+      setTimeout(() => {
+        window.location.hash = targetId;
+      }, duration);
     }
   });
 });

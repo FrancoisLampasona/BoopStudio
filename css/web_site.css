@@ -91,9 +91,9 @@
   background-color: transparent;
   perspective: 1000px;
   margin-top: 15vw;
-  margin-left: 10%;
+  margin-left: 5%;
   border-radius: 180px;
-  width: 80vw;
+  width: 90vw;
   height: 75vw;
 }
 
@@ -131,6 +131,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   transform: rotateY(180deg);
+  background-position: center;
 }
 
 .card-content {
