@@ -13,6 +13,11 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: Configure SSH Agent
+      run: |
+        eval "$(ssh-agent -s)"
+        echo "$SSH_PRIVATE_KEY" | ssh-add -
+
     - name: Deploy to SiteGround
       run: rsync -avz --delete ./ u2131-miz0wlveypcj@boopstudio.it:/public_html
       env:
