@@ -17,7 +17,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: boopstudio.it
-        username: ${{ secrets.FTP_USERNAME }}
+        username: francois@boopstudio.it
         password: ${{ secrets.FTP_PASSWORD }}
         server-dir: /public_html
         local-dir: ./
