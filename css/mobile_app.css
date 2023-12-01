@@ -250,16 +250,16 @@
 
   .mobileApp-text {
     margin-left: 6vw;
-    margin-top: 16vw;
+    margin-top: 23vw;
   }
 
   .decorazione-main {
     width: 6vw;
-    margin-top: 2vw;
+    margin-top: 2.5vw;
   }
 
   #mobileApp-text-1 {
-    font-size: 4.5vw;
+    font-size: 5vw;
   }
 
   #mobileApp-text-2 {
@@ -273,7 +273,9 @@
   }
 
   #linea-testo img {
-    width: 38vw;
+    width: 32vw;
+    height: 1.5vw;
+
   }
 
   #mobileApp-text-mobile {
@@ -297,7 +299,7 @@
 
   .mobileApp-img {
     position: absolute;
-    margin-top: 5vw;
+    margin-top: 9vw;
     max-width: 100%;
     background-size: 112%;
   }
@@ -309,7 +311,7 @@
   }
 
   .desktop-container {
-    margin-top: 16.7vw;
+    margin-top: 20vw;
     display: block;
   }
 
@@ -522,6 +524,7 @@
   }
 
   .mobileApp-img {
+    margin-top: 5vw;
     background-size: 118%;
   }
 

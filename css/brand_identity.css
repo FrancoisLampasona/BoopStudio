@@ -56,7 +56,7 @@
 }
 
 .mini-logo-container {
-  margin-top: 10vw;
+  margin-top: 12vw;
   position: relative;
 }
 
@@ -248,7 +248,7 @@
   font-weight: 500;
 }
 
-.card-text{
+.card-text {
   z-index: 10;
 }
 
@@ -368,7 +368,7 @@
 
   .brand-identity-text {
     margin-left: 6vw;
-    margin-top: 16vw;
+    margin-top: 26.5vw;
   }
 
   .decorazione-main {
@@ -377,11 +377,11 @@
   }
 
   #brand-text-1 {
-    font-size: 4.5vw;
+    font-size: 5vw;
   }
   #brand-text-2 {
     padding-top: 2vw;
-    font-size: 1.8vw;
+    font-size: 1.85vw;
   }
   #brand-text-3 {
     padding-top: 2.5vw;
@@ -465,6 +465,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 2vw;
+    margin-top: 5vw;
     max-width: 100%;
     height: 45vw;
   }
@@ -601,7 +602,7 @@
   }
 
   #decorazione-1 {
-    transform: translate(80%, -365%);
+    transform: translate(175%, -395%);
     background-image: url("../assets/decorazioni/tratti_gialli.png");
   }
   #decorazione-2 {
@@ -609,7 +610,7 @@
     background-image: url("../assets/decorazioni/stelle_blu.png");
   }
   #decorazione-3 {
-    transform: translate(50%, -325%);
+    transform: translate(90%, -325%);
     background-image: url("../assets/decorazioni/stella_arancio.png");
   }
   #decorazione-4 {
@@ -617,19 +618,19 @@
     background-image: url("../assets/decorazioni/stelle_gialle.png");
   }
   #decorazione-5 {
-    transform: translate(145%, -305%);
+    transform: translate(215%, -305%);
     background-image: url("../assets/decorazioni/farfalle_blu.png");
   }
   #decorazione-6 {
-    transform: translate(355%, -305%);
+    transform: translate(355%, -325%);
     background-image: url("../assets/decorazioni/tratti_arancio.png");
   }
   #decorazione-7 {
-    transform: translate(135%, -395%);
+    transform: translate(195%, -395%);
     background-image: url("../assets/decorazioni/stella_gialla.png");
   }
   #decorazione-8 {
-    transform: translate(420%, -335%);
+    transform: translate(420%, -355%);
     background-image: url("../assets/decorazioni/farfalle_blu.png");
   }
 }
@@ -743,13 +744,35 @@
     text-decoration: underline;
     word-wrap: break-word;
   }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .brand-identity-text {
-    margin-left: 6.5vw;
-    margin-top: 16vw;
+  #decorazione-1 {
+    transform: translate(80%, -368%);
+  }
+  #decorazione-2 {
+    transform: translate(550%, -270%);
+  }
+  #decorazione-3 {
+    transform: translate(58%, -335%);
+    background-image: url("../assets/decorazioni/stella_arancio.png");
+  }
+  #decorazione-4 {
+    transform: translate(505%, -325%);
+    background-image: url("../assets/decorazioni/stelle_gialle.png");
+  }
+  #decorazione-5 {
+    transform: translate(155%, -305%);
+    background-image: url("../assets/decorazioni/farfalle_blu.png");
+  }
+  #decorazione-6 {
+    transform: translate(355%, -305%);
+    background-image: url("../assets/decorazioni/tratti_arancio.png");
+  }
+  #decorazione-7 {
+    transform: translate(120%, -385%);
+    background-image: url("../assets/decorazioni/stella_gialla.png");
+  }
+  #decorazione-8 {
+    transform: translate(420%, -315%);
+    background-image: url("../assets/decorazioni/farfalle_blu.png");
   }
   #decorazione-1 {
     transform: translate(80%, -368%);
@@ -780,5 +803,43 @@
   #decorazione-8 {
     transform: translate(420%, -315%);
     background-image: url("../assets/decorazioni/farfalle_blu.png");
+  }
+  #decorazione-1 {
+    transform: translate(80%, -368%);
+  }
+  #decorazione-2 {
+    transform: translate(550%, -270%);
+  }
+  #decorazione-3 {
+    transform: translate(58%, -335%);
+    background-image: url("../assets/decorazioni/stella_arancio.png");
+  }
+  #decorazione-4 {
+    transform: translate(505%, -325%);
+    background-image: url("../assets/decorazioni/stelle_gialle.png");
+  }
+  #decorazione-5 {
+    transform: translate(155%, -305%);
+    background-image: url("../assets/decorazioni/farfalle_blu.png");
+  }
+  #decorazione-6 {
+    transform: translate(355%, -305%);
+    background-image: url("../assets/decorazioni/tratti_arancio.png");
+  }
+  #decorazione-7 {
+    transform: translate(120%, -385%);
+    background-image: url("../assets/decorazioni/stella_gialla.png");
+  }
+  #decorazione-8 {
+    transform: translate(420%, -315%);
+    background-image: url("../assets/decorazioni/farfalle_blu.png");
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .brand-identity-text {
+    margin-left: 6.5vw;
+    margin-top: 16vw;
   }
 }

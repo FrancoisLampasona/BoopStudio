@@ -305,6 +305,7 @@
   }
 
   .logo-cerchio {
+    margin-top: 8vw;
     margin-left: 40vw;
     width: 85%;
     height: 80%;
@@ -354,10 +355,10 @@
   }
 
   #linea-testo-desktop {
-    margin-left: -2vw;
+    margin-left: -0.5vw;
     display: block;
-    width: 32vw;
-    height: 1vw;
+    width: 27.5vw;
+    height: 2vw;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -474,6 +475,10 @@
   
 
   /* <=========================== Perchè Section ========================> */
+
+  .logo-cerchio{
+    margin-top: 1vw;
+  }
 
   .container-perche {
     height: 40vw;

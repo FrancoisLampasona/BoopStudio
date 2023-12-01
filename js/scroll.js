@@ -35,9 +35,8 @@ const linksToHandle = [
     desktop1200: 120,
     desktop1700: 70,
   },
-]
-
-;document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+];
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
 
@@ -80,7 +79,7 @@ const linksToHandle = [
         targetElement.getBoundingClientRect().top + window.scrollY - offset;
       const startPosition = window.scrollY;
 
-      const duration = 1000; // Durata dello scorrimento in millisecondi
+      const duration = 1500; // Durata dello scorrimento in millisecondi
       const startTime = performance.now();
 
       function scrollStep(currentTime) {
@@ -102,11 +101,6 @@ const linksToHandle = [
       }
 
       requestAnimationFrame(scrollStep);
-
-      // Aggiungi la gestione del cambio hash solo alla fine dell'animazione
-      setTimeout(() => {
-        window.location.hash = targetId;
-      }, duration);
     }
   });
 });
