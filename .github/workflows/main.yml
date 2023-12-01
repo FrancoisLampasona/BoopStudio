@@ -18,12 +18,15 @@ jobs:
         with:
           server: boopstudio.it
           username: francois@boopstudio.it
-          password: lampasona
+          password: ${{ secrets.password }}
           server-dir: /boopstudio.it/public_html/
           local-dir: ./
           exclude: |
             **/.git/**
             **/.github/**
             **/.vscode/**
+            mediaquery.txt
+            montagne.png
+            README.md
 
 
