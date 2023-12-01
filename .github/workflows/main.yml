@@ -19,6 +19,6 @@ jobs:
         server: boopstudio.it
         username: francois@boopstudio.it
         password: lampasona
-        server-dir: /public_html
+        server-dir: /public_html/
         local-dir: ./
         exclude: ".git,.github"
