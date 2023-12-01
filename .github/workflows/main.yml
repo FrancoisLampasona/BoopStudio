@@ -21,4 +21,9 @@ jobs:
           password: lampasona
           server-dir: /boopstudio.it/public_html/
           local-dir: ./
-          exclude: ".git,.github,.vscode,mediaquery.txt,montagne.png,README.md"
+          exclude: |
+            **/.git/**
+            **/.github/**
+            **/.vscode/**
+
+
